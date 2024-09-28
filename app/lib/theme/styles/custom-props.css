@@ -7,6 +7,7 @@
   --font-size-h6: clamp(0.875rem, 0.188vw + 0.831rem, 1rem);
   /* --heading-line-height: clamp(2.1rem, 3.681vw + 1.237rem, 4.55rem); */
 
+  /* override font sizes */
   --font-size-00: 0.625rem;
   --font-size-01: 0.75rem;
   --font-size-0: 0.875rem;
@@ -14,6 +15,24 @@
   --font-size-2: 1.125rem;
   --font-size-3: 1.5rem;
   --font-size-4: 1.75rem;
+
+  /* custom app colors */
+
+  --surface-1: #f4f4f2;
+  --surface-2: #ebf3ed;
+  --surface-3: #fcfdff;
+
+  --text-1: #d6d6d6;
+  --text-2: #adadad;
+  --text-3: #858585;
+  --text-4: #5c5c5c;
+  --text-5: #333333;
+
+  --green-2: #19582933;
+  --green-4: #19582966;
+  --green-6: #19582966;
+  --green-8: #19582999;
+  --green-10: #195829;
 }
 
 h1,
