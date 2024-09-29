@@ -1,0 +1,47 @@
+.contentContainer {
+  padding: var(--size-9) var(--size-3);
+  background-color: var(--green-10);
+  color: var(--surface-3);
+}
+
+.links {
+  font-size: var(--font-size-1);
+}
+
+.linkContainer {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-3);
+}
+
+.headerContainer {
+  margin-bottom: var(--size-4);
+  display: flex;
+  justify-content: space-between;
+}
+
+.followUsContainer {
+  margin: var(--size-5) 0 var(--size-3) 0;
+}
+
+.iconContainer {
+  display: flex;
+  gap: var(--size-5);
+}
+
+.logoContainer {
+  padding-top: var(--size-8);
+  text-align: center;
+}
+
+.logoTitle {
+  padding-top: var(--size-3);
+  line-height: var(--font-lineheight-3);
+}
+
+.copyrighContainer {
+  color: var(--text-5);
+  text-align: center;
+  padding: var(--size-5) 0;
+}
