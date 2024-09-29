@@ -20,8 +20,8 @@
     "baseUrl": "app/",
     "paths": {
       "@app/*": ["*"],
-      "@components/*": ["ui/components/*"],
-      "@assets/*": ["assets/*"],
+      "@components/*": ["lib/components/*"],
+      "@assets/*": ["lib/assets/*"],
       "@lib/*": ["lib/*"],
       "@providers/*": ["lib/providers/*"],
       "@hooks/*": ["lib/hooks/*"],
@@ -30,6 +30,12 @@
       "@services/*": ["services/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "svgr.d.ts",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }
