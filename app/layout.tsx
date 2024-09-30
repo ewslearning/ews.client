@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { poppinsFontClass } from "@lib/theme/fonts/font";
+import Footer from "@components/footer/footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppinsFontClass.className}`}>{children}</body>
+      <body className={`${poppinsFontClass.className}`}>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

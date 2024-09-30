@@ -45,3 +45,9 @@
   text-align: center;
   padding: var(--size-5) 0;
 }
+
+@media (min-width: var(--size-md)) {
+  .contentContainer {
+    padding: 10rem;
+  }
+}
