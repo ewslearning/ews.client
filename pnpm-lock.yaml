@@ -75,9 +75,9 @@ importers:
       postcss:
         specifier: ^8.4.47
         version: 8.4.47
-      postcss-custom-media:
-        specifier: ^11.0.1
-        version: 11.0.1(postcss@8.4.47)
+      postcss-simple-vars:
+        specifier: ^7.0.1
+        version: 7.0.1(postcss@8.4.47)
       storybook:
         specifier: 8.3.4
         version: 8.3.4
@@ -743,30 +743,6 @@ packages:
   '@chromatic-com/storybook@1.9.0':
     resolution: {integrity: sha512-vYQ+TcfktEE3GHnLZXHCzXF/sN9dw+KivH8a5cmPyd9YtQs7fZtHrEgsIjWpYycXiweKMo1Lm1RZsjxk8DH3rA==}
     engines: {node: '>=16.0.0', yarn: '>=1.22.18'}
-
-  '@csstools/cascade-layer-name-parser@2.0.1':
-    resolution: {integrity: sha512-G9ZYN5+yr/E6xYSiy1BwOEFP5p88ZtWo8sL4NztKBkRRAwRkzVGa70M+D+fYHugMID5jkLeNt5X9jYd5EaVuyg==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      '@csstools/css-parser-algorithms': ^3.0.1
-      '@csstools/css-tokenizer': ^3.0.1
-
-  '@csstools/css-parser-algorithms@3.0.1':
-    resolution: {integrity: sha512-lSquqZCHxDfuTg/Sk2hiS0mcSFCEBuj49JfzPHJogDBT0mGCyY5A1AQzBWngitrp7i1/HAZpIgzF/VjhOEIJIg==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      '@csstools/css-tokenizer': ^3.0.1
-
-  '@csstools/css-tokenizer@3.0.1':
-    resolution: {integrity: sha512-UBqaiu7kU0lfvaP982/o3khfXccVlHPWp0/vwwiIgDF0GmqqqxoiXC/6FCjlS9u92f7CoEz6nXKQnrn1kIAkOw==}
-    engines: {node: '>=18'}
-
-  '@csstools/media-query-list-parser@3.0.1':
-    resolution: {integrity: sha512-HNo8gGD02kHmcbX6PvCoUuOQvn4szyB9ca63vZHKX5A81QytgDG4oxG4IaEfHTlEZSZ6MjPEMWIVU+zF2PZcgw==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      '@csstools/css-parser-algorithms': ^3.0.1
-      '@csstools/css-tokenizer': ^3.0.1
 
   '@emnapi/runtime@1.2.0':
     resolution: {integrity: sha512-bV21/9LQmcQeCPEg3BDFtvwL6cwiTMksYNWQQ4KOxCZikEGalWtenoZ0wCiukJINlGCIi2KXx01g4FoH/LxpzQ==}
@@ -3655,12 +3631,6 @@ packages:
     resolution: {integrity: sha512-d7Uw+eZoloe0EHDIYoe+bQ5WXnGMOpmiZFTuMWCwpjzzkL2nTjcKiAk4hh8TjnGye2TwWOk3UXucZ+3rbmBa8Q==}
     engines: {node: '>= 0.4'}
 
-  postcss-custom-media@11.0.1:
-    resolution: {integrity: sha512-vfBliYVgEEJUFXCRPQ7jYt1wlD322u+/5GT0tZqMVYFInkpDHfjhU3nk2quTRW4uFc/umOOqLlxvrEOZRvloMw==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      postcss: ^8.4
-
   postcss-loader@8.1.1:
     resolution: {integrity: sha512-0IeqyAsG6tYiDRCYKQJLAmgQr47DX6N7sFSWvQxt6AcupX8DIdmykuk/o/tx0Lze3ErGHJEp5OSRxrelC6+NdQ==}
     engines: {node: '>= 18.12.0'}
@@ -3701,6 +3671,12 @@ packages:
   postcss-selector-parser@6.1.2:
     resolution: {integrity: sha512-Q8qQfPiZ+THO/3ZrOrO0cJJKfpYCagtMUkXbnEfmgUjwXg6z/WBeOyS9APBBPCTSiDV+s4SwQGu8yFsiMRIudg==}
     engines: {node: '>=4'}
+
+  postcss-simple-vars@7.0.1:
+    resolution: {integrity: sha512-5GLLXaS8qmzHMOjVxqkk1TZPf1jMqesiI7qLhnlyERalG0sMbHIbJqrcnrpmZdKCLglHnRHoEBB61RtGTsj++A==}
+    engines: {node: '>=14.0'}
+    peerDependencies:
+      postcss: ^8.2.1
 
   postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
@@ -5413,22 +5389,6 @@ snapshots:
       - '@chromatic-com/cypress'
       - '@chromatic-com/playwright'
       - react
-
-  '@csstools/cascade-layer-name-parser@2.0.1(@csstools/css-parser-algorithms@3.0.1(@csstools/css-tokenizer@3.0.1))(@csstools/css-tokenizer@3.0.1)':
-    dependencies:
-      '@csstools/css-parser-algorithms': 3.0.1(@csstools/css-tokenizer@3.0.1)
-      '@csstools/css-tokenizer': 3.0.1
-
-  '@csstools/css-parser-algorithms@3.0.1(@csstools/css-tokenizer@3.0.1)':
-    dependencies:
-      '@csstools/css-tokenizer': 3.0.1
-
-  '@csstools/css-tokenizer@3.0.1': {}
-
-  '@csstools/media-query-list-parser@3.0.1(@csstools/css-parser-algorithms@3.0.1(@csstools/css-tokenizer@3.0.1))(@csstools/css-tokenizer@3.0.1)':
-    dependencies:
-      '@csstools/css-parser-algorithms': 3.0.1(@csstools/css-tokenizer@3.0.1)
-      '@csstools/css-tokenizer': 3.0.1
 
   '@emnapi/runtime@1.2.0':
     dependencies:
@@ -7602,7 +7562,7 @@ snapshots:
       debug: 4.3.7
       enhanced-resolve: 5.17.1
       eslint: 8.57.1
-      eslint-module-utils: 2.11.1(@typescript-eslint/parser@8.7.0(eslint@8.57.1)(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@8.7.0(eslint@8.57.1)(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.30.0)(eslint@8.57.1))(eslint@8.57.1)
+      eslint-module-utils: 2.11.1(@typescript-eslint/parser@8.7.0(eslint@8.57.1)(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1)
       fast-glob: 3.3.2
       get-tsconfig: 4.8.1
       is-bun-module: 1.2.1
@@ -7615,7 +7575,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-module-utils@2.11.1(@typescript-eslint/parser@8.7.0(eslint@8.57.1)(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@8.7.0(eslint@8.57.1)(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.30.0)(eslint@8.57.1))(eslint@8.57.1):
+  eslint-module-utils@2.11.1(@typescript-eslint/parser@8.7.0(eslint@8.57.1)(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -7637,7 +7597,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.11.1(@typescript-eslint/parser@8.7.0(eslint@8.57.1)(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@8.7.0(eslint@8.57.1)(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.30.0)(eslint@8.57.1))(eslint@8.57.1)
+      eslint-module-utils: 2.11.1(@typescript-eslint/parser@8.7.0(eslint@8.57.1)(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1)
       hasown: 2.0.2
       is-core-module: 2.15.1
       is-glob: 4.0.3
@@ -8806,14 +8766,6 @@ snapshots:
 
   possible-typed-array-names@1.0.0: {}
 
-  postcss-custom-media@11.0.1(postcss@8.4.47):
-    dependencies:
-      '@csstools/cascade-layer-name-parser': 2.0.1(@csstools/css-parser-algorithms@3.0.1(@csstools/css-tokenizer@3.0.1))(@csstools/css-tokenizer@3.0.1)
-      '@csstools/css-parser-algorithms': 3.0.1(@csstools/css-tokenizer@3.0.1)
-      '@csstools/css-tokenizer': 3.0.1
-      '@csstools/media-query-list-parser': 3.0.1(@csstools/css-parser-algorithms@3.0.1(@csstools/css-tokenizer@3.0.1))(@csstools/css-tokenizer@3.0.1)
-      postcss: 8.4.47
-
   postcss-loader@8.1.1(postcss@8.4.47)(typescript@5.6.2)(webpack@5.95.0(esbuild@0.23.1)):
     dependencies:
       cosmiconfig: 9.0.0(typescript@5.6.2)
@@ -8850,6 +8802,10 @@ snapshots:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
+
+  postcss-simple-vars@7.0.1(postcss@8.4.47):
+    dependencies:
+      postcss: 8.4.47
 
   postcss-value-parser@4.2.0: {}
 

@@ -1,53 +1,101 @@
 .contentContainer {
-  padding: var(--size-9) var(--size-3);
-  background-color: var(--green-10);
-  color: var(--surface-3);
+    padding: var(--size-9) var(--size-3);
+    background-color: var(--green-10);
+    color: var(--surface-3);
 }
 
 .links {
-  font-size: var(--font-size-1);
+    font-size: var(--font-size-1);
 }
 
 .linkContainer {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  gap: var(--size-3);
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-3);
 }
 
 .headerContainer {
-  margin-bottom: var(--size-4);
-  display: flex;
-  justify-content: space-between;
+    margin-bottom: var(--size-4);
+    display: flex;
+    justify-content: space-between;
 }
 
 .followUsContainer {
-  margin: var(--size-5) 0 var(--size-3) 0;
+    margin: var(--size-5) 0 var(--size-3) 0;
 }
 
 .iconContainer {
-  display: flex;
-  gap: var(--size-5);
+    display: flex;
+    gap: var(--size-5);
 }
 
 .logoContainer {
-  padding-top: var(--size-8);
-  text-align: center;
+    padding-top: var(--size-8);
+    text-align: center;
 }
 
 .logoTitle {
-  padding-top: var(--size-3);
-  line-height: var(--font-lineheight-3);
+    padding-top: var(--size-3);
+    line-height: var(--font-lineheight-3);
 }
 
-.copyrighContainer {
-  color: var(--text-5);
-  text-align: center;
-  padding: var(--size-5) 0;
+.copyrightContainer {
+    color: var(--text-5);
+    text-align: center;
+    padding: var(--size-5) 0;
 }
 
-@media (min-width: var(--size-md)) {
-  .contentContainer {
-    padding: 10rem;
-  }
+.rightContainer {
+    display: block;
+}
+
+.icons {
+    width: var(--size-8);
+    height: var(--size-8);
+}
+
+.arrowDesktop {
+    display: none;
+}
+
+
+@media (min-width: $breakpoint-lg) {
+    .contentContainer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        padding: var(--size-12) var(--size-10);
+    }
+
+    .rightContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: var(--size-12);
+    }
+
+    .logoContainer {
+        padding: 0;
+    }
+
+    .logoTitle {
+        font-size: var(--font-size-0);
+    }
+
+    .linkContainer {
+        font-size: var(--font-size-2);
+    }
+
+    .headerContainer {
+        margin-bottom: var(--size-6);
+    }
+
+    .followUsContainer {
+        margin-bottom: var(--size-7);
+    }
+
+    .arrowDesktop {
+        display: block;
+    }
 }
