@@ -1,9 +1,9 @@
 import classes from "./hero.module.css";
-import HalfCircleLeft from "@assets/icons/half-circle-left.svg";
-import RightHalfCircle from "@assets/icons/half-circle-right.svg";
 import Star from "@assets/icons/star.svg";
 import PeopleTalkingImage from "@assets/images/people-talking.png";
 import Image from "next/image";
+// import HalfCircleLeft from "@assets/icons/half-circle-left.svg";
+// import RightHalfCircle from "@assets/icons/half-circle-right.svg";
 
 const Hero: React.FC = () => {
   return (
