@@ -1,5 +1,6 @@
 :root {
   --font-size-h1: clamp(1.75rem, 2.629vw + 1.134rem, 3.5rem);
+  /* 24px to 48px */
   --font-size-h2: clamp(1.5rem, 2.254vw + 0.972rem, 3rem);
   --font-size-h3: clamp(1.25rem, 1.878vw + 0.81rem, 2.5rem);
   --font-size-h4: clamp(1.125rem, 1.315vw + 0.817rem, 2rem);
@@ -33,6 +34,9 @@
   --green-6: #19582966;
   --green-8: #19582999;
   --green-10: #195829;
+  --green: #207235;
+
+  --layer-0: -1;
 }
 
 h1,
@@ -43,7 +47,7 @@ h5,
 h6 {
   color: var(--color-heading);
   font-weight: var(--font-weight-7);
-  /* line-height: var(--heading-line-height); */
+  line-height: var(--font-lineheight-3);
   margin: 0;
 }
 
