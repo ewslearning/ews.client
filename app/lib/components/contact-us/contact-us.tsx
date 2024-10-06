@@ -6,9 +6,9 @@ const ContactUs: React.FC = () => {
     <section className={classes.contactUsContainer}>
       <div className={classes.contactUsContent}>
         <p className={classes.contactUstext}>
-          We're excited to hear from you! Whether you have questions about our
-          programs, certifications, or potential collaborations, please fill out
-          the form, and we'll get back to you as soon as possible.
+          We&apos;re excited to hear from you! Whether you have questions about
+          our programs, certifications, or potential collaborations, please fill
+          out the form, and we'll get back to you as soon as possible.
         </p>
         <Link href="#" className={classes.contactUs}>
           <h1 className={classes.contactUsLinkText}>Contact Us</h1>
