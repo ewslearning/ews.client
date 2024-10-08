@@ -13,7 +13,6 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ header, ...rest }) => (
   <Item
     {...rest}
     header={
-      // @ts-ignore
       <>
         {header}
         <Image className={classes.chevron} src={PlusIcon} alt="Plus Icon" />
@@ -57,7 +56,7 @@ const KeyServices: React.FC = () => {
 
           <AccordionItem header="Recycling Programs">
             Develop and implement effective recycling programs tailored to your
-            organization's needs, promoting a circular economy and reducing
+            organization&apos;s needs, promoting a circular economy and reducing
             waste.
           </AccordionItem>
 
