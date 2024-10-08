@@ -6,7 +6,6 @@
   --font-size-h4: clamp(1.125rem, 1.315vw + 0.817rem, 2rem);
   --font-size-h5: clamp(1rem, 0.751vw + 0.824rem, 1.5rem);
   --font-size-h6: clamp(0.875rem, 0.188vw + 0.831rem, 1rem);
-  /* --heading-line-height: clamp(2.1rem, 3.681vw + 1.237rem, 4.55rem); */
 
   /* override font sizes */
   --font-size-00: 0.625rem;
