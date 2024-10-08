@@ -66,6 +66,15 @@ const OurPartners: React.FC = () => {
           />
           <p className={classes.companyText}>Company Name</p>
         </div>
+        <div className={classes.companyContent}>
+          <Image
+            src={WellsFargoIcon}
+            width={42}
+            height={42}
+            alt="wells fargo icon"
+          />
+          <p className={classes.companyText}>Company Name</p>
+        </div>
       </div>
     </section>
   );
