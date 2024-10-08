@@ -53,8 +53,8 @@
 }
 
 .textIcon {
-  height: 64px;
-  width: 64px;
+  height: var(--size-9);
+  width: var(--size-9);
 }
 
 @media (min-width: $breakpoint-lg) {
