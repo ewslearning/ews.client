@@ -33,6 +33,16 @@ const nextConfig = {
       rules: {
         "*.svg": {
           loaders: ["@svgr/webpack"],
+          svgoConfig: {
+            plugins: [
+              {
+                name: 'preset-default',
+                params: {
+                  overrides: { removeViewBox: false },
+                },
+              },
+            ],
+          },
           as: "*.js",
         },
       },

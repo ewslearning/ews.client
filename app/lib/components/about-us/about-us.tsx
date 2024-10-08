@@ -12,21 +12,27 @@ const AboutUs: React.FC = () => {
       </div>
       <div className={classes.aboutUsContentContainer}>
         <div className={classes.aboutUsContent}>
+          <div className={classes.textIcon}>
           <TextIcon />
+          </div>
           <p className={classes.aboutUstext}>Lorem ipsum ( Title )</p>
           <p className={classes.aboutUsDescription}>
             Short Description of Title
           </p>
         </div>
         <div className={classes.aboutUsContent}>
+        <div className={classes.textIcon}>
           <TextIcon />
+          </div>
           <p className={classes.aboutUstext}>Lorem ipsum ( Title )</p>
           <p className={classes.aboutUsDescription}>
             Short Description of Title
           </p>
         </div>
         <div className={classes.aboutUsContent}>
+        <div className={classes.textIcon}>
           <TextIcon />
+          </div>
           <p className={classes.aboutUstext}>Lorem ipsum ( Title )</p>
           <p className={classes.aboutUsDescription}>
             Short Description of Title

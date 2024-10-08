@@ -52,6 +52,11 @@
   text-wrap: nowrap;
 }
 
+.textIcon {
+  height: 64px;
+  width: 64px;
+}
+
 @media (min-width: $breakpoint-lg) {
   .aboutUsContainer {
     padding: var(--size-12) var(--size-7);
@@ -77,5 +82,10 @@
 
   .aboutUsDescription {
     font-size: var(--font-size-4);
+  }
+
+  .textIcon {
+    height: 140px;
+    width: 140px;
   }
 }
