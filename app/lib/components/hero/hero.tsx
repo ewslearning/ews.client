@@ -30,6 +30,7 @@ const Hero: React.FC = () => {
               priority
               sizes="100vw"
               placeholder="blur"
+              className={classes.heroImage}
             />
           </div>
         </div>

@@ -1,5 +1,4 @@
 import classes from "./hero.module.css";
-import Star from "@assets/icons/star.svg";
 import ProgramsHero from "@assets/images/programsHero.png";
 import Image from "next/image";
 import CertifiedPrograms from '@assets/icons/certifiedPrograms.svg';

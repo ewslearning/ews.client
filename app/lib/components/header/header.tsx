@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import styles from "./header.module.css";
 import EWS from "@assets/icons/ews.svg";
@@ -11,7 +10,6 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    console.log ("tapppp");
     setIsMenuOpen(!isMenuOpen);
   };
 

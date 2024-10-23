@@ -1,7 +1,7 @@
 "use client";
 import classes from "./course-description.module.css";
 import CertifiedPrograms from '@assets/icons/certifiedPrograms.svg';
-import { useRouter, useSearchParams } from "next/navigation";
+import {useSearchParams} from "next/navigation";
 import Calendar from "../assets/icons/calendar.svg";
 import Mode from "../assets/icons/mode.svg";
 import Language from "../assets/icons/language.svg";
@@ -12,7 +12,6 @@ import WasteManagement from "@assets/images/waste-management.png";
 
 
 const CourseDescription: React.FC = () => {
-    const router = useRouter();
     const searchParams = useSearchParams();
     const title = searchParams.get('title')
 
