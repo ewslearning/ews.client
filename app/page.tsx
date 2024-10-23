@@ -4,14 +4,16 @@ import AboutUs from "@lib/components/about-us/about-us";
 import ContactUs from "@lib/components/contact-us/contact-us";
 import KeyServices from "@lib/components/key-services/key-services";
 import OurPartners from "@lib/components/our-partners/our-partners";
+import Testimonials from "@lib/components/testimonials/testimonials";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <KeyServices />
-      <ContactUs />
       <AboutUs />
+      <KeyServices />
+      <Testimonials/>
+      <ContactUs />
       <OurPartners />
     </>
   );

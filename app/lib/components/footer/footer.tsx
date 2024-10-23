@@ -35,11 +35,11 @@ const Footer: React.FC = () => {
                             <div className={styles.followUsContainer}>
                                 <h4>Follow Us</h4>
                             </div>
-                            <div className={styles.iconContainer}>
-                                <FacebookIcon className={styles.icons}/>
-                                <LinkedinIcon/>
-                                <InstaIcon/>
-                                <TwitterIcon/>
+                            <div className={styles.iconContainer}>                           
+                                <FacebookIcon  className={styles.icons}/>
+                                <LinkedinIcon className={styles.icons}/>
+                                <InstaIcon className={styles.icons}/>
+                                <TwitterIcon className={styles.icons}/>                              
                             </div>
                         </div>
                         <div className={styles.arrowDesktop}>

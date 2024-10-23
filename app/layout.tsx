@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { poppinsFontClass } from "@lib/theme/fonts/font";
 import Footer from "@components/footer/footer";
+import Header from "@components/header/header";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -10,12 +11,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: Readonly<{ 
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
       <body className={`${poppinsFontClass.className}`}>
+        <Header />
         {children}
         <Footer />
       </body>
