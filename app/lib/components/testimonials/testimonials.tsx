@@ -5,6 +5,7 @@ import Image1 from "@assets/images/ajayKushwaha.png";
 import Image2 from "@assets/images/prashanth.png";
 import Image3 from "@assets/images/abrar.png";
 import Clients from "@assets/icons/3Clients.svg";
+import Image from "next/image";
 
 
 const Testimonials: React.FC = () => {
@@ -19,12 +20,12 @@ const Testimonials: React.FC = () => {
        
          {/* PNG Images with Boxed Text */}
          <div className={`${styles.imageWithText} ${styles.imagePosition1}`} >
-          <img src={Image1.src} alt="Image 1" />
+          <Image src={Image1} alt="Image 1" />
           <div className={styles.boxedText}>AJAY KUSHWA </div>
         </div>
 
         <div className={`${styles.imageWithText} ${styles.imagePosition2}`} >
-          <img src={Image2.src} alt="Image 2" />
+          <Image src={Image2} alt="Image 2" />
           <div className={styles.boxedText}>PRASHANTH</div>
         </div>
         {/*3 Clients*/}
@@ -33,7 +34,7 @@ const Testimonials: React.FC = () => {
        
 
         <div className={`${styles.imageWithText} ${styles.imagePosition3}`} >
-          <img src={Image3.src} alt="Image 3" />
+          <Image src={Image3} alt="Image 3" />
           <div className={styles.boxedText}>ABRAR</div>
         </div>
 

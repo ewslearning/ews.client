@@ -66,8 +66,8 @@
 
   .contactButton {
     background-color: var(--green-10);
-    height: 75;
-    width: 197;
+    height: 75px;
+    width: 197px;
     color: var(--surface-3);
     padding: 10px var(--size-4);
     border: none;
@@ -117,25 +117,24 @@
   }
   .overlayMenu {
     display: flex; 
-    /* Include the same overlay styling here */
-    top: 10%; /* Below the header */
-    left: 0; /* Align it to the left */
-    right: 0; /* Align it to the right */
+    top: 10%; 
+    left: 0;
+    right: 0;
     background-color:var(--surface-1);
-    padding: var(--size-2); /* Padding around the menu */
+    padding: var(--size-2); 
   }
   
   .overlayLinkContainer {
-    list-style-type: none; /* Remove default list styles */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
   }
   
   .overlayLink {
-    display: block; /* Make each link a block for better click area */
-    padding: 10px; /* Padding around each link */
-    cursor: pointer; /* Pointer cursor on hover */
-    color: #000; /* Adjust color as needed */
+    display: block;
+    padding: 10px;
+    cursor: pointer; 
+    color: #000;
     font-size: var(--font-size-2);
     font-weight: var(--font-weight-4);
   }
@@ -147,7 +146,7 @@
   .contactButton {
     background-color: var(--green-10);
     height: var(--size-7);
-    width: 101;
+    width: 101px;
     color: white; 
     padding: 10px var(--size-4);
     border: none;

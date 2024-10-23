@@ -4,7 +4,7 @@ import { useState } from "react";
 import styles from "./header.module.css";
 import EWS from "@assets/icons/ews.svg";
 import HamburgerIcon from "@assets/icons/hamburger.svg"; // Add a hamburger icon
-import { debuglog } from "util";
+import Link from 'next/link'; 
 
 
 const Header: React.FC = () => {
@@ -23,15 +23,9 @@ const Header: React.FC = () => {
         </div>
         <div>
         <ul className={styles.linkContainer}>
-          <li>
-            <span className={styles.link}>Programs</span>
-          </li>
-          <li>
-            <span className={styles.link}>Company</span>
-          </li>
-          <li>
-            <span className={styles.link}>Resources</span>
-          </li>
+          <Link href="/programs" className={styles.link}>Programs</Link>
+          <Link href="/programs"  className={styles.link}>Company</Link>
+          <Link href="/programs"  className={styles.link}>Resources</Link>
         </ul>
         </div>
         <div className={styles.buttonContainer}>
@@ -51,7 +45,7 @@ const Header: React.FC = () => {
         <div className={styles.overlayMenu}>
           <ul className={styles.overlayLinkContainer}>
             <li>
-              <span className={styles.overlayLink}>Programs</span>
+              <Link href="/programs" className={styles.overlayLink}>Programs</Link>
             </li>
             <li>
               <span className={styles.overlayLink}>Company</span>

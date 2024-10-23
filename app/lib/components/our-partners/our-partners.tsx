@@ -1,79 +1,27 @@
-import Image from "next/image";
+
 import classes from "./our-partners.module.css";
-import WellsFargoIcon from "@assets/icons/wells-fargo.svg?url";
+import Onesb from "@assets/images/onesb.png";
+import Hkbk from "@assets/images/hkbk.png";
+import Image from "next/image";
 
 const OurPartners: React.FC = () => {
   return (
     <section className={classes.ourPartnersContainer}>
       <div className={classes.headerContainer}>
         <h4 className={classes.subHeaderText}>
-          Lorem IPSUM Lorem IPSUM Lorem IPSUM
+        At EWS, we value our collaboration and are 
+        committed to driving sustainability together
         </h4>
         <h1 className={classes.headerText}>Our Partners</h1>
       </div>
       <div className={classes.companiesContainer}>
-        <div className={classes.companyContent}>
-          <Image
-            src={WellsFargoIcon}
-            width={42}
-            height={42}
-            alt="wells fargo icon"
-          />
-          <p className={classes.companyText}>Company Name</p>
+        <div className={classes.image1}>
+        <Image src={Onesb} alt="one school of business"  />
+        <div className={classes.companyName}>ONESB</div>
         </div>
-        <div className={classes.companyContent}>
-          <Image
-            src={WellsFargoIcon}
-            width={42}
-            height={42}
-            alt="wells fargo icon"
-          />
-          <p className={classes.companyText}>Company Name</p>
-        </div>
-        <div className={classes.companyContent}>
-          <Image
-            src={WellsFargoIcon}
-            width={42}
-            height={42}
-            alt="wells fargo icon"
-          />
-          <p className={classes.companyText}>Company Name</p>
-        </div>
-        <div className={classes.companyContent}>
-          <Image
-            src={WellsFargoIcon}
-            width={42}
-            height={42}
-            alt="wells fargo icon"
-          />
-          <p className={classes.companyText}>Company Name</p>
-        </div>
-        <div className={classes.companyContent}>
-          <Image
-            src={WellsFargoIcon}
-            width={42}
-            height={42}
-            alt="wells fargo icon"
-          />
-          <p className={classes.companyText}>Company Name</p>
-        </div>
-        <div className={classes.companyContent}>
-          <Image
-            src={WellsFargoIcon}
-            width={42}
-            height={42}
-            alt="wells fargo icon"
-          />
-          <p className={classes.companyText}>Company Name</p>
-        </div>
-        <div className={classes.companyContent}>
-          <Image
-            src={WellsFargoIcon}
-            width={42}
-            height={42}
-            alt="wells fargo icon"
-          />
-          <p className={classes.companyText}>Company Name</p>
+        <div className={classes.image2} >
+        <Image src={Hkbk} alt="hkbk college of engineering" />
+        <div className={classes.companyName}>HKBK College of Engineering</div>
         </div>
       </div>
     </section>
