@@ -22,8 +22,8 @@ const Header: React.FC = () => {
         <div>
         <ul className={styles.linkContainer}>
           <Link href="/programs" className={styles.link}>Programs</Link>
-          <Link href="/programs"  className={styles.link}>Company</Link>
-          <Link href="/programs"  className={styles.link}>Resources</Link>
+          <Link href="/company"  className={styles.link}>Company</Link>
+          <Link href="/resources"  className={styles.link}>Resources</Link>
         </ul>
         </div>
         <div className={styles.buttonContainer}>
@@ -46,10 +46,10 @@ const Header: React.FC = () => {
               <Link href="/programs" className={styles.overlayLink}>Programs</Link>
             </li>
             <li>
-              <span className={styles.overlayLink}>Company</span>
+              <Link href="/company" className={styles.overlayLink}>Company</Link>
             </li>
             <li>
-              <span className={styles.overlayLink}>Resources</span>
+              <Link href="/resources" className={styles.overlayLink}>Resources</Link>
             </li>
           </ul>
         </div>
