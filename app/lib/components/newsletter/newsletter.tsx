@@ -4,12 +4,14 @@ import classes from "./newsletter.module.css";
 export const Newsletter = () => {
   return (
     <article className={classes.newsletterContainer}>
-      <h1 className={classes.header}>Stay Updated with Our Newsletter</h1>
-      <p className={classes.description}>
-        Sign up to receive the latest news, updates, and exclusive insights from
-        our team. Be the first to know about our programs, certifications, and
-        collaborations!
-      </p>
+      <div className={classes.headerContainer}>
+        <h1 className={classes.header}>Stay Updated with Our Newsletter</h1>
+        <p className={classes.description}>
+          Sign up to receive the latest news, updates, and exclusive insights
+          from our team. Be the first to know about our programs,
+          certifications, and collaborations!
+        </p>
+      </div>
       <form>
         <p>Form Here</p>
       </form>

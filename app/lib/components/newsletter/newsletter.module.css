@@ -6,10 +6,13 @@
   text-align: center;
 }
 
+.headerContainer {
+  max-width: calc(var(--size-14) * 2);
+  margin: auto;
+}
+
 .header {
   padding-bottom: var(--size-2);
-  padding-left: var(--size-3);
-  padding-right: var(--size-3);
   font-weight: 600;
 }
 
