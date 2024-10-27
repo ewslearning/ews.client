@@ -1,3 +1,4 @@
+import Button from "@components/common/button/button";
 import classes from "./newsletter.module.css";
 
 export const Newsletter = () => {
@@ -19,7 +20,7 @@ export const Newsletter = () => {
         time.
       </p>
 
-      <button>Submit</button>
+      <Button variant="secondary">Submit</Button>
     </article>
   );
 };

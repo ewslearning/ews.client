@@ -1,136 +1,117 @@
+.contentContainer {
+  display: flex;
+  height: 166.75px;
+  background-color: var(--surface-1);
+  color: var(--surface-3);
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--size-9) var(--size-6);
+  position: relative;
+}
 
+.logoContainer {
+  display: flex;
+  align-items: center;
+  width: 140px;
+  height: var(--size-11);
+}
 
+.linkContainer {
+  display: flex;
+  list-style-type: none;
+  gap: var(--size-7);
+}
+
+.overlayMenu {
+  position: absolute;
+  top: 100%; /* Below the header */
+  left: 0;
+  right: 0;
+  background-color: var(--surface-1);
+  padding: var(--size-2);
+  z-index: 999; /* Ensure it's above other content */
+  box-shadow: 0 var(--size-1) var(--size-2) rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+}
+
+/* Styling the dropdown links */
+.overlayLinkContainer {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-2); /* Space between the links */
+}
+
+.overlayLink {
+  font-size: var(--font-size-3);
+  color: var(--text-color);
+  text-decoration: none;
+  cursor: pointer;
+  padding: var(--size-3); /* Add some padding to each link */
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: var(--font-size-3);
+  color: #000; /* Adjust color as needed */
+}
+
+.hamburgerButton {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center; /* Align Contact Us and hamburger vertically */
+  gap: var(--size-3); /* Add space between Contact Us and hamburger */
+}
+
+@media (max-width: $breakpoint-md) {
   .contentContainer {
     display: flex;
-    height: 166.75px;
+    height: 91.75px;
     background-color: var(--surface-1);
     color: var(--surface-3);
-    justify-content: space-between; 
-    align-items: center;
-    padding: var(--size-9) var(--size-6);
-    position: relative; 
-
-  }
-  
-  .logoContainer {
-    display: flex;
-    align-items: center;
-    width: 140px;
-    height: var(--size-11);
-  }
-  
-  .linkContainer {
-    display: flex;
-    list-style-type: none;
-    gap: var(--size-7);
+    justify-content: space-between; /* Align logo on the left and buttons on the right */
+    align-items: center; /* Vertically center logo and links */
+    padding: var(--size-5) var(--size-3);
+    position: relative; /* Allows absolute positioning of the dropdown */
   }
 
-  .overlayMenu {
-    position: absolute; 
-    top: 100%; /* Below the header */
-    left: 0; 
-    right: 0; 
-    background-color: var(--surface-1);
-    padding: var(--size-2); 
-    z-index: 999; /* Ensure it's above other content */
-    box-shadow: 0 var(--size-1) var(--size-2) rgba(0, 0, 0, 0.1); 
-    display: none;
-    flex-direction: column;
-  }
-  
-  /* Styling the dropdown links */
-  .overlayLinkContainer {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: var(--size-2); /* Space between the links */
-  }
-  
-  .overlayLink {
-    font-size: var(--font-size-3);
-    color: var(--text-color);
-    text-decoration: none;
-    cursor: pointer;
-    padding: var(--size-3); /* Add some padding to each link */
-  }
-  
-  .link {
-    text-decoration: none;
-    cursor: pointer;
-    font-weight: 400;
-    font-size: var(--font-size-3);
-    color: #000; /* Adjust color as needed */
-  }
-
-  .contactButton {
-    background-color: var(--green-10);
-    height: 75;
-    width: 197;
-    color: var(--surface-3);
-    padding: 10px var(--size-4);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-
-  .hamburgerButton {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-
-
-  .buttonContainer {
-    display: flex;
-    align-items: center; /* Align Contact Us and hamburger vertically */
-    gap: var(--size-3); /* Add space between Contact Us and hamburger */
-  }
-
-  @media (max-width: $breakpoint-md) {
-    .contentContainer {
-      display: flex;
-      height: 91.75px;
-      background-color: var(--surface-1);
-      color: var(--surface-3);
-      justify-content: space-between; /* Align logo on the left and buttons on the right */
-      align-items: center; /* Vertically center logo and links */
-      padding: var(--size-5) var(--size-3);
-      position: relative; /* Allows absolute positioning of the dropdown */
-    
-    }
-      
   .linkContainer {
     display: none;
   }
- 
+
   .logoContainer {
     display: flex;
     align-items: center;
     width: 69px;
     height: auto;
-   
   }
   .overlayMenu {
-    display: flex; 
+    display: flex;
     /* Include the same overlay styling here */
     top: 10%; /* Below the header */
     left: 0; /* Align it to the left */
     right: 0; /* Align it to the right */
-    background-color:var(--surface-1);
+    background-color: var(--surface-1);
     padding: var(--size-2); /* Padding around the menu */
   }
-  
+
   .overlayLinkContainer {
     list-style-type: none; /* Remove default list styles */
     padding: 0; /* Remove default padding */
     margin: 0; /* Remove default margin */
   }
-  
+
   .overlayLink {
     display: block; /* Make each link a block for better click area */
     padding: 10px; /* Padding around each link */
@@ -139,21 +120,9 @@
     font-size: var(--font-size-2);
     font-weight: var(--font-weight-4);
   }
-  
+
   .overlayLink:hover {
     background-color: rgba(0, 0, 0, 0.1); /* Optional hover effect */
-  }
-
-  .contactButton {
-    background-color: var(--green-10);
-    height: var(--size-7);
-    width: 101;
-    color: white; 
-    padding: 10px var(--size-4);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
   }
 
   .buttonContainer {
@@ -165,7 +134,7 @@
   .hamburgerButton {
     display: block; /* Ensure hamburger button is visible on mobile */
     padding-right: var(--size-2);
-    padding-left:  var(--size-2);
+    padding-left: var(--size-2);
   }
 
   .showMenu {
@@ -177,7 +146,4 @@
     background-color: var(--surface-1);
     padding: var(--size-2);
   }
-  }
- 
-  
-  
+}
