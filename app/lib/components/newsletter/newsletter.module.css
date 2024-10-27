@@ -20,6 +20,17 @@
   padding-bottom: var(--size-7);
 }
 
+.inputcontainer {
+  display: grid;
+  gap: var(--size-5);
+  text-align: left;
+  background-color: var(--green-7);
+  padding: var(--size-3) var(--size-7);
+  border-radius: var(--radius-3);
+
+  margin-bottom: var(--size-7);
+}
+
 .disclamer {
   padding-bottom: var(--size-7);
 }
