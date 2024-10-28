@@ -1,4 +1,4 @@
-@import url("./lib/theme/styles/normalize.css");
+@import url("./home/theme/styles/normalize.css");
 @import "open-props/style";
-@import url("./lib/theme/styles/custom-props.css");
+@import url("./home/theme/styles/custom-props.css");
 

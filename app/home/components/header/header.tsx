@@ -4,7 +4,7 @@ import styles from "./header.module.css";
 import EWS from "@assets/icons/ews.svg";
 import HamburgerIcon from "@assets/icons/hamburger.svg"; // Add a hamburger icon
 import Link from 'next/link'; 
-
+import Button from "@components/common/button/button";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,9 +16,9 @@ const Header: React.FC = () => {
   return (
     <header>
       <div className={styles.contentContainer}>
-        <div className={styles.logoContainer}>
-          <EWS />
-        </div>
+       
+          <Link href="/" className={styles.logoContainer}><EWS/></Link>
+        
         <div>
         <ul className={styles.linkContainer}>
           <Link href="/programs" className={styles.link}>Programs</Link>
@@ -28,18 +28,17 @@ const Header: React.FC = () => {
         </div>
         <div className={styles.buttonContainer}>
           {/* Contact Us button */}
-          <button className={styles.contactButton}>Contact Us</button>
+          <Button>Contact Us</Button>
 
           {/* Hamburger button */}
           <button className={styles.hamburgerButton} onClick={toggleMenu}>
             <HamburgerIcon />
           </button>
         </div>
-       
       </div>
-     
-     {/* Conditionally render the dropdown menu for mobile */}
-     {isMenuOpen && (
+
+      {/* Conditionally render the dropdown menu for mobile */}
+      {isMenuOpen && (
         <div className={styles.overlayMenu}>
           <ul className={styles.overlayLinkContainer}>
             <li>
@@ -54,7 +53,6 @@ const Header: React.FC = () => {
           </ul>
         </div>
       )}
-
     </header>
   );
 };

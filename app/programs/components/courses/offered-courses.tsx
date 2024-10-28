@@ -1,6 +1,6 @@
 import classes from "./offered-courses.module.css";
 import TileComponent from "../tile/tile";
-import WasteManagement from "@assets/images/waste-management.png";
+import WasteManagement from "../../..//home/assets/images/waste-management.png";
 
 
 const OfferedCourses: React.FC = () => {
@@ -50,13 +50,13 @@ const OfferedCourses: React.FC = () => {
     },
   ];
 
-return (<div className={classes.parentContainer}>
+return ( <div className={classes.parentContainer}>
            <span className={classes.heading}>Courses We Offer</span>
            <div className={classes.gridContainer}>
         {courses.map((course, index) => (
           <TileComponent
             key={index}
-            imageSrc={course}
+            imageSrc={course.imageSrc}
             title={course.title}
             bulletPoints={course.bulletPoints}
             mode={course.mode}

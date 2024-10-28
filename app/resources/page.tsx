@@ -1,16 +1,16 @@
-import CompanyAboutUs from "@app/company/components/about-us/about-us";
-import OurTeam from "@app/company/components/our-team/our-team";
-import Certifications from "@app/company/components/certifications/certifications";
-import ContactUs from "@app/lib/components/contact-us/contact-us";
+
+import ContactUs from "@app/home/components/contact-us/contact-us";
+import Brochures from "./components/brochures/brochures";
+import Blogs from "./components/blogs/blogs";
 
 
-export default function Company() {
+export default function Resources() {
   return (
     <>
-    <CompanyAboutUs/>
-    <OurTeam/>
-    <Certifications/>
+    <Brochures/>
+    <Blogs/>
     <ContactUs/>
     </>
   );
 }
+  

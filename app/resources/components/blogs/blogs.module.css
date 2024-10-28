@@ -1,0 +1,132 @@
+
+
+.parentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center; /* Center-align the grid container */
+  width: 100%;
+  margin-top: 6%;
+  margin-bottom: 5%;
+  margin-inline: 5%;
+ }
+
+ .gridWrapper{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0%;
+}
+
+.header{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 72px;
+    color: var(--text-5);
+}
+
+.divider {
+  background-color: var(--text-5);
+  height: 1px;
+  width: 88%;
+  margin-top: 4px;
+  margin-bottom: 64px;
+}
+
+.blogContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 64px;
+}
+
+.blogTitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  color: var(--surface-5);
+}
+
+.blogTextsContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.image {
+  padding-right: 32px;
+}
+
+.readMore{
+  width: 168px;
+  height: 51px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  background-color: transparent;
+  color: var(--green-10);
+  border-color: var(--green-10);
+}
+
+.blogDate {
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+color: var(--text-4);
+}
+
+@media (max-width: $breakpoint-lg){
+  .header{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    color: var(--text-5);
+  }
+
+  
+
+}
+
+@media (max-width: $breakpoint-md){
+  .blogContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+ 
+  
+  .blogTitle {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--surface-5);
+    padding-bottom: 10px;
+  }
+
+  .readMore{
+    width: 130px;
+    height: 38px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: transparent;
+    color: var(--green-10);
+    border-color: var(--green-10);
+  }
+
+  .blogDate {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    color: var(--text-4);
+    padding-top: 8px;
+    }
+
+    .image {
+      padding-right: 24px;
+    }
+}
