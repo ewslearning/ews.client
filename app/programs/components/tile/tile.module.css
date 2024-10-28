@@ -16,7 +16,9 @@
     0px 6px 12px #18274B1F;
 }
 
-
+.image:hover {
+  transform: scale(1.15); /* Zoom in on hover */
+}
 .link {
     text-decoration: none;
     cursor: pointer;

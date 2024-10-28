@@ -1,5 +1,7 @@
 import classes from "./about-us.module.css";
-import TextIcon from "@assets/icons/text-icon.svg";
+import OurCommitment from "@assets/icons/our-commitment.svg";
+import TailoredSolutions from "@assets/icons/tailored-solutions.svg";
+import Collab from "@assets/icons/collaborative-partnerships.svg";
 
 const AboutUs: React.FC = () => {
   return (
@@ -13,7 +15,7 @@ const AboutUs: React.FC = () => {
       <div className={classes.aboutUsContentContainer}>
         <div className={classes.aboutUsContent}>
           <div className={classes.textIcon}>
-          <TextIcon />
+          <OurCommitment />
           </div>
           <p className={classes.aboutUstext}>Lorem ipsum ( Title )</p>
           <p className={classes.aboutUsDescription}>
@@ -22,7 +24,7 @@ const AboutUs: React.FC = () => {
         </div>
         <div className={classes.aboutUsContent}>
         <div className={classes.textIcon}>
-          <TextIcon />
+          <TailoredSolutions />
           </div>
           <p className={classes.aboutUstext}>Lorem ipsum ( Title )</p>
           <p className={classes.aboutUsDescription}>
@@ -31,7 +33,7 @@ const AboutUs: React.FC = () => {
         </div>
         <div className={classes.aboutUsContent}>
         <div className={classes.textIcon}>
-          <TextIcon />
+          <Collab />
           </div>
           <p className={classes.aboutUstext}>Lorem ipsum ( Title )</p>
           <p className={classes.aboutUsDescription}>
