@@ -29,7 +29,7 @@ const TileWiget: React.FC<TileComponentProps> = ({ imageSrc, title, description 
           </React.Fragment>
         ))}</h5>
          <p className={classes.description}>
-          Mode
+          {description}
         </p>
         <button className={classes.readMore}>Read More</button>
     </div>

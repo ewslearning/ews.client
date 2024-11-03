@@ -6,19 +6,19 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label: string;
   placeholder: string;
   name: string;
-  register: UseFormRegister<any>;
+  register: UseFormRegister<any>; // eslint-disable-line @typescript-eslint/no-explicit-any
   error?: FieldError;
   isDropDown?: boolean;
   dropdownOptions?: { label: string; value: string }[]; 
 }
 
-const Input = forwardRef<HTMLInputElement, InputProps>(
+const Input = forwardRef<HTMLInputElement, InputProps>( // eslint-disable-line react/display-name
   ({ label, name, register, error, isDropDown, dropdownOptions, ...rest }, ref) => {
 
     const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
       if (e.target.value === "RemoveAll") {
         e.target.value = ""; // Clear the selection
-        register(name).onChange({ target: { value: "" } } as any); // Reset the value in the form
+        register(name).onChange({ target: { value: "" } } as any); // eslint-disable-line @typescript-eslint/no-explicit-any
       }
     };
 
