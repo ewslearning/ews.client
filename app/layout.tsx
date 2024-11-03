@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { poppinsFontClass } from "@lib/theme/fonts/font";
+import { poppinsFontClass } from "@app/home/theme/fonts/font";
 import Footer from "@components/footer/footer";
 import Header from "@components/header/header";
 

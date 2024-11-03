@@ -1,0 +1,39 @@
+.button {
+  font-size: var(--font-size-0);
+  border-radius: var(--radius-2);
+  font-weight: 600;
+  padding: var(--size-2) var(--size-3);
+  cursor: pointer;
+}
+
+.primary {
+  background-color: var(--green-10);
+  color: var(--surface-3);
+  border: none;
+}
+
+.secondary {
+  background-color: transparent;
+  border: 1px solid var(--surface-3);
+  color: var(--surface-3);
+  
+}
+
+.whiteBg {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--surface-3);
+  color: var(--green-10);
+  border: none;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+@media (min-width: $breakpoint-lg) {
+  .button {
+    padding: var(--size-3) var(--size-5);
+    font-size: var(--font-size-2);
+  }
+}

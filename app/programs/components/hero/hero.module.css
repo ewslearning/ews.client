@@ -1,0 +1,203 @@
+.hero {
+    display: flex;
+    overflow: hidden; 
+    width: 100%;
+    height: auto;
+  }
+
+  .titleContainer{
+    padding: 10% 5%;
+    justify-items: start;
+    align-items: start;
+  }
+  
+  .headerContainer{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: var(--size-7);
+  }
+
+.headerText {
+    font-size: var(--size-6);
+    padding-left: var(--size-3);
+    font-weight: 400;
+    
+}
+
+.subheaderText {
+    font-size: var(--size-8);
+    padding-left: var(--size-3);
+    font-weight: 500;
+    align-items: start;
+    text-align: start;
+    color: var(--text-5);
+    padding-left: 0px;
+}
+
+.onlineOffline {
+    font-size: var(--size-8);
+    font-weight: 700;
+    align-items: start;
+    text-align: start;
+    color: var(--green-10);
+}
+
+
+.stepsContainer {
+    display: flex;               /* Use flexbox for layout */
+   
+    justify-content: space-between; /* Space them evenly */
+    align-items: center;         /* Center align vertically */
+    width: 100%;     
+    padding-left:  5%;  
+    padding-right: 5%; 
+    padding-bottom: 10%;         /* Full width */
+}
+
+.svgContainer {
+    position: relative;          /* Position relative for absolute children */
+    flex: 1;                     /* Allow each to grow equally */
+    
+    height: var(--size-11);               /* Set a height for each SVG container */
+    overflow: hidden;          /* Prevent overflow */
+}
+
+.svgImage {
+    position: absolute;          /* Position the SVG absolutely */
+    top: 0;                      /* Align to the top */
+    left: 0;                     /* Align to the left */
+    width: 112px;                /* Full width */
+    height: 72px;               /* Full height */
+    z-index: 1;                 /* Ensure SVG is behind */
+}
+
+.textOverlay {
+    position: absolute;  
+    left: 93px;
+    top: 54px;   
+    transform: translate(-50%, -50%); 
+    z-index: 2;                 /* Ensure text is above the SVG */
+    color: var(--text-5);               /* Change text color as needed */
+    font-size: var(--size-6);
+    font-weight: 600;           /* Adjust font size as needed */
+    text-align: start;
+    padding: 0;         /* Center text */
+}
+
+
+.textBelow {
+    margin-top: 10px;           /* Space between SVG and additional text */
+    text-align: start;         /* Center the additional text */
+    font-size: var(--size-6);
+    font-weight: 400;            /* Adjust font size as needed */
+    color: var(--text-4);       
+    padding: 0;         /* Change text color as needed */
+    padding-bottom: 0;
+}
+
+
+.item {
+    flex-direction: column;     
+    align-items: center;         /* Center align items */
+                
+    position: relative;         
+}
+
+.divider {
+    width: 100px;         /* Set the width of the divider */
+    height: 4px;          /* Set the thickness of the divider */
+    background-color: var(--green-10); /* Set the color of the divider */
+    margin-top: var(--size-7);
+}
+
+@media (max-width: $breakpoint-lg){
+    .textBelow {
+        margin-top: 10px;           /* Space between SVG and additional text */
+        text-align: start;         /* Center the additional text */
+        font-size: var(--size-5);
+        font-weight: 400;            /* Adjust font size as needed */
+        color: var(--text-4);       
+        padding: 0;         /* Change text color as needed */
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: $breakpoint-md) {
+    .headerText {
+        font-size: var(--size-4);
+        font-weight: 400;
+    padding-left: var(--size-1);
+    }
+    
+    .stepsContainer {
+        display: flex;  
+        flex-direction: column;             /* Use flexbox for layout */
+        justify-content: space-between; /* Space them evenly */
+        align-items: start;         /* Center align vertically */
+        width: 100%;     
+        padding-left:  5%;  
+        padding-right: 5%; 
+        padding-bottom: 10%;         /* Full width */
+    }
+
+    .textBelow {
+        margin: 0px;           /* Space between SVG and additional text */
+        text-align: start;         /* Center the additional text */
+        font-size: var(--size-5);
+        line-height: 24px;
+        font-weight: 400;            /* Adjust font size as needed */
+        color: var(--text-4);       
+        padding: 0;         /* Change text color as needed */
+        padding-bottom: 0;
+    }
+
+    .svgImage {
+        position: absolute;          /* Position the SVG absolutely */
+        top: 0;                      /* Align to the top */
+        left: 0;                     /* Align to the left */
+        width: 72px;                /* Full width */
+        height: 72px;               /* Full height */
+        z-index: 1;                 /* Ensure SVG is behind */
+    }
+
+    .textOverlay {
+        position: absolute;  
+        left: 96px;
+        top: 36px;   
+        transform: translate(-50%, -50%); 
+        z-index: 2;                 /* Ensure text is above the SVG */
+        color: var(--text-5);               /* Change text color as needed */
+        font-size: var(--size-6);
+        font-weight: 600;           /* Adjust font size as needed */
+        text-align: start;
+        padding: 0;         /* Center text */
+    }
+
+    
+    .divider {
+        width: 100px;         /* Set the width of the divider */
+        height: 4px;          /* Set the thickness of the divider */
+        background-color: var(--green-10); /* Set the color of the divider */
+        margin-top: var(--size-6);
+        margin-bottom: var(--size-6);
+    }
+
+    .subheaderText {
+        font-size: var(--size-4);
+        padding-left: var(--size-3);
+        font-weight: 400;
+        align-items: start;
+        text-align: start;
+        color: var(--text-5);
+        padding-left: 0px;
+    }
+
+    .onlineOffline {
+        font-size: var(--size-4);
+        font-weight: 500;
+        align-items: start;
+        text-align: start;
+        color: var(--green-10);
+    }
+}

@@ -1,0 +1,151 @@
+
+
+.tileContainer {
+    background-color: var(--surface-3);
+    width: 390px;
+    height: 608px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: start;
+    align-items: start;
+    border-radius: 12px;
+    box-shadow: 
+    0px 8px 24px #18274B14,  
+    0px 6px 12px #18274B1F;
+}
+
+.image:hover {
+  transform: scale(1.15); /* Zoom in on hover */
+}
+.link {
+    text-decoration: none;
+    cursor: pointer;
+   
+  }
+
+.imageContainer {
+    width: 100%; /* Full width */
+    height: 350px;
+    overflow: hidden;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.imageContainer img {
+    width: 393px;/* Make sure the image fills the container*/
+    height: 350px; /* Maintain the aspect ratio of the image */
+    display: block;
+    object-fit: cover; 
+    overflow: hidden;
+}
+
+.title {
+    color: var(--text-5);
+    font-weight: 600;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-top: 16px;
+}
+
+.bulletPoints {
+     color: var(--text-3); 
+     font-size: 16px; 
+     font-weight: 400;
+     line-height: 24px;
+     padding-left: 36px;
+     padding-right: 96px;
+ }  
+
+ .bulletPoints li {
+    padding-bottom: 16px; 
+    align-items: center;
+  }
+
+ .bulletPoints li::marker {
+    font-size: 10px; /* Adjust bullet size */
+    color: var(--text-3); 
+  }
+
+  .divider {
+    color: var(--text-1);
+    display: flex;
+    height: 1px;
+    width: 100%;
+  }
+
+  .info {
+    display: flex;
+    width: 100%;
+    padding-top: 16px;
+    padding-inline: 12px;
+    justify-content: space-between;
+  }
+
+  .info p {
+    font-size: 14px;
+    color: var(--text-5);
+  }
+
+
+@media (max-width: $breakpoint-md) {
+    
+   
+    .tileContainer {
+        background-color: var(--surface-3);
+        width: 343px;
+        height: 516px;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column; 
+        justify-content: start;
+        align-items: start;
+        border-radius: 12px;
+    
+    }
+
+
+    .imageContainer {
+        width: 100%; /* Full width */
+        height: 304px;
+        overflow: hidden;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px 12px 0px 0px;
+    }
+    
+    .imageContainer img {
+        width: 343px;/* Make sure the image fills the container*/
+        height: 304px; /* Maintain the aspect ratio of the image */
+        display: block;
+        object-fit: cover; 
+    }
+
+    .bulletPoints {
+        color: var(--text-3); 
+        font-size: 16px; 
+        font-weight: 400;
+        line-height: 24px;
+        padding-left: 36px;
+        padding-right: 72px;
+    }  
+
+    .info {
+        display: flex;
+        width: 100%;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-inline: 24px;
+        justify-content: space-between;
+      }
+
+    .info p {
+        font-size: 12px;
+        color: var(--text-5);
+      }
+}

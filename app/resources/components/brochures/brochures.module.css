@@ -1,0 +1,118 @@
+.gridWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0%;
+}
+
+.parentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center; /* Center-align the grid container */
+  width: 100%;
+  margin-top: 2.5%;
+  margin-bottom: 5%;
+ }
+
+ .pageHeader{
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 96px;
+  color: var(--green-10);
+  padding-bottom: 80px;
+ }
+
+.header{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 72px;
+    color: var(--text-5);
+    padding-left: 12px;
+}
+
+
+.description {
+    color: var(--text-5);
+    font-size: 28px;
+     font-weight:   400;
+    line-height:   42px;
+    padding-top: 42px;
+    text-align: center;
+    margin-inline: 18%;
+    padding-bottom: 40px;
+}
+
+
+
+.gridContainer {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, 28%);
+  gap: 80px;
+}
+
+.divider {
+  background-color: var(--text-5);
+  height: 1px;
+  width: 98%;
+  margin-left: 16px;
+  margin-top: 4px;
+  margin-bottom: 64px;
+}
+
+@media (max-width: $breakpoint-lg){
+  .gridContainer {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 40%);
+    gap: 80px;
+  }
+  
+}
+
+@media (max-width: $breakpoint-md){
+  .parentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2.5%;
+    margin-bottom: 5%;
+   }
+
+  .gridContainer {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:24px;
+    margin-inline: 16px;
+  }
+
+
+ .pageHeader{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--green-10);
+  padding-bottom: 80px;
+  padding-left: 10px;
+ }
+
+  .header{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    color: var(--text-5);
+    padding-left: 12px;
+  }
+  
+}

@@ -20,13 +20,13 @@
     "baseUrl": "app/",
     "paths": {
       "@app/*": ["*"],
-      "@components/*": ["lib/components/*"],
-      "@assets/*": ["lib/assets/*"],
-      "@lib/*": ["lib/*"],
-      "@providers/*": ["lib/providers/*"],
-      "@hooks/*": ["lib/hooks/*"],
-      "@types/*": ["lib/types/*"],
-      "@utils/*": ["lib/utils/*"],
+      "@components/*": ["home/components/*"],
+      "@assets/*": ["home/assets/*"],
+      "@home/*": ["home/*"],
+      "@providers/*": ["home/providers/*"],
+      "@hooks/*": ["home/hooks/*"],
+      "@types/*": ["home/types/*"],
+      "@utils/*": ["home/utils/*"],
       "@services/*": ["services/*"]
     }
   },
