@@ -1,6 +1,6 @@
 import { forwardRef } from "react";
 import styles from "./input.module.css";
-import { FieldError, FieldValues, UseFormRegister } from "react-hook-form";
+import { FieldError, UseFormRegister } from "react-hook-form";
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label: string;
