@@ -13,9 +13,18 @@
 }
 
 .secondary {
-  background-color: var(--green-7);
+  background-color: transparent;
   border: 1px solid var(--surface-3);
   color: var(--surface-3);
+  
+}
+
+.whiteBg {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--surface-3);
+  color: var(--green-10);
+  border: none;
 }
 
 .button:hover {

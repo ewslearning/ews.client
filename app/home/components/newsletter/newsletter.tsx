@@ -31,6 +31,7 @@ export const Newsletter = () => {
         </p>
       </div>
       <form onSubmit={handleSubmit(onSubmit)}>
+      <div className={classes.inputparentcontainer}>
         <div className={classes.inputcontainer}>
           <Input
             name="firstName"
@@ -63,8 +64,19 @@ export const Newsletter = () => {
             register={register}
             error={errors.firstName}
           />
+           {/* Dropdown */}
+          <Input
+            name="last"
+            label="Areas of Interest (Optional)"
+            placeholder="Select the topics you're interested in "
+            register={register}
+            isDropDown={true}
+            dropdownOptions={[{label: "value1", value: "s"}, {label: "value2", value: "sss"}, {label: "value3", value: "sss3"}]}
+            error={errors.firstName}
+          />
         </div>
-
+        
+        <div className={classes.submitBtnContainer}>
         <p className={classes.disclamer}>
           By Clicking Submit you agree I agree to receive email communications
           from [Your Organization Name].I understand that I can unsubscribe at
@@ -74,6 +86,8 @@ export const Newsletter = () => {
         <Button typeof="submit" variant="secondary">
           Submit
         </Button>
+        </div>
+        </div>
       </form>
     </article>
   );

@@ -1,6 +1,6 @@
 import classes from "./button.module.css";
 
-type ButtonVariants = "primary" | "secondary";
+type ButtonVariants = "primary" | "secondary" | "whiteBg";
 
 interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariants;
@@ -15,7 +15,7 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       className={`${classes.button} ${
-        variant === "primary" ? classes.primary : classes.secondary
+        variant === "primary" ? classes.primary :  variant === "secondary" ? classes.secondary : classes.whiteBg
       }`}
       {...props}
     >
