@@ -1,18 +1,18 @@
 import { forwardRef } from "react";
 import styles from "./input.module.css";
-import { FieldError, UseFormRegister } from "react-hook-form";
+import { FieldError, FieldValues, UseFormRegister } from "react-hook-form";
 
-interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+interface InputProps<T extends FieldValues> extends React.InputHTMLAttributes<HTMLInputElement> {
   label: string;
   placeholder: string;
   name: string;
-  register: UseFormRegister<any>;
+  register: UseFormRegister<T>;
   error?: FieldError;
   isDropDown?: boolean;
   dropdownOptions?: { label: string; value: string }[]; 
 }
 
-const Input = forwardRef<HTMLInputElement, InputProps>(
+const Input = forwardRef<HTMLInputElement, InputProps<any>>(
   ({ label, name, register, error, isDropDown, dropdownOptions, ...rest }, ref) => {
 
     const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
