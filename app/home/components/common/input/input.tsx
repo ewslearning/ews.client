@@ -2,23 +2,23 @@ import { forwardRef } from "react";
 import styles from "./input.module.css";
 import { FieldError, FieldValues, UseFormRegister } from "react-hook-form";
 
-interface InputProps<T extends FieldValues> extends React.InputHTMLAttributes<HTMLInputElement> {
+interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label: string;
   placeholder: string;
   name: string;
-  register: UseFormRegister<T>;
+  register: UseFormRegister<any>; // eslint-disable-line @typescript-eslint/no-explicit-any
   error?: FieldError;
   isDropDown?: boolean;
   dropdownOptions?: { label: string; value: string }[]; 
 }
 
-const Input = forwardRef<HTMLInputElement, InputProps<any>>(
+const Input = forwardRef<HTMLInputElement, InputProps>( // eslint-disable-line react/display-name
   ({ label, name, register, error, isDropDown, dropdownOptions, ...rest }, ref) => {
 
     const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
       if (e.target.value === "RemoveAll") {
         e.target.value = ""; // Clear the selection
-        register(name).onChange({ target: { value: "" } } as any); // Reset the value in the form
+        register(name).onChange({ target: { value: "" } } as any); // eslint-disable-line @typescript-eslint/no-explicit-any
       }
     };
 
