@@ -6,7 +6,8 @@
 .label {
   display: block;
   color: var(--surface-3);
-  font-size: var(--font-size-1);
+  font-size: 18px;
+  list-style: 27px;
   font-weight: 600;
   margin-bottom: var(--size-3);
 }
@@ -22,7 +23,11 @@
 }
 
 .input::placeholder {
-  color: transparent;
+  color: #f3f8ff87;
+  font-size: 18px;
+  list-style: 27px;
+  font-weight: 400;
+
 }
 
 .input:focus {

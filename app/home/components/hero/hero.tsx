@@ -4,6 +4,7 @@ import classes from "./hero.module.css";
 import Star from "@assets/icons/star.svg";
 import RightArrow from "@assets/icons/right-arrow.svg";
 import Button from "@components/common/button/button";
+import { useRouter } from "next/navigation";
 
 const Hero: React.FC = () => {
   const [isVideoFullScreen, setVideoFullScreen] = useState(false);
@@ -26,6 +27,13 @@ const Hero: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isVideoFullScreen]);
 
+
+  const router = useRouter();
+
+  const handleNavigation = () => {
+    router.push("/programs"); // Replace with your target path
+  };
+
   return (
     <main className={classes.heroContainer}>
        
@@ -38,7 +46,7 @@ const Hero: React.FC = () => {
           Empowering Sustainable Futures through Environmental Education &
           Corporate Sustainability
         </h2>
-        <Button variant="whiteBg">Explore Programs<RightArrow className={classes.rightArrow}/></Button>
+        <Button onClick={handleNavigation} variant="whiteBg">Explore Programs<RightArrow className={classes.rightArrow}/></Button>
       </div>
       <div>
         <div className={`${classes.contentContainer} ${classes.rightContent}`}>
