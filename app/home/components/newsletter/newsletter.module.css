@@ -1,6 +1,6 @@
 .newsletterContainer {
   padding: var(--size-9) var(--size-3);
-  background-color: var(--green);
+  background-color: var(--green-10);
   color: var(--surface-3);
   line-height: var(--font-lineheight-3);
   text-align: center;
@@ -14,15 +14,21 @@
 .header {
   padding-bottom: var(--size-2);
   font-weight: 600;
+  font-size: 64px;
+  line-height: 96px;
 }
 
 .description {
+  padding-inline: 25%;
   padding-bottom: var(--size-7);
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 42px;
 }
 
 .inputparentcontainer {
   background-color: var(--green-7);
-  padding: var(--size-3) var(--size-7);
+  padding: var(--size-7) var(--size-8);
   border-radius: var(--radius-3);
   margin-bottom: var(--size-7);
 }
@@ -30,8 +36,7 @@
 .inputcontainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
-  gap: var(--size-7);
+  gap: var(--size-8);
   text-align: left;
   padding-top: var(--size-7);
 }
@@ -41,7 +46,7 @@
   flex-direction: row;
   align-items: center;
   justify-items: center;
-  padding-top: var(--size-7);
+  padding-top: var(--size-8);
   padding-bottom: var(--size-7);
 }
 
@@ -53,6 +58,27 @@
 
 
 @media (max-width: $breakpoint-md) {
+
+  .headerContainer {
+    max-width: calc(var(--size-12) * 2);
+    margin: auto;
+  }
+  
+  .header {
+    padding-bottom: var(--size-2);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+  }
+  
+  .description {
+    padding-inline: 12%;
+    padding-bottom: var(--size-7);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
 
   .inputcontainer {
     display: flex;

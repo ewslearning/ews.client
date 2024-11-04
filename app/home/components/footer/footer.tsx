@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./footer.module.css";
 import FacebookIcon from "@assets/icons/facebook.svg";
 import InstaIcon from "@assets/icons/instagram.svg";
@@ -5,9 +7,17 @@ import LinkedinIcon from "@assets/icons/linkedin.svg";
 import TwitterIcon from "@assets/icons/twitter.svg";
 import EWSLogo from "@assets/icons/ews-logo.svg";
 import GoToTop from "@assets/icons/to-top.svg";
+import Link from "next/link";
 
 const Footer: React.FC = () => {
-    return (
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
+
+    return ( 
         <footer>
             <div className={styles.footerBg}>
                 <div className={styles.contentContainer}>
@@ -15,20 +25,20 @@ const Footer: React.FC = () => {
                         <div>
                             <div className={styles.headerContainer}>
                                 <h4>Quick Links</h4>
-                                <div className={styles.arrowMweb}>
-                                    <GoToTop/>
+                                <div className={styles.arrowMweb} onClick={scrollToTop} role="button" >
+                                <GoToTop/>
                                 </div>
                             </div>
                             <ul className={styles.linkContainer}>
-                                <li>
-                                    <span className={styles.link}>Home</span>
-                                </li>
-                                <li>
-                                    <span className={styles.link}>Programs</span>
-                                </li>
-                                <li>
-                                    <span className={styles.link}>Contact Us</span>
-                                </li>
+                                
+                                    <Link href="/" className={styles.link}>Home</Link>
+                                
+                                
+                                    <Link href="/programs" className={styles.link}>Programs</Link>
+                                
+                                 
+                                    <Link href="/contact-us" className={styles.link}>Contact Us</Link>
+                                
                             </ul>
                         </div>
                         <div>
@@ -42,7 +52,7 @@ const Footer: React.FC = () => {
                                 <TwitterIcon className={styles.icons}/>                              
                             </div>
                         </div>
-                        <div className={styles.arrowDesktop}>
+                        <div className={styles.arrowDesktop}  onClick={scrollToTop} role="button" >
                             <GoToTop/>
                         </div>
                     </div>

@@ -17,16 +17,18 @@
 .aboutUsHeader {
   background-color: var(--green-10);
   max-width: fit-content;
-  padding: var(--size-3) var(--size-7);
+  padding: 12px 32px;
   color: var(--surface-3);
-  border-radius: var(--radius-3);
+  border-radius: var(--radius-2);
+  border: none;
+  font-size: 20px;
   font-weight: 500;
   text-align: justify;
   text-wrap: nowrap;
 }
 
 .aboutUsDescription {
-  font-size: var(--font-size-2);
+  font-size: 20px;
   font-weight: 400;
   text-align: center;
 }
@@ -63,6 +65,19 @@
     gap: var(--size-10);
   }
 
+  .aboutUsHeader {
+    background-color: var(--green-10);
+    max-width: fit-content;
+    padding: 12px 32px;
+    color: var(--surface-3);
+    border-radius: var(--radius-2);
+    border: none;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: justify;
+    text-wrap: nowrap;
+  }
+
   .aboutUsContentContainer {
     flex-direction: row;
     gap: var(--size-9);
@@ -81,7 +96,9 @@
   }
 
   .aboutUsDescription {
-    font-size: var(--font-size-4);
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
   }
 
   .textIcon {

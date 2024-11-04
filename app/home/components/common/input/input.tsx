@@ -15,14 +15,6 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
 const Input = forwardRef<HTMLInputElement, InputProps>( // eslint-disable-line react/display-name
   ({ label, name, register, error, isDropDown, dropdownOptions, ...rest }, ref) => {
 
-    const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-      if (e.target.value === "RemoveAll") {
-        e.target.value = ""; // Clear the selection
-        register(name).onChange({ target: { value: "" } } as any); // eslint-disable-line @typescript-eslint/no-explicit-any
-      }
-    };
-
-
     return (
       <div className={styles.container}>
         <label htmlFor={name} className={styles.label}>
@@ -32,15 +24,12 @@ const Input = forwardRef<HTMLInputElement, InputProps>( // eslint-disable-line r
         {isDropDown ? (
           <select
             id={name}
-            {...register(name)}
-            onChange={handleChange}
+            {...register(name)} 
+            defaultValue= "0"
             className={`${styles.input} ${error ? styles.error : ""}`}
           >
-            <option value="" disabled >
+            <option value="0" disabled>
               {rest.placeholder}
-            </option>
-            <option value="RemoveAll"  >
-              Remove selected choice
             </option>
             {dropdownOptions?.map((option) => (
               <option key={option.value} value={option.value}>

@@ -13,11 +13,12 @@ const Header: React.FC = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+
   return (
     <header>
       <div className={styles.contentContainer}>
        
-          <Link href="/" className={styles.logoContainer}><EWS/></Link>
+          <Link href="/" ><EWS className={styles.logoContainer}/></Link>
         
         <div>
         <ul className={styles.linkContainer}>

@@ -24,12 +24,13 @@ export const Newsletter = () => {
     <article className={classes.newsletterContainer}>
       <div className={classes.headerContainer}>
         <h1 className={classes.header}>Stay Updated with Our Newsletter</h1>
-        <p className={classes.description}>
+       
+      </div>
+      <p className={classes.description}>
           Sign up to receive the latest news, updates, and exclusive insights
           from our team. Be the first to know about our programs,
           certifications, and collaborations!
         </p>
-      </div>
       <form onSubmit={handleSubmit(onSubmit)}>
       <div className={classes.inputparentcontainer}>
         <div className={classes.inputcontainer}>
