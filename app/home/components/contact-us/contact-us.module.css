@@ -35,6 +35,13 @@
   display: none;
 }
 
+.goToLeftMweb {
+  display: block;
+  width: 64px;
+  height: 64px;
+}
+
+
 @media (min-width: $breakpoint-lg) {
   .contactUsContainer {
     padding: var(--size-12) var(--size-10);
@@ -43,7 +50,7 @@
   .contactUstext {
     font-size: var(--font-size-5);
     padding-bottom: var(--size-8);
-    flex-basis: 85%;
+    flex-basis: 82%;
   }
 
   .goToLeftMweb {
@@ -52,6 +59,8 @@
 
   .goToLeftDesktop {
     display: block;
+    width: 216px;
+    height: 216px;
   }
 
   .contactUsContainer {
@@ -60,6 +69,6 @@
   }
 
   .contactUsContent {
-    flex-basis: 85%;
+    flex-basis: 82%;
   }
 }

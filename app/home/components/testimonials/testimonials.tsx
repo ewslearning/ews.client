@@ -6,13 +6,15 @@ import Image2 from "@assets/images/prashanth.png";
 import Image3 from "@assets/images/abrar.png";
 import Clients from "@assets/icons/3Clients.svg";
 import Image from "next/image";
+import Carousel from "./carousel/carousel";
 
 
 const Testimonials: React.FC = () => {
 
   return (
-    <section className={styles.reviewsContainer}>
-      <div>
+    
+    <section className={styles.parentContainer}>
+      <div className={styles.reviewsContainer}>
        <div className={styles.testimonialText}>TESTIMONIALS</div>
        <div className={styles.headerText}>What Clients<br/>Have To Say About Us</div>
        </div>
@@ -42,6 +44,7 @@ const Testimonials: React.FC = () => {
 
         <Map />
       </div>
+      <Carousel/>
     </section>
   );
 };
