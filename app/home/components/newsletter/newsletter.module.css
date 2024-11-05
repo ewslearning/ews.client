@@ -28,7 +28,7 @@
 
 .inputparentcontainer {
   background-color: var(--green-7);
-  padding: var(--size-7) var(--size-8);
+  padding: var(--size-8) var(--size-8);
   border-radius: var(--radius-3);
   margin-bottom: var(--size-7);
 }
