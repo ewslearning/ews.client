@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
                                     <Link href="/programs" className={styles.link}>Programs</Link>
                                 
                                  
-                                    <Link href="/contact-us" className={styles.link}>Contact Us</Link>
+                                    <Link href="/contactform" className={styles.link}>Contact Us</Link>
                                 
                             </ul>
                         </div>

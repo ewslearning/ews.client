@@ -18,7 +18,7 @@ const Header: React.FC = () => {
   const router = useRouter();
 
   const handleNavigation = () => {
-    router.push("/contactform"); // Replace with your target path
+    router.push("/contactform"); 
   };
 
   return (
