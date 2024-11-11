@@ -1,0 +1,4 @@
+<svg width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#195829"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M34 13H16C14.3455 13 13 14.3455 13 16V34C13 35.6545 14.3455 37 16 37H25V28.75H22V25H25V22C25 20.8065 25.4741 19.6619 26.318 18.818C27.1619 17.9741 28.3065 17.5 29.5 17.5H32.5V21.25H31C30.172 21.25 29.5 21.172 29.5 22V25H33.25L31.75 28.75H29.5V37H34C35.6545 37 37 35.6545 37 34V16C37 14.3455 35.6545 13 34 13Z" fill="#195829"/>
+</svg>

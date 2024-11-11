@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import styles from "./header.module.css";
 import EWS from "@assets/icons/ews.svg";
 import HamburgerIcon from "@assets/icons/hamburger.svg"; // Add a hamburger icon
@@ -13,6 +14,12 @@ const Header: React.FC = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+
+  const router = useRouter();
+
+  const handleNavigation = () => {
+    router.push("/contactform"); // Replace with your target path
+  };
 
   return (
     <header>
@@ -29,7 +36,7 @@ const Header: React.FC = () => {
         </div>
         <div className={styles.buttonContainer}>
           {/* Contact Us button */}
-          <Button>Contact Us</Button>
+          <Button onClick={handleNavigation}>Contact Us</Button>
 
           {/* Hamburger button */}
           <button className={styles.hamburgerButton} onClick={toggleMenu}>

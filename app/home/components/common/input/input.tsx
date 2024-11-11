@@ -2,6 +2,8 @@ import { forwardRef } from "react";
 import styles from "./input.module.css";
 import { FieldError, UseFormRegister } from "react-hook-form";
 
+type InputVariant = "primary" | "secondary";
+
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label: string;
   placeholder: string;
@@ -10,23 +12,22 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   error?: FieldError;
   isDropDown?: boolean;
   dropdownOptions?: { label: string; value: string }[]; 
+  variant?: InputVariant;
 }
 
 const Input = forwardRef<HTMLInputElement, InputProps>( // eslint-disable-line react/display-name
-  ({ label, name, register, error, isDropDown, dropdownOptions, ...rest }, ref) => {
+  ({ label, name, register, error, isDropDown, dropdownOptions,  variant = "primary", ...rest }, ref) => {
 
     return (
-      <div className={styles.container}>
-        <label htmlFor={name} className={styles.label}>
+      <div className={variant === "primary" ? styles.container : styles.containerLight}>
+        <label htmlFor={name} className={ variant === "primary" ? styles.label: styles.labelLight}>
           {label}
         </label>
        
         {isDropDown ? (
           <select
             id={name}
-            {...register(name)} 
-            defaultValue= "0"
-            className={`${styles.input} ${error ? styles.error : ""}`}
+            className={`${variant === "primary"? styles.input: styles.inputLight} ${error ? styles.error : ""}`}
           >
             <option value="0" disabled>
               {rest.placeholder}
@@ -43,7 +44,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>( // eslint-disable-line r
             {...register(name)}
             {...rest}
             ref={ref}
-            className={`${styles.input} ${error ? styles.error : ""}`}
+            className={`${variant === "primary"? styles.input: styles.inputLight} ${error ? styles.error : ""}`}
           />
         )}
         {error && <p className={styles.errorMessage}>{error.message}</p>}
