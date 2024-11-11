@@ -1,0 +1,55 @@
+/* CustomCheckbox.module.css */
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.checkboxInput {
+  appearance: none; /* Remove default styles */
+  position: absolute;
+  opacity: 0; /* Hide the input itself */
+}
+
+.customCheckbox {
+  width: 32px;
+  height: 32px;
+  background-color: #ddd; /* Unchecked background */
+  border: 2px solid #4caf50; /* Green border */
+  border-radius: 8px;
+  display: inline-block;
+  position: relative;
+  transition: background-color 0.2s ease;
+}
+
+/* Checked state for the checkbox background */
+.checkboxInput:checked + .customCheckbox {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+/* White checkmark for checked state */
+.checkboxInput:checked + .customCheckbox::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  left: 10px;
+  top: 10%;
+  width: 8px;
+  height: 16px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Label styling */
+.checkboxLabel {
+  margin-left: 16px;
+  color: black; 
+  cursor: pointer;
+  
+}

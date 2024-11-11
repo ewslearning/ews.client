@@ -45,7 +45,7 @@ export const Newsletter = () => {
           <Input
             name="lastName"
             label="Last Name"
-            placeholder="Enter your first name"
+            placeholder="Enter your last name"
             register={register}
             error={errors.firstName}
           />

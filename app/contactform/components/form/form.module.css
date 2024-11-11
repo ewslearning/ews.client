@@ -1,0 +1,255 @@
+.newsletterContainer {
+    line-height: var(--font-lineheight-3);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin: 6%;
+   
+  }
+  
+  .inputparentcontainer {
+    width: calc(100vw/2.4);
+    margin-right: 60px;
+    margin-bottom: var(--size-7);
+  }
+  
+  .inputcontainer {
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: repeat(3, 1fr); */
+    gap: var(--size-8);
+    text-align: left;
+    padding-top: var(--size-7);
+  }
+  
+  .submitBtnContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    padding-top: var(--size-8);
+    padding-bottom: var(--size-7);
+  }
+
+  .labelText {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 600;
+    color: #333333;
+    padding: 0px;
+    text-align: left;
+  }
+
+  .hintText{
+    display: inline-block;
+    flex-direction: row;
+    text-align: left;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    padding-top: 16px;
+    color: #5C5C5C;
+  }
+  .checkboxContainer{
+    display: grid; 
+    grid-template-columns: repeat(3, 216px);
+   gap: 24px;
+    flex-direction: row;
+    padding-top: 24px;
+  }
+
+  
+  .checkbox{
+    accent-color: #4caf50; 
+    background-color: black;
+    border-color: white;
+    color: white;
+    flood-color: white;
+    text-decoration-color: white;
+    text-emphasis-color: white;
+  }
+
+  .workingHours{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #BD992A;
+  }
+  
+  .map{
+    padding-top: 32px;
+  }
+
+  .addressHeading{
+    font-size: 28px;
+    font-weight: 400;
+    height: 42px;
+    color: #5C5C5C;
+    padding-top: 48px;
+   
+  }
+
+  .fullAddress{
+    padding-top: 60px;
+    font-size: 28px;
+    font-weight: 600;
+    height: 48px;
+    color: #333333;
+  }
+
+  .followUsContainer{
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+    color: #195829;
+    padding-top: 154px;
+    padding-bottom: 28px;
+  }
+  
+  .iconContainer {
+    display: flex;
+    justify-content: center;
+    gap: var(--size-5);
+}
+
+  .icons {
+    width: 50px;
+    height: 50px;
+    accent-color: #4caf50;
+}
+  
+
+.mapSideContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+  
+  @media (max-width: $breakpoint-md) {
+
+    .newsletterContainer {
+        line-height: var(--font-lineheight-3);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 6%;
+       
+      }
+
+      .inputparentcontainer {
+        width: 100%;
+        margin-bottom: var(--size-9);
+      }
+
+    
+  
+    .inputcontainer {
+      display: flex;
+     flex-direction: column;
+      gap: var(--size-7);
+      text-align: left;
+      padding-top: var(--size-7);
+    }
+
+    .checkboxContainer{
+        display: grid; 
+        grid-template-columns: repeat(2, 50%);
+       gap: 24px;
+        flex-direction: row;
+        padding-top: 24px;
+      }
+   
+    .submitBtnContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      padding-top: var(--size-7);
+      padding-bottom: var(--size-4);
+    }
+  
+
+    .labelText {
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 600;
+        color: #333333;
+        padding: 0px;
+        text-align: left;
+      }
+    
+      .hintText{
+        display: inline-block;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        padding-top: 16px;
+        color: #5C5C5C;
+      }
+      .workingHours{
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        color: #BD992A;
+      }
+
+      .map{
+        padding-top: 32px;
+        width: 86vw;
+        height: auto;
+      }
+
+
+      .addressHeading{
+        font-size: 18px;
+        font-weight: 400;
+        height: 27px;
+        color: #5C5C5C;
+        padding-top: 24px;
+       
+      }
+    
+      .fullAddress{
+        padding-top: 36px;
+        font-size: 18px;
+        font-weight: 600;
+        height: 27px;
+        color: #333333;
+      }
+    
+      .followUsContainer{
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        color: #195829;
+        padding-top: 72px;
+        padding-bottom: 12px;
+      }
+      
+      .iconContainer {
+        display: flex;
+        justify-content: center;
+        gap: var(--size-5);
+    }
+    
+      .icons {
+        width: 32px;
+        height: 32px;
+        accent-color: #4caf50;
+    }
+      
+    
+
+  }
+
+/* 
+@media (max-width: $breakpoint-lg){
+  
+    
+} */

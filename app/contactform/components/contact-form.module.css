@@ -1,0 +1,192 @@
+
+.parentContainer{
+    margin-bottom: 10%;
+}
+.topImageContainer{
+    display: flex;
+    margin: 4% 6%;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+}
+
+.contactFormContainer{
+    margin: 6%;
+}
+.usOrContainer{
+    width: 18%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.subHeaderContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0%;
+    padding: 0px;
+}
+
+.heading {
+    font-size: 64px;
+    width: 600;
+    list-style: 96px;
+    color: var(--green-10);
+}
+
+.usText{
+    font-size: 96px;
+    width: 600;
+    list-style: 144px;
+    color: var(--text-5);
+}
+
+.orContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--green-10);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 2%;
+    height: 54px;
+    width: 60px;
+    align-items: center;
+    justify-content: center;
+    color: var(--surface-3);
+    
+}
+
+.divider{
+    background-color: var(--text-2);
+    display: flex;
+    height: 1px;
+}
+
+.reachOutText{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 42px;
+    color: var(--text-4);
+    
+}
+
+.emailColumn{
+    padding-left:4%;
+}
+
+.emailText{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 42px;
+    color: var(--text-5);
+}
+
+.message{
+    padding-top: 32px;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 42px;
+    color: var(--text-4);
+}
+
+
+@media (max-width: $breakpoint-lg){
+  
+    .topImageContainer{
+        display: flex;
+        margin: 6% 5%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        justify-items: center;
+    }
+    .topImage1{
+    width: 98%;
+    height: auto;
+    }
+    
+    .topImage2{
+        display: none;
+    }
+
+    .topImage3{
+        display: none;
+    }
+    
+    .heading {
+        font-size: 32px;
+        width: 600;
+        list-style: 48px;
+        color: var(--green-10);
+    }
+  
+    .usOrContainer{
+        width: 27%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+       
+    }
+    .usText{
+        font-size: 48px;
+        width: 600;
+        list-style: 72px;
+        color: var(--text-5);
+    }
+
+    .subHeaderContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 0%;
+        padding: 0px;
+    }
+
+    .emailColumn{
+        padding-left:0%;
+    }
+    
+    .orContainer {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--green-10);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 12px;
+        letter-spacing: 2%;
+        height: 37px;
+        width: 40px;
+        align-items: center;
+        justify-content: center;
+        color: var(--surface-3);
+        
+    }
+
+    .reachOutText{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        color: var(--text-4);
+        
+    }
+
+    .emailText{
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        color: var(--text-5);
+    }
+    
+    .message{
+        padding-top: 32px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px;
+        color: var(--text-4);
+    }
+}

@@ -1,7 +1,7 @@
 "use client";
 import classes from "./course-description.module.css";
 import CertifiedPrograms from '@assets/icons/certifiedPrograms.svg';
-import {useSearchParams} from "next/navigation";
+import {useSearchParams, useRouter} from "next/navigation";
 import Calendar from "../assets/icons/calendar.svg";
 import Mode from "../assets/icons/mode.svg";
 import Language from "../assets/icons/language.svg";
@@ -14,6 +14,13 @@ import WasteManagement from "@assets/images/waste-management.png";
 const CourseDescription: React.FC = () => {
     const searchParams = useSearchParams();
     const title = searchParams.get('title')
+
+
+  const router = useRouter();
+
+  const handleNavigation = () => {
+    router.push("/contactform"); 
+  };
 
     const courses = [
         {
@@ -89,7 +96,7 @@ return (<div>
                     </div>
                     <div className={classes.buttonContainer}>
           {/* Contact Us button */}
-          <button className={classes.contactButton}>Contact Us</button></div>
+          <button onClick={handleNavigation} className={classes.contactButton}>Contact Us</button></div>
               </div>
 
               {/* //Features Mobile */}
@@ -129,7 +136,7 @@ return (<div>
                     </div>
                     <div className={classes.buttonContainer}>
           {/* Contact Us button */}
-          <button className={classes.contactButton}>Contact Us</button></div>
+          <button onClick={handleNavigation} className={classes.contactButton}>Contact Us</button></div>
               </div>
 
 
