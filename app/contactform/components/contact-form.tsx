@@ -31,8 +31,8 @@ const ContactForm: React.FC = () => {
                   </div>
                </div>
                <div className={styles.divider}/>
-               <p className={styles.message}>We're excited to hear from you! Whether you have questions about our programs, 
-               certifications, or potential collaborations, please fill out the form below, and we'll get back to you as soon as possible.</p>
+               <p className={styles.message}>We&apos;re excited to hear from you! Whether you have questions about our programs, 
+               certifications, or potential collaborations, please fill out the form below, and we&apos;ll get back to you as soon as possible.</p>
          </div>
       </div>
       <Form/>

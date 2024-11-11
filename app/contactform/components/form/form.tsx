@@ -19,19 +19,19 @@ type Inputs = {
   orgName: string;
 };
 
-interface CheckboxOption {
-   label: string;
-   value: string;
- }
+// interface CheckboxOption {
+//    label: string;
+//    value: string;
+//  }
  
- interface CheckboxGroupProps {
-   options: CheckboxOption[];
-   onSubmit: (selectedValues: string[]) => void;
- }
+//  interface CheckboxGroupProps {
+//    options: CheckboxOption[];
+//    onSubmit: (selectedValues: string[]) => void;
+//  }
  
- type FormValues = {
-   selectedOptions: Record<string, boolean>; // Object to keep track of selected options
- };
+//  type FormValues = {
+//    selectedOptions: Record<string, boolean>; // Object to keep track of selected options
+//  };
  
 
 export const Form = () => {
