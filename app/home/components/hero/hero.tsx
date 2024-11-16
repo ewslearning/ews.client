@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
 
   return (
     <main className={classes.heroContainer}>
-       
+      
       <div className={classes.baseContainer}>
       <div className={`${classes.ripple} ${classes.ripple1}`}></div>
       <div className={`${classes.ripple} ${classes.ripple2}`}></div>
