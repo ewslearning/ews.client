@@ -12,6 +12,7 @@
   }
 
   .controls {
+    max-width: 400px;
     position: relative;
     z-index: 2;
     bottom: 160px;
@@ -154,7 +155,7 @@
       }
     
       .controls {
-
+max-width: 100%;
         display: flex;
         bottom: 100px;
         left: 0px;
