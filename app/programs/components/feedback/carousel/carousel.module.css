@@ -1,0 +1,215 @@
+.parentContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.carouselContainer{
+    display: flex;
+    padding: 3%;
+    background-color: #EBF3ED;
+    border-radius: 20px;
+    position: relative;
+  
+}
+
+.subContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.img {
+    width: 277px;
+    height: 302px;
+}
+
+
+.quoteIconRight{
+    height: 37px;
+    width: 27px;
+}
+
+.feedbackContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feed {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    padding: 6% 2% 5% 8%;
+    color: #5C5C5C;
+}
+
+.titleContainer {
+    padding: 0% 0% 0% 8%;
+}
+
+.name {
+ font-size: 20px;
+ font-weight: 700;
+ line-height: 27px;
+ color: #333333;
+}
+
+.position {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    padding-top: 4px;
+    color: #5C5C5C;
+}
+ .indicatorsContainer{
+    padding-top: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+ }
+.indicators {
+    display: flex;
+    justify-content: center;
+    margin-inline: 10%;
+  }
+  
+  .indicator {
+    width: 16px;
+    height: 16px;
+    background-color: #D6D6D6;
+    border-radius: 50%;
+    margin: 0 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+   
+  }
+  
+  .indicator.active {
+    background-color: #195829;
+  }
+  
+  .leftButton,
+  .rightButton {
+    height: 36px;
+    width: 36px;
+    padding: 1%;
+    align-items: center;
+    justify-items: center;
+   display: flex;
+    background-color: #195829;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+
+@media (max-width: $breakpoint-md) {
+    .carouselContainer{
+        display: flex;
+        padding: 3% 5%;
+        background-color: #EBF3ED;
+        border-radius: 20px;
+    }
+    
+    .img {
+        width: 126px;
+        height: 140px;
+    }
+   
+
+    .quoteIconRight{
+       
+        height: 17px;
+        width: 12px;
+        
+    }
+    
+
+    .feed {
+        font-size: 10px;
+        line-height: 15px;
+        font-weight: 400;
+        padding: 5% 0% 5% 18%;
+        color: #5C5C5C;
+    }
+
+    .titleContainer {
+        padding: 0% 0% 0% 18%;
+    }
+    
+    .name {
+     font-size: 10px;
+     font-weight: 600;
+     line-height: 15px;
+     color: #333333;
+    }
+
+    .position {
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 15px;
+        padding-top: 4px;
+        color: #5C5C5C;
+    }
+
+    .indicatorsContainer{
+        padding-top: 44px;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+     }
+    .indicators {
+        display: flex;
+        justify-content: center;
+        margin-inline: 10%;
+      }
+      
+      .indicator {
+        width: 10px;
+        height: 10px;
+        background-color: #D6D6D6;
+        border-radius: 50%;
+        margin: 0 6px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+       
+      }
+      
+      .indicator.active {
+        background-color: #195829;
+      }
+      
+      .leftButton,
+      .rightButton {
+        height: 24px;
+        width: 24px;
+        padding: 1%;
+        align-items: center;
+        justify-items: center;
+       display: flex;
+        background-color: #195829;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+      
+      .leftButton {
+        left: 10px;
+      }
+      
+      .rightButton {
+        right: 10px;
+      }
+}

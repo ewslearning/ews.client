@@ -15,7 +15,7 @@ const ContactUs: React.FC = () => {
           <ToLeft className={classes.goToLeftMweb} />
         </Link>
       </div>
-      <ToLeft className={classes.goToLeftDesktop} />
+      <Link href="/contactform"><ToLeft className={classes.goToLeftDesktop} /></Link>
     </section>
   );
 };

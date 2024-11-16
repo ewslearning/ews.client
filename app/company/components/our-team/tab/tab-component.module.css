@@ -77,13 +77,13 @@
 .tabs {
   display: flex;
   border-bottom: 1px solid transparent; 
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 600;
 }
 
 .tab {
   flex: 1;
-  padding: 10px;
+  padding: 8px;
   text-align: center;
   cursor: pointer;
   position: relative;

@@ -29,11 +29,11 @@ const Input = forwardRef<HTMLInputElement, InputProps>( // eslint-disable-line r
             id={name}
             className={`${variant === "primary"? styles.input: styles.inputLight} ${error ? styles.error : ""}`}
           >
-            <option value="0" disabled>
+            <option value="0" disabled selected>
               {rest.placeholder}
             </option>
             {dropdownOptions?.map((option) => (
-              <option key={option.value} value={option.value}>
+              <option key={option.label} value={option.value}>
                 {option.label}
               </option>
             ))}

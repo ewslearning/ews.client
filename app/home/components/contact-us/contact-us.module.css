@@ -1,7 +1,8 @@
 .contactUsContainer {
   display: flex;
-  flex-direction: column;
-  padding: var(--size-3) var(--size-9);
+  flex-direction: column;  font-size: 18px;
+  font-weight: 400;
+  padding: var(--size-3) var(--size-6);
   background-color: var(--surface-2);
 }
 
@@ -12,11 +13,11 @@
 }
 
 .contactUstext {
-  font-size: var(--font-size-2);
-  color: var(--green-8);
-  opacity: 0.8;
+  font-size: 18px;
+  font-weight: 400;
+  color: #195829CC;
   padding-bottom: var(--size-5);
-  line-height: var(--font-lineheight-3);
+  line-height: 27px;
   border-bottom: 1px solid var(--text-2);
 }
 
@@ -25,6 +26,9 @@
   justify-content: space-between;
   text-decoration: none;
   align-items: center;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60px;
 }
 
 .contactUsLinkText {
@@ -48,9 +52,13 @@
   }
 
   .contactUstext {
-    font-size: var(--font-size-5);
     padding-bottom: var(--size-8);
     flex-basis: 82%;
+      font-size: 32px;
+      font-weight: 400;
+      color: #195829CC;
+      line-height: 48px;
+      border-bottom: 1px solid var(--text-2);
   }
 
   .goToLeftMweb {

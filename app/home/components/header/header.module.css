@@ -63,6 +63,22 @@
   color: #000; /* Adjust color as needed */
 }
 
+.link:hover {
+  color: #195829
+}
+
+.activeLink {
+  text-decoration: underline;
+  color: #195829;
+  text-underline-offset: 20px;
+}
+
+.activeLinkMob {
+  background-color: #195829;
+  color: white;
+}
+
+
 .hamburgerButton {
   display: none;
   background: none;
@@ -118,8 +134,7 @@
   .overlayLink {
     display: block;
     padding: 10px;
-    cursor: pointer; 
-    color: #000;
+    cursor: pointer;
     font-size: var(--font-size-2);
     font-weight: var(--font-weight-4);
   }
@@ -127,6 +142,7 @@
   .overlayLink:hover {
     background-color: rgba(0, 0, 0, 0.1); /* Optional hover effect */
   }
+
 
   .contactButton {
     background-color: var(--green-10);

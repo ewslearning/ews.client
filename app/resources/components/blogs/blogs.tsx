@@ -36,7 +36,8 @@ const Blogs: React.FC = () => {
         <h6 className={styles.blogTitle}>How to choose the right customer for your<br/>photo business?</h6>
         <button className={styles.readMore}>Read More</button>
       </div>
-    </div>    </div>
+    </div>   
+     </div>
      
      
    </div>)

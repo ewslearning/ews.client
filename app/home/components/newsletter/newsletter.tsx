@@ -72,7 +72,7 @@ export const Newsletter = () => {
             placeholder="Select the topics you're interested in "
             register={register}
             isDropDown={true}
-            dropdownOptions={[{label: "value1", value: "s"}, {label: "value2", value: "sss"}, {label: "value3", value: "sss3"}]}
+            dropdownOptions={[{label: "Recycling", value: "Recycling"}, {label: "Sustainability", value: "Sustainability"}, {label: "Economic Statergies", value: "Economic Statergies"}]}
             error={errors.firstName}
           />
         </div>
@@ -80,7 +80,7 @@ export const Newsletter = () => {
         <div className={classes.submitBtnContainer}>
         <p className={classes.disclamer}>
           By Clicking Submit you agree I agree to receive email communications
-          from [Your Organization Name].I understand that I can unsubscribe at
+          from EWS Learning. I understand that I can unsubscribe at
           any time.
         </p>
 

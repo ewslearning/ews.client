@@ -100,7 +100,7 @@
 .item {
     flex-direction: column;     
     align-items: center;         /* Center align items */
-                
+    width: 100%;
     position: relative;         
 }
 
@@ -116,10 +116,13 @@
         margin-top: 10px;           /* Space between SVG and additional text */
         text-align: start;         /* Center the additional text */
         font-size: var(--size-5);
+         
+       
         font-weight: 400;            /* Adjust font size as needed */
         color: var(--text-4);       
         padding: 0;         /* Change text color as needed */
         padding-bottom: 0;
+      
     }
 }
 
@@ -132,6 +135,7 @@
     
     .stepsContainer {
         display: flex;  
+        
         flex-direction: column;             /* Use flexbox for layout */
         justify-content: space-between; /* Space them evenly */
         align-items: start;         /* Center align vertically */
@@ -144,12 +148,14 @@
     .textBelow {
         margin: 0px;           /* Space between SVG and additional text */
         text-align: start;         /* Center the additional text */
-        font-size: var(--size-5);
+        font-size: 16px;
         line-height: 24px;
         font-weight: 400;            /* Adjust font size as needed */
-        color: var(--text-4);       
+        color: var(--text-4); 
+        padding-top: 0px;      
         padding: 0;         /* Change text color as needed */
         padding-bottom: 0;
+        margin-left: 10%;
     }
 
     .svgImage {
@@ -163,12 +169,12 @@
 
     .textOverlay {
         position: absolute;  
-        left: 96px;
+        left: 80px;
         top: 36px;   
         transform: translate(-50%, -50%); 
         z-index: 2;                 /* Ensure text is above the SVG */
         color: var(--text-5);               /* Change text color as needed */
-        font-size: var(--size-6);
+        font-size: 18px;
         font-weight: 600;           /* Adjust font size as needed */
         text-align: start;
         padding: 0;         /* Center text */
@@ -181,10 +187,11 @@
         background-color: var(--green-10); /* Set the color of the divider */
         margin-top: var(--size-6);
         margin-bottom: var(--size-6);
+        margin-left: 10%;
     }
 
     .subheaderText {
-        font-size: var(--size-4);
+        font-size: 20px;
         padding-left: var(--size-3);
         font-weight: 400;
         align-items: start;
