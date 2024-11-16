@@ -1,5 +1,5 @@
 .newsletterContainer {
-  padding: var(--size-9) var(--size-3);
+  padding: var(--size-9) var(--size-3) var(--size-1) var(--size-3);
   background-color: var(--green-10);
   color: var(--surface-3);
   line-height: var(--font-lineheight-3);
@@ -72,11 +72,11 @@
   }
   
   .description {
-    padding-inline: 12%;
+    padding-inline: 10%;
     padding-bottom: var(--size-7);
     font-weight: 400;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 27px;
   }
   
 
@@ -85,7 +85,14 @@
    flex-direction: column;
     gap: var(--size-7);
     text-align: left;
-    padding-top: var(--size-7);
+    padding-top: 0px;
+  }
+
+  .inputparentcontainer {
+    background-color: var(--green-7);
+    padding: var(--size-5) var(--size-6);
+    border-radius: var(--radius-3);
+    margin-bottom: var(--size-7);
   }
  
   .submitBtnContainer {
@@ -99,7 +106,7 @@
 
   .disclamer {
     width: 69vw;
-    margin-left: 18%;
+    margin-left: var(--size-10);
     text-align: left;
     font-size: 16px;
     line-height: 24px;

@@ -1,4 +1,8 @@
-
+.parentContainer{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
 .reviewsContainer {
  
     position: relative; 
@@ -6,7 +10,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: var(--size-8) var(--size-3) var(--size-11) var(--size-3);
+    padding: var(--size-8) var(--size-3) var(--size-9) var(--size-3);
   }
   
   .mapContainer {
@@ -14,7 +18,8 @@
     display: flex;
     justify-content: center;
     height:  204px;
-    width: 400px;
+    width: 100%;
+    padding-inline: 20px;
   }
 
   .testimonialText{
@@ -32,7 +37,7 @@
     color: var(--text-5);
     align-items: center;
     text-align: center;
-    padding-bottom: 60px;
+    padding-bottom: 0px;
   }
   
   .imageWithText {
@@ -236,7 +241,7 @@
   
     .mapContainer {
       height: 520px;
-      width: 1310px;
+      width: 100%;
     }
 
     .imagePosition1{
@@ -304,7 +309,7 @@
   
     .mapContainer {
       height: 520px;
-      width: 1310px;
+      width: 100%;
     }
 
     .imagePosition1{

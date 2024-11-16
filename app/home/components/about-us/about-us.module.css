@@ -28,9 +28,11 @@
 }
 
 .aboutUsDescription {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   text-align: center;
+  line-height: 27px;
+  color: #333333;
 }
 
 .aboutUsContentContainer {
@@ -49,10 +51,11 @@
 }
 
 .aboutUstext {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 48px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
   text-wrap: nowrap;
+
 }
 
 .textIcon {
@@ -94,6 +97,8 @@
 
   .aboutUstext {
     font-size: var(--font-size-4);
+    font-weight: 700;
+  line-height: 48px;
   }
 
   .aboutUsDescription {

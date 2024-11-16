@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import styles from "./header.module.css";
 import EWS from "@assets/icons/ews.svg";
 import HamburgerIcon from "@assets/icons/hamburger.svg"; // Add a hamburger icon
@@ -18,8 +18,14 @@ const Header: React.FC = () => {
   const router = useRouter();
 
   const handleNavigation = () => {
+    
     router.push("/contactform"); 
+   
   };
+  
+  const pathname = usePathname(); // Get the current pathname
+
+  const isActiveLink = (path: string) => pathname === path;
 
   return (
     <header>
@@ -29,9 +35,9 @@ const Header: React.FC = () => {
         
         <div>
         <ul className={styles.linkContainer}>
-          <Link href="/programs" className={styles.link}>Programs</Link>
-          <Link href="/company"  className={styles.link}>Company</Link>
-          <Link href="/resources"  className={styles.link}>Resources</Link>
+          <Link href="/programs" className={`${styles.link} ${isActiveLink("/programs") ? styles.activeLink : ""}`}>Programs</Link>
+          <Link href="/company"  className={`${styles.link} ${isActiveLink("/company") ? styles.activeLink : ""}`}>Company</Link>
+          <Link href="/resources"  className={`${styles.link} ${isActiveLink("/resources") ? styles.activeLink : ""}`}>Resources</Link>
         </ul>
         </div>
         <div className={styles.buttonContainer}>
@@ -50,13 +56,13 @@ const Header: React.FC = () => {
         <div className={styles.overlayMenu}>
           <ul className={styles.overlayLinkContainer}>
             <li>
-              <Link href="/programs" className={styles.overlayLink}>Programs</Link>
+              <Link href="/programs" onClick={toggleMenu} className={`${styles.overlayLink} ${isActiveLink("/programs") ? styles.activeLinkMob : ""}`}>Programs</Link>
             </li>
             <li>
-              <Link href="/company" className={styles.overlayLink}>Company</Link>
+              <Link href="/company" onClick={toggleMenu} className={`${styles.overlayLink} ${isActiveLink("/company") ? styles.activeLinkMob : ""}`}>Company</Link>
             </li>
             <li>
-              <Link href="/resources" className={styles.overlayLink}>Resources</Link>
+              <Link href="/resources" onClick={toggleMenu} className={`${styles.overlayLink} ${isActiveLink("/resources") ? styles.activeLinkMob : ""}`}>Resources</Link>
             </li>
           </ul>
         </div>

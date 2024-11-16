@@ -1,5 +1,5 @@
 .keyServicesContainer {
-  padding: var(--size-3);
+  padding: var(--size-9) var(--size-5) ;
 }
 
 .mobImageContainer{
@@ -30,6 +30,7 @@
 .accordion {
   margin-top: var(--size-5);
 }
+
 
 .item {
   padding-top: 6px;
@@ -114,10 +115,12 @@
     margin-top: var(--size-9);
   background-color: white;
   color: white;
+  
   }
 
   .accordionItem{
     width: 60vw;
+
   }
 
   .item {
