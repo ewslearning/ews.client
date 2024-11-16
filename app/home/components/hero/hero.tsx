@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
 
   return (
     <main className={classes.heroContainer}>
-        <title>EWS Learning</title>
+      
       <div className={classes.baseContainer}>
       <div className={`${classes.ripple} ${classes.ripple1}`}></div>
       <div className={`${classes.ripple} ${classes.ripple2}`}></div>
@@ -46,7 +46,6 @@ const Hero: React.FC = () => {
           Empowering Sustainable Futures through Environmental Education &
           Corporate Sustainability
         </h2>
-        <meta name="keywords" content="ews, ewsLearning, ews learning, ews learn" />
         <Button onClick={handleNavigation} variant="whiteBg">Explore Programs<RightArrow className={classes.rightArrow}/></Button>
       </div>
       <div>
