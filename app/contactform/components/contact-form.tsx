@@ -4,9 +4,10 @@ import Solar from "../assets/images/solar.png";
 import Turbines from "../assets/images/turbines.png";
 import Image from "next/image";
 import Form from "./form/form";
+import NewsLetter from "./newsletter/newsletter";
 
 
-const ContactForm: React.FC = () => {
+const    ContactForm: React.FC = () => {
  
     
    return (<div className={styles.parentContainer}>
@@ -36,6 +37,7 @@ const ContactForm: React.FC = () => {
          </div>
       </div>
       <Form/>
+      <NewsLetter/>
    </div>)
 };
 

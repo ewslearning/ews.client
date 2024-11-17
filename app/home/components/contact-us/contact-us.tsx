@@ -1,9 +1,18 @@
 import Link from "next/link";
 import classes from "./contact-us.module.css";
 import ToLeft from "@assets/icons/to-left.svg";
-const ContactUs: React.FC = () => {
+
+
+type ContactUsVariants = "primary" | "secondary" ;
+
+interface ContactUsProps extends React.HTMLAttributes<HTMLButtonElement> {
+  variant?: ContactUsVariants;
+}
+const ContactUs: React.FC<ContactUsProps> = ({
+  variant = "primary",
+}) => {
   return (
-    <section className={classes.contactUsContainer}>
+    <section className={  variant === "primary" ? classes.contactUsContainer : classes.contactUsContainerSecondary}>
       <div className={classes.contactUsContent}>
         <p className={classes.contactUstext}>
           We&apos;re excited to hear from you! Whether you have questions about

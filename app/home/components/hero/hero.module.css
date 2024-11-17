@@ -36,8 +36,9 @@
 
 .subText {
   padding-left: 5%;
-  font-weight: var(--font-weight-5);
+  font-weight: 500;
   font-size: 32px;
+  line-height: 48px;
   color: var(--text-5);
   z-index: 3;
 }
@@ -87,9 +88,10 @@
 }
 
 .leftHeaderTxt {
-  font-weight: var(--font-weight-5);
+  font-weight: 700;
   font-size: 48px;
   padding-bottom: 36px;
+  line-height: 72px;
 }
 
 

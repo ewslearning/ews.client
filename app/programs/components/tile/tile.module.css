@@ -46,6 +46,7 @@
 .title {
     color: var(--text-5);
     font-weight: 600;
+    line-height: 36px;
     padding-bottom: 12px;
     padding-left: 24px;
     padding-top: 16px;

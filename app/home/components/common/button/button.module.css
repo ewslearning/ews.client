@@ -1,7 +1,8 @@
 .button {
-  font-size: var(--font-size-0);
+  font-size: 18px;
   border-radius: var(--radius-2);
   font-weight: 600;
+  line-height: 27px;
   padding: var(--size-2) var(--size-3);
   cursor: pointer;
 }

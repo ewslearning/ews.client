@@ -11,7 +11,7 @@ export default function Courseoverview() {
       <Suspense fallback={<div>Loading...</div>}>
     <CourseDescription />
   </Suspense>
-      <ContactUs/>
+      <ContactUs variant={"secondary"}/>
     </>
   );
 }

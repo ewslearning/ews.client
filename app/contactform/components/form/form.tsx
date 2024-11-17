@@ -16,6 +16,7 @@ type Inputs = {
   firstName: string;
   lastName: string;
   email: string;
+  phone: string;
   orgName: string;
 };
 
@@ -83,7 +84,7 @@ export const Form = () => {
             label="Last Name*"
             placeholder="Enter Your Lirst Name"
             register={register}
-            error={errors.firstName}
+            error={errors.lastName}
           />
 
           <Input
@@ -92,7 +93,7 @@ export const Form = () => {
             label="Email Address*"
             placeholder="Enter Your Email Address"
             register={register}
-            error={errors.firstName}
+            error={errors.email}
           />
 
           <Input
@@ -101,7 +102,7 @@ export const Form = () => {
             label="Phone Number"
             placeholder="Enter Your Phone Number"
             register={register}
-            error={errors.firstName}
+            error={errors.phone}
           />
 
          <Input
@@ -110,7 +111,6 @@ export const Form = () => {
             label="Organization Name"
             placeholder="You Organization / Company Name"
             register={register}
-            error={errors.firstName}
           />
           <div className={styles.labelText}>Subject<br/>
           <div className={styles.hintText}>Select an option
@@ -137,7 +137,6 @@ export const Form = () => {
             label="Please provide details of your inquiry or request your message"
             placeholder="You Organization / Company Name"
             register={register}
-            error={errors.firstName}
           />
       
       <div className={styles.labelText}>Preferred Method of Contact<br/>
