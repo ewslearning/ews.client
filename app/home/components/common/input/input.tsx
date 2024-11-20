@@ -16,7 +16,7 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
 }
 
 const Input = forwardRef<HTMLInputElement, InputProps>( // eslint-disable-line react/display-name
-  ({ label, name, register, error, isDropDown, dropdownOptions,  variant = "primary", ...rest }, ref) => {
+  ({ label, name, register, error, isDropDown, dropdownOptions,  variant = "primary", ...rest }) => {
 
     return (
       <div className={variant === "primary" ? styles.container : variant === "green"  ? styles.containerGreen : styles.containerLight}>
@@ -27,6 +27,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>( // eslint-disable-line r
         {isDropDown ? (
           <select
             id={name}
+            {...register(name)} 
             className={`${variant === "primary"? styles.input: styles.inputLight} ${error ? styles.error : ""}`}
           >
             <option value="0" disabled selected>
@@ -42,8 +43,6 @@ const Input = forwardRef<HTMLInputElement, InputProps>( // eslint-disable-line r
           <input
             id={name}
             {...register(name)}
-            {...rest}
-            ref={ref}
             className={`${variant === "primary"? styles.input: variant === "green" ? styles.inputGreen : styles.inputLight} ${error ? styles.error : ""}`}
           />
         )}

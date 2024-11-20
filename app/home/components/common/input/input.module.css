@@ -72,7 +72,7 @@
 }
 
 .inputLight::placeholder {
-  color: var(--text-6);
+  color: #ADADAD;
   font-size: 18px;
   list-style: 27px;
   font-weight: 400;
