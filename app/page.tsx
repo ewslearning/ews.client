@@ -14,6 +14,12 @@ export default function Home() {
     <Head>
       <title>EWS Learning</title>
       <meta name="keywords" content="ews, ewsLearning, ews learning, ews learn" />
+      <meta property="og:title" content="My Amazing Website" />
+        <meta property="og:description" content="Empowering Sustainable Futures through Environmental Education & Corporate Sustainability." />
+        <meta property="og:url" content="https://ewslearning.com" />
+        <meta property="og:type" content="website" />
+
+       
       </Head>
       <Hero />
       <AboutUs />
