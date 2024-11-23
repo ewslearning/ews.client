@@ -3,6 +3,11 @@
   border-radius: var(--radius-1);
 }
 
+.containerGreen {
+  width: 100%;
+  border-radius: var(--radius-1);
+}
+
 
 .label {
   display: block;
@@ -22,6 +27,17 @@
     font-weight: 600;
     margin-bottom: var(--size-3);
   
+}
+
+.labelGreen{
+  
+  display: block;
+  color: #195829;
+  font-size: 18px;
+  list-style: 27px;
+  font-weight: 600;
+  margin-bottom: var(--size-3);
+
 }
 
 .input {
@@ -56,12 +72,35 @@
 }
 
 .inputLight::placeholder {
-  color: var(--text-6);
+  color: #ADADAD;
   font-size: 18px;
   list-style: 27px;
   font-weight: 400;
 
 }
+
+.inputGreen {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #333333;
+  color: var(--surface-3);
+  font-size: var(--font-size-1);
+  padding: var(--size-4) 0;
+  align-items: start;
+  justify-items: start;
+  align-content: start;
+}
+
+
+.inputGreen::placeholder {
+  color: #5C5C5C;
+  font-size: 18px;
+  list-style: 27px;
+  font-weight: 400;
+
+}
+
 
 .input:focus {
   outline: none;
@@ -71,4 +110,45 @@
 .inputLight:focus {
   outline: none;
   border-bottom-width: 2px;
+}
+
+.inputGreen:focus {
+  outline: none;
+  border-bottom-width: 2px;
+}
+
+
+@media (max-width: $breakpoint-lg){
+
+  .label {
+    display: block;
+    color: var(--surface-3);
+    font-size: 16px;
+    list-style: 24px;
+    font-weight: 600;
+    margin-bottom: var(--size-1);
+  }
+
+
+.inputGreen {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #333333;
+  color: var(--surface-3);
+  font-size:  16px;
+  padding: var(--size-4) 0;
+  align-items: start;
+  justify-items: start;
+  align-content: start;
+}
+
+
+.inputGreen::placeholder {
+  color: #5C5C5C;
+  font-size: 16px;
+  list-style: 24px;
+  font-weight: 400;
+
+}
 }

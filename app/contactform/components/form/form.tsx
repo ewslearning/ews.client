@@ -11,11 +11,13 @@ import FacebookIcon from "../../assets/icons/fbGreen.svg";
 import InstaIcon from "../../assets/icons/igGreen.svg";
 import LinkedinIcon from "../../assets/icons/linkedinGreen.svg";
 import TwitterIcon from "../../assets/icons/twitterGreen.svg";
+import { useState } from "react";
 
 type Inputs = {
   firstName: string;
   lastName: string;
   email: string;
+  phone: string;
   orgName: string;
 };
 
@@ -42,6 +44,7 @@ export const Form = () => {
   } = useForm<Inputs>();
 
   const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
+  
 
   const subjectOptions = [
    { label: "General\nInquiry", value: "General Inquiry" },
@@ -49,6 +52,8 @@ export const Form = () => {
    { label: "Certification\nDetails", value: "Certification Details" },
    { label: "Others", value: "Others" },
  ];
+
+
 
  const preferredMContactMethods = [
    { label: "Phone", value: "Phone" },
@@ -62,9 +67,36 @@ export const Form = () => {
    { label: "Others", value: "Others" },
  ];
 
+  // State to manage checked options
+  const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
+  const [selectedpreferredMContactMethods, setSelectedPreferredMContactMethods] = useState<string[]>([]);
+  const [selectedHowDidYouHeardAboutUs, setHowDidYouHeardAboutUs] = useState<string[]>([]);
+ 
+  // Handle checkbox change
+  const handleSelectedOptionsChange = (value: string) => {
+    setSelectedOptions((prevSelected) =>
+      prevSelected.includes(value)
+        ? prevSelected.filter((option) => option !== value) // Remove if already selected
+        : [...prevSelected, value] // Add if not already selected
+    );
+  };
+  const handleSselectedpreferredMContactMethodsChange = (value: string) => {
+    setSelectedPreferredMContactMethods((prevSelected) =>
+      prevSelected.includes(value)
+        ? prevSelected.filter((option) => option !== value) // Remove if already selected
+        : [...prevSelected, value] // Add if not already selected
+    );
+  };
+  const handleselectedHowDidYouHeardAboutUsChange = (value: string) => {
+    setHowDidYouHeardAboutUs((prevSelected) =>
+      prevSelected.includes(value)
+        ? prevSelected.filter((option) => option !== value) // Remove if already selected
+        : [...prevSelected, value] // Add if not already selected
+    );
+  };
+
   return (
     <div className={styles.newsletterContainer}>
-     
       <form onSubmit={handleSubmit(onSubmit)}>
       <div className={styles.inputparentcontainer}>
         <div className={styles.inputcontainer}>
@@ -83,7 +115,7 @@ export const Form = () => {
             label="Last Name*"
             placeholder="Enter Your Lirst Name"
             register={register}
-            error={errors.firstName}
+            error={errors.lastName}
           />
 
           <Input
@@ -92,16 +124,16 @@ export const Form = () => {
             label="Email Address*"
             placeholder="Enter Your Email Address"
             register={register}
-            error={errors.firstName}
+            error={errors.email}
           />
 
           <Input
           variant="secondary"
-            name="phoneNumber"
-            label="Phone Number"
+            name="phone"
+            label="Phone Number*"
             placeholder="Enter Your Phone Number"
             register={register}
-            error={errors.firstName}
+            error={errors.phone}
           />
 
          <Input
@@ -110,7 +142,6 @@ export const Form = () => {
             label="Organization Name"
             placeholder="You Organization / Company Name"
             register={register}
-            error={errors.firstName}
           />
           <div className={styles.labelText}>Subject<br/>
           <div className={styles.hintText}>Select an option
@@ -121,8 +152,8 @@ export const Form = () => {
         key={option.value}
         value={option.value}
         label= {option.label}
-        isChecked={true}
-        onChange={()=>{}}
+        isChecked={selectedOptions.includes(option.value)} 
+        onChange={() => handleSelectedOptionsChange(option.value)}
             />
              
         
@@ -137,7 +168,6 @@ export const Form = () => {
             label="Please provide details of your inquiry or request your message"
             placeholder="You Organization / Company Name"
             register={register}
-            error={errors.firstName}
           />
       
       <div className={styles.labelText}>Preferred Method of Contact<br/>
@@ -149,8 +179,8 @@ export const Form = () => {
         key={option.value}
         value={option.value}
         label= {option.label}
-        isChecked={true}
-        onChange={()=>{}}
+        isChecked={selectedpreferredMContactMethods.includes(option.value)} 
+        onChange={() => handleSselectedpreferredMContactMethodsChange(option.value)}
             />
       ))}
       </div>
@@ -165,8 +195,8 @@ export const Form = () => {
         key={option.value}
         value={option.value}
         label= {option.label}
-        isChecked={true}
-        onChange={()=>{}}
+        isChecked={selectedHowDidYouHeardAboutUs.includes(option.value)} 
+        onChange={() => handleselectedHowDidYouHeardAboutUsChange(option.value)}
             />
       ))}
       </div>

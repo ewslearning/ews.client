@@ -49,7 +49,7 @@
   font-size: var(--size-2);
   font-weight: 600;
 
-  padding-top:var(--size-1);
+  padding-top:var(--size-4);
   padding-bottom: var(--size-5);
 }
 
@@ -61,11 +61,13 @@
 
   .headerText {
     font-size: 64px;
+    line-height: 96px;
     margin-top: var(--size-4);
   }
 
   .subHeaderText {
-    font-size: var(--size-5);
+    font-size: 32px;
+    line-height: 48px;
     color: var(--green-10);
     font-weight: 500;
   }
@@ -98,7 +100,8 @@
 }
 
 .companyName {
-  font-size: 38px;
+  font-size: 48px;
+  line-height: 72px;
   font-weight: 600;
 }
 

@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
                     <div className={styles.rightContainer}>
                         <div>
                             <div className={styles.headerContainer}>
-                                <h4>Quick Links</h4>
+                                <h4 className={styles.quickLinks}>Quick Links</h4>
                                 <div className={styles.arrowMweb} onClick={scrollToTop} role="button" >
                                 <GoToTop/>
                                 </div>
@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
                         </div>
                         <div>
                             <div className={styles.followUsContainer}>
-                                <h4>Follow Us</h4>
+                                <h4 className={styles.quickLinks}>Follow Us</h4>
                             </div>
                             <div className={styles.iconContainer}>                           
                                 <FacebookIcon  className={styles.icons}/>

@@ -10,6 +10,7 @@ type Inputs = {
   lastName: string;
   email: string;
   orgName: string;
+  areasOfInterest: string;
 };
 
 export const Newsletter = () => {
@@ -19,7 +20,7 @@ export const Newsletter = () => {
     formState: { errors },
   } = useForm<Inputs>();
 
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<Inputs> = (data) => {console.log(data)};
   return (
     <article className={classes.newsletterContainer}>
       <div className={classes.headerContainer}>
@@ -67,7 +68,7 @@ export const Newsletter = () => {
           />
            {/* Dropdown */}
           <Input
-            name="last"
+            name="areasOfInterest"
             label="Areas of Interest (Optional)"
             placeholder="Select the topics you're interested in "
             register={register}

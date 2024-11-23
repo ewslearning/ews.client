@@ -44,7 +44,8 @@
 
 .logoTitle {
     padding-top: var(--size-3);
-    line-height: var(--font-lineheight-3);
+    line-height: 21px;
+    font-weight: 600;
 }
 
 .copyrightContainer {
@@ -75,12 +76,19 @@
     text-decoration: none;
     cursor: pointer;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 27px;
     color: var(--surface-3); /* Adjust color as needed */
 }
 
 
 @media (min-width: $breakpoint-lg) {
+    .quickLinks {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 42px;
+
+    }
     .contentContainer {
         display: flex;
         justify-content: space-between;
@@ -100,7 +108,7 @@
     }
 
     .logoTitle {
-        font-size: var(--font-size-0);
+        font-size: 14px;
     }
 
     .linkContainer {

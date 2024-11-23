@@ -90,6 +90,7 @@
   .subText {
     font-size: 48px;
     font-weight: 500;
+    line-height: 72px;
     padding-bottom: var(--size-3);
   }
  
@@ -99,6 +100,8 @@
   }
   .header {
     font-size: 64px;
+    line-height: 96px;
+    font-weight: 600;
     margin-bottom: var(--size-5);
   }
 

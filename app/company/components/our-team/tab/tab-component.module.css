@@ -11,6 +11,7 @@
     display: flex;
     border-bottom: 1px solid transparent; 
     font-size: 28px;
+    line-height: 42px;
     font-weight: 400;
   }
   
@@ -59,6 +60,7 @@
    .paragraph {
     font-size: 28px;
     font-weight: 400;
+    line-height: 42px;
     color: var(--text-5);
     padding-bottom: 32px;
    }
@@ -97,7 +99,7 @@
  .paragraph {
   font-size: 14px;
   font-weight: 400;
-  color: var(--text-4);
+  color: #333333;
   padding-right: 10%; 
   padding-bottom: 24px;
  } 

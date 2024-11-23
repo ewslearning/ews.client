@@ -5,7 +5,7 @@
   color: var(--surface-3);
   justify-content: space-between;
   align-items: center;
-  padding: var(--size-9) var(--size-6);
+  padding: var(--size-9) var(--size-8) var(--size-9) var(--size-6);
   position: relative;
 }
 
@@ -59,8 +59,9 @@
   text-decoration: none;
   cursor: pointer;
   font-weight: 400;
-  font-size: var(--font-size-3);
-  color: #000; /* Adjust color as needed */
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333; /* Adjust color as needed */
 }
 
 .link:hover {
@@ -71,6 +72,9 @@
   text-decoration: underline;
   color: #195829;
   text-underline-offset: 20px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
 }
 
 .activeLinkMob {
