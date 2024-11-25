@@ -27,6 +27,14 @@
   text-wrap: nowrap;
 }
 
+.aboutUsSubTitle {
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 42px;
+  color: #333333;
+}
+
 .aboutUsDescription {
   font-size: 18px;
   font-weight: 400;
@@ -82,6 +90,14 @@
     text-wrap: nowrap;
   }
 
+  .aboutUsSubTitle {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 27px;
+    color: #333333;
+  }
+
   .aboutUsContentContainer {
     flex-direction: row;
     gap: var(--size-9);
@@ -104,6 +120,7 @@
   .aboutUsDescription {
     font-size: 28px;
     font-weight: 400;
+    line-height: 42px;
     text-align: center;
   }
 
