@@ -9,7 +9,7 @@ const AboutUs: React.FC = () => {
     <section className={classes.aboutUsContainer}>
       <div className={classes.headerContainer}>
         <Button className={classes.aboutUsHeader}>About Us</Button>
-        <h3 className={classes.aboutUsDescription}>
+        <h3 className={classes.aboutUsSubTitle}>
         Leading the Way in Sustainability
         </h3>
       </div>
