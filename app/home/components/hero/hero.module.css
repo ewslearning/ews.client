@@ -1,4 +1,3 @@
-
 .contentContainer {
   position: relative;
   padding: var(--size-10) var(--size-3);
@@ -64,7 +63,7 @@
   padding: 0;
   right: 5%;
   bottom: 0%;
-  width: 629px;
+  width: 40%;
   height: auto;
   border-radius: 12px;
   z-index: 4;
@@ -72,13 +71,14 @@
 
 .videoFullScreen {
   position: absolute;
-  top: 20%;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  z-index: 4;border-radius: 0px;
-  transition: height 2s ease, top 2s ease;
+  z-index: 4;
+  border-radius: 3px;
+  transition: width 1s;
+  right: 0;
+  top: 167px;
 }
 
 .rightArrow {
@@ -94,12 +94,10 @@
   line-height: 72px;
 }
 
-
-
 .baseContainer {
   display: flex;
   flex-direction: row;
-  position: relative; 
+  position: relative;
   overflow: hidden;
 }
 
@@ -109,13 +107,13 @@
   left: 50%; /* Center horizontally */
   width: 100%; /* Set width for the ripple effect */
   height: 180%; /* Set height for the ripple effect */
-  border: 2px solid #FCFDFF;
+  border: 2px solid #fcfdff;
   border-radius: 100%; /* Make it circular */
   transform: translate(-50%, -50%); /* Center the ripple */
   pointer-events: none; /* Make sure it does not interfere with interactions */
   opacity: 0; /* Start invisible */
   z-index: 2;
-  mix-blend-mode:difference;
+  mix-blend-mode: difference;
 }
 
 .ripple1 {
@@ -123,7 +121,7 @@
 }
 
 .ripple2 {
-  animation: ripple 4s infinite  0.6s; /* Second ripple with a delay */
+  animation: ripple 4s infinite 0.6s; /* Second ripple with a delay */
 }
 
 .ripple3 {
@@ -145,25 +143,23 @@
   .heroContainer {
     display: flex;
     flex-direction: column;
+    position: relative;
   }
 
+  .baseContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
 
-
-.baseContainer {
-  display: flex;
-  flex-direction: column;
-  position: relative; 
-  overflow: hidden;
-}
-
-.leftContent {
-  flex-basis: 50%;
-  flex-shrink: 0;
-  background-color: var(--green-10);
-  color: var(--surface-3);
-  z-index: var(--layer-1);
-}
-
+  .leftContent {
+    flex-basis: 50%;
+    flex-shrink: 0;
+    background-color: var(--green-10);
+    color: var(--surface-3);
+    z-index: var(--layer-1);
+  }
 
   .rightContent {
     flex-basis: 50%;
@@ -186,7 +182,7 @@
 
   .leftHeaderTxt {
     font-weight: 700;
-      font-size: 24px;
+    font-size: 24px;
     padding-bottom: 30px;
     text-align: left;
     padding-left: 0;
@@ -194,50 +190,45 @@
     line-height: 36px;
   }
 
+  .videoFullScreen {
+    position: absolute;
+    object-fit: cover;
+    z-index: 4;
+    border-radius: 0px;
+    transition: height 2s ease, top 2s ease;
+  }
 
-.videoFullScreen {
-  position: absolute;
-  object-fit: cover;
-  z-index: 4;
-  border-radius: 0px;
-  transition: height 2s ease, top 2s ease;
+  .video {
+    position: absolute;
+    padding: 0;
+    top: 94%;
+    align-items: center;
+    justify-items: center;
+    bottom: 0%;
+    width: 92%;
+    border-radius: 12px;
+    z-index: 4;
+  }
+
+  .subTextContainer {
+    padding-top: 0px;
+    margin: 0px;
+    padding-bottom: 0px;
+    z-index: 3;
+  }
+
+  .ripple {
+    position: absolute;
+    top: 46%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    width: 240%; /* Set width for the ripple effect */
+    height: 100%; /* Set height for the ripple effect */
+    border: 2px solid #fcfdff;
+    border-radius: 100%; /* Make it circular */
+    transform: translate(-50%, -50%); /* Center the ripple */
+    pointer-events: none; /* Make sure it does not interfere with interactions */
+    opacity: 0; /* Start invisible */
+    z-index: 2;
+    mix-blend-mode: difference;
+  }
 }
-
-.video {
-  position: absolute;
-  padding: 0;
-  top: 94%;
-  align-items: center;
-  justify-items: center;
-  bottom: 0%;
-  width: 92%;
-  border-radius: 12px;
-  z-index: 4;
-}
-
-.subTextContainer {
-  padding-top: 0px;
-  margin: 0px;
-  padding-bottom: 0px;
-  z-index: 3;
-}
-
-.ripple {
-  position: absolute;
-  top: 46%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  width: 240%; /* Set width for the ripple effect */
-  height: 100%; /* Set height for the ripple effect */
-  border: 2px solid #FCFDFF;
-  border-radius: 100%; /* Make it circular */
-  transform: translate(-50%, -50%); /* Center the ripple */
-  pointer-events: none; /* Make sure it does not interfere with interactions */
-  opacity: 0; /* Start invisible */
-  z-index: 2;
-  mix-blend-mode:difference;
-}
-
-}
-
-
-
