@@ -7,9 +7,7 @@ import Form from "./form/form";
 import NewsLetter from "./newsletter/newsletter";
 
 
-const    ContactForm: React.FC = () => {
- 
-    
+const ContactForm: React.FC = () => {
    return (<div className={styles.parentContainer}>
       <div className={styles.topImageContainer}>
          <Image src={Turbine} alt="Wind Turbine" className={styles.topImage1}/>

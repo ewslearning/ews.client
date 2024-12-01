@@ -19,7 +19,7 @@ const CourseDescription: React.FC = () => {
   const router = useRouter();
 
   const handleNavigation = () => {
-    router.push("/contactform"); 
+    router.push("/contact"); 
   };
 
     const courses = [

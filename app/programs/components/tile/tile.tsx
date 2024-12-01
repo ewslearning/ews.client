@@ -18,7 +18,7 @@ const TileComponent: React.FC<TileComponentProps> = ({ imageSrc, title, bulletPo
   return (
     <Link
       href={{
-        pathname: "/courseoverview",
+        pathname: "/course-overview",
         query: { title, mode, duration },
       }}
       className={classes.link}
