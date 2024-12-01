@@ -19,7 +19,7 @@ const Header: React.FC = () => {
 
   const handleNavigation = () => {
     
-    router.push("/contactform"); 
+    router.push("/contact"); 
    
   };
   

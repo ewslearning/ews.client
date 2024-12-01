@@ -44,6 +44,11 @@
   font-weight: 600;
   line-height: 36px;
   color: var(--surface-5);
+  text-decoration: none;
+}
+
+.blogTitle:hover {
+  text-decoration: underline;
 }
 
 .blogTextsContainer{
@@ -54,6 +59,8 @@
 
 .image {
   padding-right: 32px;
+  height: 196px;
+  width: 416px;
 }
 
 .readMore{
@@ -102,6 +109,7 @@ color: var(--text-4);
     line-height: 24px;
     color: var(--surface-5);
     padding-bottom: 10px;
+    text-decoration: none;
   }
 
   .readMore{
@@ -125,5 +133,7 @@ color: var(--text-4);
 
     .image {
       padding-right: 24px;
+      height: 186px;
+      width: 342px;
     }
 }

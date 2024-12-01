@@ -19,12 +19,12 @@ const ContactUs: React.FC<ContactUsProps> = ({
           our programs, certifications, or potential collaborations, please fill
           out the form, and we&apos;ll get back to you as soon as possible.
         </p>
-        <Link href="/contactform" className={classes.contactUs}>
+        <Link href="/contact" className={classes.contactUs}>
           <h1 className={classes.contactUsLinkText}>Contact Us</h1>
           <ToLeft className={classes.goToLeftMweb} />
         </Link>
       </div>
-      <Link href="/contactform"><ToLeft className={classes.goToLeftDesktop} /></Link>
+      <Link href="/contact"><ToLeft className={classes.goToLeftDesktop} /></Link>
     </section>
   );
 };

@@ -1,0 +1,66 @@
+
+.heroParentContainer {
+    margin: 5%;
+
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 72px;
+    color: #195829;
+    text-decoration: none;
+    padding-bottom: 56px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.description {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 42px;
+    color: #5C5C5C;
+    text-decoration: none;
+    padding-top: 56px;
+}
+
+.footNote {
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 600;
+    color: #333333;
+    padding-top: 36px;
+}
+
+
+@media (max-width: $breakpoint-md){
+    .footNote {
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 500;
+        color: #333333;
+        padding-top: 18px;
+    }
+
+    .title {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 37px;
+        color: #195829;
+        text-decoration: none;
+        padding-bottom: 24px;
+    }
+
+    .description {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        color: #5C5C5C;
+        text-decoration: none;
+        padding-top: 24px;
+    }
+
+ }
