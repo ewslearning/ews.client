@@ -5,6 +5,7 @@ import Image, { StaticImageData } from "next/image";
 import classes from "./tile.module.css";
 
 interface TileComponentProps {
+  id: number,
   imageSrc: StaticImageData;
   title: string;
   bulletPoints: string[];
@@ -12,14 +13,13 @@ interface TileComponentProps {
   duration: string;
 }
 
-const TileComponent: React.FC<TileComponentProps> = ({ imageSrc, title, bulletPoints, mode, duration }) => {
-
+const TileComponent: React.FC<TileComponentProps> = ({ imageSrc, id, title, bulletPoints, mode, duration }) => {
 
   return (
     <Link
       href={{
         pathname: "/course-overview",
-        query: { title, mode, duration },
+        query: { id },
       }}
       className={classes.link}
     >
