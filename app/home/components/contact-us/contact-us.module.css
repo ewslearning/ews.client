@@ -1,6 +1,7 @@
 .contactUsContainer {
   display: flex;
-  flex-direction: column;  font-size: 18px;
+  flex-direction: column;  
+  font-size: 18px;
   font-weight: 400;
   padding: var(--size-3) var(--size-6);
   background-color: #EBF3ED;
@@ -8,7 +9,8 @@
 
 .contactUsContainerSecondary{
   display: flex;
-  flex-direction: column;  font-size: 18px;
+  flex-direction: row;  
+  font-size: 18px;
   font-weight: 400;
   padding: var(--size-3) var(--size-6);
   background-color:  #FCFDFF;
@@ -56,6 +58,10 @@
 
 @media (min-width: $breakpoint-lg) {
   .contactUsContainer {
+    padding: var(--size-12) var(--size-10);
+  }
+
+  .contactUsContainerSecondary {
     padding: var(--size-12) var(--size-10);
   }
 

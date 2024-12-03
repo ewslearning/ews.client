@@ -19,6 +19,7 @@ type Inputs = {
   email: string;
   phone: string;
   orgName: string;
+  message?: string;
 };
 
 // interface CheckboxOption {
@@ -43,7 +44,40 @@ export const Form = () => {
     formState: { errors },
   } = useForm<Inputs>();
 
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<Inputs> = async (data) => {
+    const formData = {
+      access_key: "24e01616-b222-4139-bd08-df0f2e6d253a",
+      firstName: data.firstName,
+      lastName: data.lastName,
+      email: data.email,
+      phone: data.phone,
+      orgName: data.orgName,
+      message: data.message,
+      subject: selectedOptions.join(", "),
+      preferredContactMethod: selectedpreferredMContactMethods.join(", "),
+      howDidYouHearAboutUs: selectedHowDidYouHeardAboutUs.join(", "),
+    };
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        alert("Form submitted successfully!");
+      } else {
+        alert("Something went wrong. Please try again later.");
+      }
+    } catch (error) {
+      console.error("Submission error:", error);
+      alert("An error occurred. Please check your internet connection and try again.");
+    }
+  };
   
 
   const subjectOptions = [
@@ -164,7 +198,7 @@ export const Form = () => {
           
       <Input
             variant="secondary"
-            name="Message"
+            name="message"
             label="Please provide details of your inquiry or request your message"
             placeholder="You Organization / Company Name"
             register={register}
