@@ -40,6 +40,7 @@ const Hero: React.FC = () => {
         <div className={`${classes.ripple} ${classes.ripple1}`}></div>
         <div className={`${classes.ripple} ${classes.ripple2}`}></div>
         <div className={`${classes.ripple} ${classes.ripple3}`}></div>
+        <div className={`${classes.ripple} ${classes.ripple4}`}></div>
         <div className={`${classes.contentContainer} ${classes.leftContent}`}>
           <h2 className={classes.leftHeaderTxt}>
             Empowering Sustainable Futures through Environmental Education &
