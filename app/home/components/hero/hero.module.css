@@ -117,15 +117,19 @@
 }
 
 .ripple1 {
-  animation: ripple 4s infinite; /* First ripple */
+  animation: ripple 8s infinite; /* First ripple */
 }
 
 .ripple2 {
-  animation: ripple 4s infinite 0.6s; /* Second ripple with a delay */
+  animation: ripple 8s infinite 2s; /* Second ripple with a delay */
 }
 
 .ripple3 {
-  animation: ripple 4s infinite 1.2s; /* Third ripple with a delay */
+  animation: ripple 8s infinite 4s; /* Third ripple with a delay */
+}
+
+.ripple4 {
+  animation: ripple 8s infinite 6s; /* Third ripple with a delay */
 }
 
 @keyframes ripple {
