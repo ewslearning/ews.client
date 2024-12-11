@@ -96,7 +96,57 @@
   gap: var(--size-3); /* Add space between Contact Us and hamburger */
 }
 
+.popUp {
+  position: absolute;
+  top: 75%; /* Below the button */
+  left: 30%;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 1000;
+}
+
+.popUp button {
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  color: #333333;
+  cursor: pointer;
+  text-align: left;
+}
+
+.popUp button:hover {
+  background-color: #19582940;
+  border-radius: 12px;
+}
+
+.popUpIcon {
+  width: 44px;
+  height: 44px;
+  margin-right: 24px;
+}
+
+.popUpBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.popUpBtn:hover {
+  color: #195829;
+}
+
+
 @media (max-width: $breakpoint-md) {
+  .popUp {
+    display: none;
+  }
   .contentContainer {
     display: flex;
     height: 91.75px;

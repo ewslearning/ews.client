@@ -1,0 +1,88 @@
+/* Main container for the section */
+.contentContainer {
+  position: relative; /* Allow absolute positioning for child elements */
+  display: flex;
+  flex-direction: column;
+  height: 748px; /* Set a fixed height */
+  width: 100%; /* Full width */
+  background-color: #ebf3ed; /* Background color */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+/* Full-screen grid background */
+.grids {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Cover the entire container */
+  height: 100%;
+  z-index: 0; /* Place it behind other content */
+}
+
+/* Positioning the icon in the top-right corner */
+.topRightIcon {
+  position: absolute;
+  right: 0%;
+  z-index: 2; /* Above the grid lines */
+}
+
+/* Text container */
+.textContainer {
+  position: absolute;
+  top: 16%; 
+  left: 5%; 
+  z-index: 1; 
+  color: #195829;
+}
+
+.descriptionContainer {
+  width: 100%;
+  position: absolute;
+  z-index: 1; 
+  top: 55%; 
+  left: 5%; 
+}
+.descriptionContainer p{ 
+  width: 42%;
+  font-size: 24px; 
+  line-height: 36px; 
+  font-weight: 400;
+  color: #333333;
+  margin: 0;
+}
+
+.heroIcon {
+  width: 100%;
+  position: absolute;
+  z-index: 1; 
+  top: 45%; 
+  left: 50%; 
+}
+
+.textContainer h2 {
+  font-size: 56px; 
+  line-height: 84px; 
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: $breakpoint-md) {
+  .contentContainer {
+    height: auto; /* Allow height to adjust automatically */
+    padding: var(--size-5) var(--size-3);
+  }
+
+  .textContainer {
+    top: 40%; /* Adjust text position */
+    left: 5%;
+  }
+
+  .onesbIcon {
+    width: 60px; /* Reduce icon size */
+  }
+
+  .textContainer h2 {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+  }
+}

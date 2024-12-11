@@ -1,0 +1,293 @@
+
+
+.titleContainer{
+  padding: 10% 5% 0% 5%;
+  justify-items: start;
+  align-items: start;
+}
+
+.headerContainer{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding-bottom: var(--size-7);
+}
+
+.headerText {
+  font-size: var(--size-6);
+  padding-left: var(--size-3);
+  font-weight: 400;
+  
+}
+
+.subheaderText {
+  font-size: var(--size-8);
+  padding-left: var(--size-3);
+  font-weight: 500;
+  align-items: start;
+  text-align: start;
+  color: var(--text-5);
+  padding-left: 0px;
+  padding-bottom: 16px;
+}
+.description {
+  font-size: 24px;
+  font-weight: 400;
+  padding-right: 90px;
+  line-height: 36px;
+  color: var(--text-4);
+  padding-top: 16px;
+}
+
+.features {
+  background-color: var(--surface-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 24px;
+  margin: 5%;
+  padding: 5%;
+  height: 120px;
+}
+
+.textColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconTextRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-5);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.icon {
+  height: 32px;
+  width: 32px;
+}
+
+.verticalDivider {
+  display: flex;
+  width: 1px; /* Width of the divider */
+  background-color: #333; 
+  color: black;
+  height: 60px; /* Make it as tall as the container */
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center; /* Align Contact Us and hamburger vertically */
+  gap: var(--size-3); /* Add space between Contact Us and hamburger */
+}
+
+.contactButton {
+  background-color: var(--green-10);
+  height: 70px;
+  width: 197px;
+  color: var(--surface-3);
+  padding: 10px var(--size-4);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.featuresMobile {
+  display: none;
+ }
+
+ .whyChoose {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #195829;
+  text-align: center;
+ }
+
+ .whyChoosePara {
+  padding: 5%;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #333333;
+  padding-top: 24px;
+  text-align: start;
+ }
+
+ .enrollToday {
+  padding: 10% ;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 96px;
+  color: #195829;
+  padding-top: 64px;
+  text-align: center;
+ }
+ 
+
+@media (max-width: $breakpoint-lg){
+  
+
+.titleContainer{
+  padding: 10% 5%;
+  justify-items: start;
+  align-items: start;
+}
+
+.headerContainer{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding-bottom: var(--size-7);
+}
+
+.headerText {
+  font-size: var(--size-6);
+  padding-left: var(--size-3);
+  font-weight: 400;
+  
+}
+
+.subheaderText {
+  font-size: 16px;
+  padding-left: var(--size-3);
+  font-weight: 600;
+  align-items: start;
+  text-align: start;
+  color: var(--text-5);
+  padding-left: 0px;
+}
+.description {
+  font-size: 14px;
+  font-weight: 400;
+  padding-right: 90px;
+  line-height: 24px;
+  color: var(--text-4);
+  padding-top: 16px;
+}
+
+.features {
+  background-color: var(--surface-2);
+  display: none;
+  justify-content: space-between;
+  border-radius: 24px;
+  margin: 5%;
+  padding: 5%;
+}
+
+.featuresMobile {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+ padding: 5%;
+  background-color: #EEFCF1;
+}
+
+.featuresGrid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(2, 240px);
+  gap: 12px;
+}
+
+.textColumn {
+  display: flex;
+  background-color: var(--surface-3);
+  border-radius: 12px;
+  border: 1px solid var(--green-10);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ margin: 10%;
+ padding-inline: 0px;
+ padding-block: 10px;
+}
+
+.iconTextRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-5);
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+}
+
+.subTxt {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-4);
+}
+
+.contactButton {
+  background-color: var(--green-10);
+  height: 50px;
+  width: 134px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-block: 20px;
+}
+
+.heading {
+  color: var(--green-10);
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.gridContainer {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  width: 100%;
+  padding-top: 60px;
+  padding-inline: 16px;
+}
+
+
+
+.whyChoose {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #195829;
+  text-align: center;
+ }
+
+ .whyChoosePara {
+  padding: 5%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
+  padding-top: 12px;
+  text-align: start;
+ }
+
+ .enrollToday {
+  padding: 10% ;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #195829;
+  padding-top: 32px;
+  text-align: center;
+ }
+
+}

@@ -1,0 +1,135 @@
+.parentContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    border: 1px solid black;
+    border-radius: 12px;
+    height: 1098px;
+    width: calc(100vw/3.6);
+   }
+
+   .diamondIcon{
+    width: 48px;
+    height: 48px;
+   }
+
+.headerContainer {
+    display: flex;
+    flex-direction: row; 
+}
+
+.heading {
+    padding-bottom: 12px;
+    padding-left: 15px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.description {
+    padding-bottom: 12px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    padding-bottom: 38px;
+    color: #5C5C5C;
+}
+
+.price {
+    padding-bottom: 24px;
+    padding-left: 6px;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.features {
+    padding-bottom: 24px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.features > div {
+    display: flex;
+    align-items: flex-start; 
+    margin-bottom: 16px; 
+}
+
+.checkIcon {
+    flex-shrink: 0;
+    margin-right: 16px;
+    width: 24px;
+    height: 24px;
+}
+
+
+@media (max-width: $breakpoint-md){
+    .parentContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        margin-bottom: 10%;
+        border: 1px solid black;
+        border-radius: 12px;
+        height: 1098px;
+        width: 100%;
+       }
+
+       .diamondIcon{
+        width: 28px;
+        height: 28px;
+       }
+    
+    .heading {
+        padding-bottom: 12px;
+        padding-left: 15px;
+        font-size: 20px;
+        line-height: 27px;
+        font-weight: 600;
+        color: #333333;
+    }
+    
+    .description {
+        padding-bottom: 16px;
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 400;
+        padding-bottom: 12px;
+        color: #5C5C5C;
+    }
+    
+    .price {
+        padding-bottom: 16px;
+        padding-left: 6px;
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 600;
+        color: #333333;
+    }
+    
+    .features {
+        padding-bottom: 24px;
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 400;
+        color: #333333;
+    }
+    
+    .features > div {
+        display: flex;
+        align-items: flex-start; 
+        margin-bottom: 12px; 
+    }
+    
+    .checkIcon {
+        flex-shrink: 0;
+        margin-right: 16px;
+        width: 24px;
+        height: 24px;
+    }
+    
+}
