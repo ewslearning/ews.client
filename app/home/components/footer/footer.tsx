@@ -45,11 +45,12 @@ const Footer: React.FC = () => {
                             <div className={styles.followUsContainer}>
                                 <h4 className={styles.quickLinks}>Follow Us</h4>
                             </div>
+
                             <div className={styles.iconContainer}>                           
-                                <FacebookIcon  className={styles.icons}/>
-                                <LinkedinIcon className={styles.icons}/>
-                                <InstaIcon className={styles.icons}/>
-                                <TwitterIcon className={styles.icons}/>                              
+                                <FacebookIcon  onClick={() => window.open("https://www.facebook.com/profile.php?id=61570908623491")}  className={styles.icons}/>
+                                <LinkedinIcon  onClick={() => window.open("https://www.linkedin.com/in/ews-learning/")} className={styles.icons}/>
+                                <InstaIcon onClick={() => window.open("https://www.instagram.com/ewslearning/")} className={styles.icons}/>
+                                <TwitterIcon  onClick={() => window.open("https://x.com/EWSLearning")} className={styles.icons}/>                              
                             </div>
                         </div>
                         <div className={styles.arrowDesktop}  onClick={scrollToTop} role="button" >
