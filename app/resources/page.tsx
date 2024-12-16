@@ -8,8 +8,8 @@ import type { Metadata } from 'next'
 export default function Resources() {
   return (
     <>
-    <Brochures/>
     <Blogs/>
+    <Brochures/>
     <ContactUs/>
     </>
   );
