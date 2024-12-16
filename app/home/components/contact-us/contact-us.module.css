@@ -58,11 +58,11 @@
 
 @media (min-width: $breakpoint-lg) {
   .contactUsContainer {
-    padding: var(--size-12) var(--size-10);
+    padding: var(--size-9) var(--size-9);
   }
 
   .contactUsContainerSecondary {
-    padding: var(--size-12) var(--size-10);
+    padding: var(--size-9) var(--size-9);
   }
 
   .contactUstext {

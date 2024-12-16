@@ -1,5 +1,5 @@
 .newsletterContainer {
-  padding: var(--size-9) var(--size-3) var(--size-1) var(--size-3);
+  padding: var(--size-11) var(--size-3) var(--size-11) var(--size-3);
   background-color: var(--green-10);
   color: var(--surface-3);
   line-height: var(--font-lineheight-3);

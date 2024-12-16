@@ -1,12 +1,31 @@
-.page {
-    position: relative;
-    display: flex;
-    /* overflow: hidden; */
-   flex-direction: row;
-   align-items: end;
-    margin: 5%;
-    margin-bottom: 10%;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
   }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Fade-in animation class */
+.fadeIn {
+  animation: fadeIn 0.8s ease-in-out; /* Adjust duration and easing as needed */
+}
+
+.page {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  margin: 5%;
+  margin-bottom: 10%;
+  /* opacity: 0; */
+  transition: opacity 0.8s ease-in-out;
+}
+
+
   .carouselContainer{
     position: relative;
   }
@@ -193,6 +212,8 @@ max-width: 100%;
         margin: 5%;
         margin-bottom: 
         10%;
+        /* opacity: 0; */
+        transition: opacity 0.8s ease-in-out;
       }
 .contentContainer{
     display: flex;

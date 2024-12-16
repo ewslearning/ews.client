@@ -94,6 +94,12 @@
   line-height: 72px;
 }
 
+.leftHeaderTxt1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+}
+
 .baseContainer {
   display: flex;
   flex-direction: row;
@@ -132,6 +138,11 @@
   animation: ripple 8s infinite 6s; /* Third ripple with a delay */
 }
 
+.greenLine {
+  width: 242px;
+  height: 10.34px;
+}
+
 @keyframes ripple {
   0% {
     transform: translate(-50%, -50%) scale(0); /* Start from center */
@@ -142,6 +153,7 @@
     opacity: 0; /* Fade out */
   }
 }
+
 
 @media (max-width: $breakpoint-md) {
   .heroContainer {
@@ -191,8 +203,22 @@
     text-align: left;
     padding-left: 0;
     padding-right: 24px;
-    line-height: 36px;
+    line-height: 40px;
   }
+
+  .leftHeaderTxt1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+  }
+
+
+.greenLine {
+  position: absolute;
+  width: 156px;
+  height: 7.34px;
+  z-index: -10;
+}
 
   .videoFullScreen {
     position: absolute;
