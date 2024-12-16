@@ -69,20 +69,47 @@
 /* Responsive design for smaller screens */
 @media (max-width: $breakpoint-md) {
   .contentContainer {
-    height: auto; /* Allow height to adjust automatically */
-    padding: var(--size-5) var(--size-3);
+    height: 460px; 
+    padding: var(--size-0) var(--size-3);
+  }
+
+
+  .heroIcon {
+    display: none;
   }
 
   .textContainer {
-    top: 40%; /* Adjust text position */
+    top: 20%; /* Adjust text position */
     left: 5%;
   }
 
   .onesbIcon {
-    width: 60px; /* Reduce icon size */
+    width: 160px;
+    height: auto; 
   }
 
   .textContainer h2 {
-    font-size: 1.5rem; /* Smaller font size for mobile */
+    font-size: 24px; 
+  line-height: 42px; 
+  font-weight: 700;
+  margin: 0;
+  }
+
+  .descriptionContainer {
+    width: 100%;
+    position: absolute;
+    z-index: 1; 
+    top: 48%; 
+    left: 5%; 
+  }
+
+  .descriptionContainer p{ 
+    width: 86%;
+    font-size: 18px; 
+    line-height: 24px; 
+    font-weight: 400;
+    color: #333333;
+    margin: 0;
+    
   }
 }

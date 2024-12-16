@@ -141,8 +141,55 @@
 .popUpBtn:hover {
   color: #195829;
 }
+.subMenuContainer {
+  margin-left: 1rem;
+}
+
+.subMenuLink {
+  display: block;
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.activeSubMenu {
+  background-color: rgba(25, 88, 41, 0.4); /* #195829 with 40% opacity */
+}
+@media (max-width: $breakpoint-xl){
+  .popUp {
+    position: absolute;
+    top: 75%; /* Below the button */
+    left: 28%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 1000;
+  }
+  
+}
 
 
+@media (max-width: $breakpoint-lg){
+  .popUp {
+    position: absolute;
+    top: 75%; /* Below the button */
+    left: 20%;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 1000;
+  }
+  
+}
 @media (max-width: $breakpoint-md) {
   .popUp {
     display: none;

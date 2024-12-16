@@ -91,11 +91,11 @@
   }
 
   .aboutUsSubTitle {
-    font-size: 18px;
-    font-weight: 400;
-    text-align: center;
-    line-height: 27px;
-    color: #333333;
+    font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 60px;
+  color: #333333;
   }
 
   .aboutUsContentContainer {

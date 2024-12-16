@@ -5,6 +5,7 @@ import Star from "@assets/icons/star.svg";
 import RightArrow from "@assets/icons/right-arrow.svg";
 import Button from "@components/common/button/button";
 import { useRouter } from "next/navigation";
+import GreenLine from "@assets/icons/green-line.svg";
 
 const Hero: React.FC = () => {
   const [isVideoFullScreen, setVideoFullScreen] = useState(false);
@@ -42,15 +43,19 @@ const Hero: React.FC = () => {
         <div className={`${classes.ripple} ${classes.ripple3}`}></div>
         <div className={`${classes.ripple} ${classes.ripple4}`}></div>
         <div className={`${classes.contentContainer} ${classes.leftContent}`}>
+         <h2 className={classes.leftHeaderTxt1}>Empowering Sustainable</h2>
+         <GreenLine className={classes.greenLine}/>
           <h2 className={classes.leftHeaderTxt}>
-            Empowering Sustainable Futures through Environmental Education &
+              Futures through Environmental Education &
             Corporate Sustainability
           </h2>
+          
           <Button onClick={handleNavigation} variant="whiteBg">
             Explore Programs
             <RightArrow className={classes.rightArrow} />
           </Button>
         </div>
+       
         <div>
           <div
             className={`${classes.contentContainer} ${classes.rightContent}`}

@@ -25,7 +25,8 @@ Business, our program offers MBA graduates the
 tools and coaching needed to excel in sustainability
 roles and managerial success across industries.</p>
        
-      </div> <HeroIcon className={styles.heroIcon}/>
+      </div> 
+      <HeroIcon className={styles.heroIcon}/>
     </div>
   );
 };

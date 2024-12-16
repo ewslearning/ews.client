@@ -56,7 +56,7 @@
 
 @media (min-width: $breakpoint-lg) {
   .ourPartnersContainer {
-    padding: var(--size-12) var(--size-10);
+    padding: var(--size-12) 0;
   }
 
   .headerText {

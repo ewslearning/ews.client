@@ -51,9 +51,9 @@
 
 .description {
     color: var(--text-4);
-    font-size: 28px;
+    font-size: 26px;
      font-weight:   400;
-    line-height:   42px;
+    line-height:   38px;
     padding-top: 42px;
 }
 .divider {
@@ -78,11 +78,13 @@
     background-color: transparent;
     color: var(--green-10);
     border-color: var(--green-10);
+    
 }
 
 .headerDescriptionContainer {
     display: flex;
     flex-direction: column;
+    padding-bottom: 16px;
 }
 
 
@@ -90,6 +92,11 @@
 @media (max-width: $breakpoint-lg){
 
   
+.headerDescriptionContainer {
+    padding-bottom: 0px;
+}
+
+
 .pageHeader{
     font-size: 32px;
     font-weight: 600;
