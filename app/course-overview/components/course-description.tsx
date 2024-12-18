@@ -73,7 +73,7 @@ const coursesList : CourseOverviewProps[] = [
       },
       topicsCovered: ["Policy development, environmental management systems (EMS), and ISO 14001 compliance.", 
         "life cycle management and sustainable resource utilization."],
-        trainingModules: "Interactive modules on hazardous waste handling, thermal desorption, bioremediation, and more.",
+        trainingModules: "Tailored modules on sustainability reporting, carbon footprint reduction, and sustainable supply chains.",
       
 
       
@@ -102,8 +102,9 @@ const coursesList : CourseOverviewProps[] = [
         certification: "Participants who complete the course will receive a Certificate in Waste Management and Recycling, verifying their ability to manage waste and recycling in compliance with environmental standards.",
 
      },
-      topicsCovered: ["Policy development, environmental management systems (EMS), and ISO 14001 compliance.", 
-        "life cycle management and sustainable resource utilization."],
+      topicsCovered: ["Waste classification, handling, and disposal techniques.", 
+        "Recycling processes, economic considerations, and compliance with regulations.",
+      "Customized recycling solutions for different waste types."],
         trainingModules: "Interactive modules on hazardous waste handling, thermal desorption, bioremediation, and more.",
       
     },
@@ -130,9 +131,10 @@ const coursesList : CourseOverviewProps[] = [
        certification: "Participants will earn a Certificate in Sustainable Workforce Development, validating their ability to cultivate sustainability within their organizations.",
 
     },
-      topicsCovered: ["Policy development, environmental management systems (EMS), and ISO 14001 compliance.", 
-        "life cycle management and sustainable resource utilization."],
-        trainingModules: "Interactive modules on hazardous waste handling, thermal desorption, bioremediation, and more.",
+      topicsCovered: ["Employee engagement in sustainability practices.", 
+        "Training on the 5 R’s: Reduce, Reuse, Recycle, Recover, and Rethink.",
+      "Developing sustainable workplace policies."],
+        trainingModules: "Hands-on workshops on creating green teams, promoting environmental stewardship, and fostering inclusive and sustainable work environments.",
       
     },
     {
@@ -158,10 +160,11 @@ const coursesList : CourseOverviewProps[] = [
        certification: "Participants will receive a Certificate in Environmental Compliance, recognizing their expertise in managing compliance and reducing environmental risks.",
 
     },
-      topicsCovered: ["Policy development, environmental management systems (EMS), and ISO 14001 compliance.", 
-        "life cycle management and sustainable resource utilization."],
-        trainingModules: "Interactive modules on hazardous waste handling, thermal desorption, bioremediation, and more.",
-      
+      topicsCovered: ["Legal requirements in waste management and sustainability.",
+        "Best practices for environmental compliance.",
+"Compliance strategies to mitigate environmental risks.",
+      ],
+        trainingModules: "Detailed modules on regulatory frameworks, environmental audits, and environmental risk management."
     },
     {
       id: 5,
@@ -186,9 +189,11 @@ const coursesList : CourseOverviewProps[] = [
        certification: "Participants will earn a Certificate in Sustainable Supply Chain Management, demonstrating their ability to develop and manage environmentally responsible supply chains.",
 
     },
-      topicsCovered: ["Policy development, environmental management systems (EMS), and ISO 14001 compliance.", 
-        "life cycle management and sustainable resource utilization."],
-        trainingModules: "Interactive modules on hazardous waste handling, thermal desorption, bioremediation, and more.",
+      topicsCovered: ["Green procurement and ethical sourcing practices.",
+        "Transparency in the supply chain and reducing environmental impact.",
+"Life cycle assessment and supplier engagement."
+      ],
+        trainingModules: "Modules on implementing sustainable procurement policies, supplier sustainability assessments, and optimizing logistics for sustainability.",
       
     },
     {
@@ -214,10 +219,9 @@ const coursesList : CourseOverviewProps[] = [
        certification: "Participants will receive a Certificate in Circular Economy Strategies, certifying their ability to implement circular economy principles in business.",
 
     },
-      topicsCovered: ["Policy development, environmental management systems (EMS), and ISO 14001 compliance.", 
-        "life cycle management and sustainable resource utilization."],
-        trainingModules: "Interactive modules on hazardous waste handling, thermal desorption, bioremediation, and more.",
-      
+      topicsCovered: ["Waste reduction and resource efficiency.", 
+        "Product lifecycle management and closing the loop on resource use."],
+        trainingModules: "nteractive sessions on designing for a circular economy, materials recovery, and circular business models."
     },
 
     {
@@ -243,10 +247,10 @@ const coursesList : CourseOverviewProps[] = [
        certification: "Participants will earn a Certificate in Energy Efficiency and Conservation, validating their expertise in reducing energy consumption and improving efficiency.",
 
     },
-      topicsCovered: ["Policy development, environmental management systems (EMS), and ISO 14001 compliance.", 
-        "life cycle management and sustainable resource utilization."],
-        trainingModules: "Interactive modules on hazardous waste handling, thermal desorption, bioremediation, and more.",
-      
+      topicsCovered: ["Energy audits and sustainable energy management practices.",
+"Strategies to lower operational costs through energy conservation.",
+"Renewable energy integration in business operations."],
+        trainingModules: "Practical modules on implementing energy-saving measures, renewable energy solutions, and behavioral change initiatives for energy efficiency.",
     },
     {
       id: 8,
@@ -271,9 +275,9 @@ const coursesList : CourseOverviewProps[] = [
        certification: "Participants will receive a Certificate in Sustainable Product Design, demonstrating their ability to design and develop eco-friendly products.",
 
     },
-      topicsCovered: ["Policy development, environmental management systems (EMS), and ISO 14001 compliance.", 
-        "life cycle management and sustainable resource utilization."],
-        trainingModules: "Interactive modules on hazardous waste handling, thermal desorption, bioremediation, and more.",
+      topicsCovered: ["Material selection for sustainability.",
+"Designing for durability and end-of-life considerations."],
+        trainingModules: "Modules on sustainable product development, eco-design principles, and life cycle analysis.",
       
     },
     {
@@ -299,9 +303,9 @@ const coursesList : CourseOverviewProps[] = [
        certification: "Participants will earn a Certificate in AI and Sustainability Integration, recognizing their ability to use AI to enhance sustainability efforts within organizations.",
 
     },
-      topicsCovered: ["Policy development, environmental management systems (EMS), and ISO 14001 compliance.", 
-        "life cycle management and sustainable resource utilization."],
-        trainingModules: "Interactive modules on hazardous waste handling, thermal desorption, bioremediation, and more.",
+      topicsCovered: ["Leveraging AI for resource optimization.",
+"Predicting and managing environmental risks using AI technologies."],
+        trainingModules: "Hands-on sessions on AI-driven sustainability solutions, data analytics for environmental management, and AI-powered resource efficiency.",
       
     }
   ];
