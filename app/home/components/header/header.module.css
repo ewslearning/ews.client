@@ -219,7 +219,7 @@
 
   .overlayMenu {
     display: flex; 
-    top: 10%; 
+    top: 90px; 
     left: 0;
     right: 0;
     background-color:var(--surface-1);

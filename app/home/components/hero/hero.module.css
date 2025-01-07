@@ -185,7 +185,7 @@
 
   .contentContainer {
     height: 66vh;
-    padding: var(--size-10) var(--size-10) var(--size-12) var(--size-3);
+    padding: var(--size-10) var(--size-3) var(--size-10) var(--size-3);
   }
 
   .subText {
@@ -231,7 +231,7 @@
   .video {
     position: absolute;
     padding: 0;
-    top: 94%;
+    top: 72%;
     align-items: center;
     justify-items: center;
     bottom: 0%;
@@ -249,7 +249,7 @@
 
   .ripple {
     position: absolute;
-    top: 46%; /* Center vertically */
+    top: 420px; /* Center vertically */
     left: 50%; /* Center horizontally */
     width: 240%; /* Set width for the ripple effect */
     height: 100%; /* Set height for the ripple effect */

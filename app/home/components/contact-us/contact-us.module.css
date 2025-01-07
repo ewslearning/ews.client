@@ -3,7 +3,7 @@
   flex-direction: column;  
   font-size: 18px;
   font-weight: 400;
-  padding: var(--size-3) var(--size-6);
+  padding: var(--size-8) var(--size-6);
   background-color: #EBF3ED;
 }
 

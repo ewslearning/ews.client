@@ -165,9 +165,9 @@
   padding-left: 0px;
 }
 .description {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
-  padding-right: 90px;
+  padding-right: 30px;
   line-height: 24px;
   color: var(--text-4);
   padding-top: 16px;
@@ -196,7 +196,7 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  grid-template-columns: repeat(2, 240px);
+  grid-template-columns: repeat(2, 190px);
   gap: 12px;
 }
 
@@ -219,7 +219,7 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 8px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--text-5);
 }
@@ -230,7 +230,7 @@
 }
 
 .subTxt {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: var(--text-4);
 }
@@ -272,19 +272,19 @@
 
  .whyChoosePara {
   padding: 5%;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 21px;
   color: #333333;
   padding-top: 12px;
-  text-align: start;
+  text-align: center;
  }
 
  .enrollToday {
   padding: 10% ;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 48px;
+  line-height: 42px;
   color: #195829;
   padding-top: 32px;
   text-align: center;

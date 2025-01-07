@@ -84,7 +84,7 @@
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #333333;
-  color: var(--surface-3);
+  color: var(--surface-5);
   font-size: var(--font-size-1);
   padding: var(--size-4) 0;
   align-items: start;
@@ -135,9 +135,9 @@
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #333333;
-  color: var(--surface-3);
+  color: var(--surface-5);
   font-size:  16px;
-  padding: var(--size-4) 0;
+  padding: var(--size-2) 0;
   align-items: start;
   justify-items: start;
   align-content: start;

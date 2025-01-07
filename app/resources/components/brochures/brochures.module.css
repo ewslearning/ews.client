@@ -1,9 +1,10 @@
 .gridWrapper{
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin: 0%;
+  padding-inline: 5%;
 }
 
 .parentContainer {
@@ -77,24 +78,36 @@
 }
 
 @media (max-width: $breakpoint-md){
+  .gridWrapper{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-inline: 5%;
+  }
+  
   .parentContainer {
     display: flex;
     flex-direction: column;
-    align-items:start;
+    align-items:center;
     justify-content: center;
     width: 100%;
     margin-top: 2.5%;
     margin-bottom: 5%;
+    padding: 0%;
+    margin-inline:0%;
+    
    }
 
   .gridContainer {
-    display: flex;
+    display:flex;
     justify-items: center;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    grid-template-columns: repeat(1, 100%);
     gap:24px;
-    margin-inline: 16px;
   }
 
 
@@ -103,8 +116,7 @@
   font-weight: 600;
   line-height: 30px;
   color: var(--green-10);
-  padding-bottom: 80px;
-  padding-left: 10px;
+  padding-bottom: 36px;
  }
 
   .header{
@@ -112,7 +124,15 @@
     font-weight: 600;
     line-height: 27px;
     color: var(--text-5);
-    padding-left: 12px;
+    padding-left: 0px;
+  }
+  .divider {
+    background-color: var(--text-5);
+    height: 1px;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 4px;
+    margin-bottom: 28px;
   }
   
 }

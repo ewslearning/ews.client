@@ -162,7 +162,7 @@
  }
 
  .paragraph {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: var(--text-4);
   padding-right: 10%; 
@@ -172,7 +172,7 @@
  
    
  .text {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 21px;
   color: #195829;
@@ -188,7 +188,7 @@
 
 
 .para {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400; line-height: 21px;
   color: #333333;
 }
@@ -203,7 +203,7 @@
 }
 
 .bulletPoint {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400; line-height: 21px;
   color: #333333;
 }

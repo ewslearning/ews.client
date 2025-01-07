@@ -44,6 +44,12 @@ export const Form = () => {
     formState: { errors },
   } = useForm<Inputs>();
 
+  const handleOpenMaps = (latitude: number, longitude: number) => {
+    const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`;
+    window.open(googleMapsUrl, '_blank');
+  };
+  
+
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     const formData = {
       access_key: "24e01616-b222-4139-bd08-df0f2e6d253a",
@@ -249,16 +255,16 @@ export const Form = () => {
         </div>
       </form>
       <div className={styles.mapSideContainer}>
-      <Image className={styles.map} src={Map} alt="Map"/>
+      <Image className={styles.map} src={Map} alt="Map" onClick={() => handleOpenMaps(13.0063544, 77.6177286)}/>
   
          <div className={styles.addressHeading}>EWS Address</div>
-         <div className={styles.fullAddress}> No.3, 2nd Floor, Wood Road, Clarke Rd, Richards Town, Bengaluru, Karnataka 560005</div>
+         <p onClick={() => handleOpenMaps(13.0063544, 77.6177286)} className={styles.fullAddress}>No.3, 2nd floor, Clark Wood Road, Richards Town, Bengaluru, Karnataka 560005</p>
         
          <div  className={styles.followUsContainer}>Follow us</div>
          <div className={styles.iconContainer}>                           
          <FacebookIcon  onClick={() => window.open("https://www.facebook.com/profile.php?id=61570908623491")}  className={styles.icons}/>
-                                <LinkedinIcon  onClick={() => window.open("https://www.linkedin.com/in/ews-learning/")} className={styles.icons}/>
-                                <InstaIcon onClick={() => window.open("https://www.instagram.com/ewslearning/")} className={styles.icons}/>
+                                <LinkedinIcon  onClick={() => window.open("https://www.linkedin.com/in/ews-learning-a5769a344")} className={styles.icons}/>
+                                <InstaIcon onClick={() => window.open("https://www.instagram.com/ews.learning/?hl=en")} className={styles.icons}/>
                                 <TwitterIcon  onClick={() => window.open("https://x.com/EWSLearning")} className={styles.icons}/>                             
                             </div>
                             </div>

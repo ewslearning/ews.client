@@ -31,39 +31,32 @@ return (<div>
                    Benefit 1
             </div>
             </div>
-           <div className={classes.textBelow}>Yo Reddit! What’s a small<br/> 
-                  thing that anyone can do<br/> 
-                  at nearly anytime to<br/> 
-                  improve their mood and<br/>
-                  make </div>
+           <div className={classes.textBelow}> In-Depth Understanding of Sustainability Concepts:<br/>
+Learn the principles of sustainability, including environmental stewardship, social responsibility, and sustainable development practices.
+</div>
                   <div className={classes.divider} ></div>
                   </div>
                   <div className={classes.item}>
             <div className={classes.svgContainer}>
               <Second className={classes.svgImage}/>
               <div className={classes.textOverlay}>
-                   Benefit 2
+              Benefit 2
             </div>
             </div>
            
-            <div className={classes.textBelow}>Yo Reddit! What’s a small<br/> 
-                  thing that anyone can do<br/> 
-                  at nearly anytime to<br/> 
-                  improve their mood and<br/>
-                  make </div>
+            <div className={classes.textBelow}>Career Growth and Opportunities:<br/>
+              The courses are designed to equip learners with skills that are highly valued in industries focusing on ESG (Environmental, Social, and Governance), green innovation, and corporate sustainability.
+                  </div>
                   <div className={classes.divider} ></div>
                   </div>
                   <div className={classes.item}>
             <div className={classes.svgContainer}>
               <Third className={classes.svgImage}/>
               <div className={classes.textOverlay}>
-                   Benefit 3
+              Benefit 3
             </div></div>
-            <div className={classes.textBelow}>Yo Reddit! What’s a small<br/> 
-                  thing that anyone can do<br/> 
-                  at nearly anytime to<br/> 
-                  improve their mood and<br/>
-                  make </div>
+            <div className={classes.textBelow}>Flexible and Customizable Learning:<br/>
+            With online modules, interactive sessions, and tailored content, learners can balance professional and personal commitments while achieving their learning goals. </div>
                   <div className={classes.divider} ></div>
                   </div>
                   
