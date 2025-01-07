@@ -44,10 +44,10 @@ const KeyServices: React.FC = () => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   const images = [
-    <WasteMgmtTraining key="0" />,
-    <Sustainability key="1" />,
-    <RecyclingPrograms key="2" />,
-    <RecyclingIndustryTraining key="3" />,
+    <WasteMgmtTraining key="0" className={classes.svgImage} />,
+    <Sustainability key="1" className={classes.svgImage}/>,
+    <RecyclingPrograms key="2" className={classes.svgImage}/>,
+    <RecyclingIndustryTraining key="3" className={classes.svgImage}/>,
   ];
 
   const handleAccordionClick = (index: number) => {

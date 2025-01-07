@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
          <h2 className={classes.leftHeaderTxt1}>Empowering Sustainable</h2>
          <GreenLine className={classes.greenLine}/>
           <h2 className={classes.leftHeaderTxt}>
-              Futures through Environmental Education &
+              Futures through Environmental<br/>Education &
             Corporate Sustainability
           </h2>
           
@@ -76,11 +76,14 @@ const Hero: React.FC = () => {
         className={`${classes.video} ${
           isVideoFullScreen ? classes.videoFullScreen : ""
         }`}
+        preload="metadata"
+        src="videos/introduction.mov" 
         autoPlay
+        muted
         loop
         controls
+        playsInline
       >
-        <source src="videos/introduction.mov" />
       </video>
     </main>
   );

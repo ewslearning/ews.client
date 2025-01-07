@@ -27,7 +27,7 @@
 .divider {
   background-color: var(--text-5);
   height: 1px;
-  width: 88%;
+  width: 100%;
   margin-top: 4px;
   margin-bottom: 64px;
 }
@@ -51,10 +51,15 @@
   text-decoration: underline;
 }
 
+.blogItemContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between; 
+}
 .blogTextsContainer{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content:flex-start;
 }
 
 .image {
@@ -79,6 +84,7 @@ font-size: 16px;
 font-weight: 400;
 line-height: 24px;
 color: var(--text-4);
+padding-bottom: 12px;
 }
 
 @media (max-width: $breakpoint-lg){
@@ -129,11 +135,20 @@ color: var(--text-4);
     line-height: 18px;
     color: var(--text-4);
     padding-top: 8px;
+    padding-bottom: 8px;
     }
 
     .image {
       padding-right: 24px;
-      height: 186px;
-      width: 342px;
+      height: auto;
+      width: 100vw;
+    }
+
+    .divider {
+      background-color: var(--text-5);
+      height: 1px;
+      width: 100%;
+      margin-top: 4px;
+      margin-bottom: 24px;
     }
 }

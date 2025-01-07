@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import styles from "./header.module.css";
 import EWS from "@assets/icons/ews.svg";
@@ -12,12 +12,17 @@ import OneSbIcon from "@assets/icons/one-sb.svg";
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
   const [programButtonText, setProgramButtonText] = useState("Programs");
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+  const toggleMenu = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.stopPropagation(); // Stop the event from propagating
+    setIsMenuOpen((prevState) => !prevState);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
 
   const router = useRouter();
 
@@ -36,6 +41,23 @@ const Header: React.FC = () => {
   };
 
   const isActiveLink = (path: string) => pathname === path;
+
+   // Close the menu when clicking outside
+   useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsMenuOpen(false);
+      }
+    };
+  
+    if (isMenuOpen) {
+      document.addEventListener("click", handleClickOutside);
+    }
+  
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [isMenuOpen]);
 
   return (
     <header>
@@ -75,26 +97,26 @@ const Header: React.FC = () => {
       
 
       {/* Conditionally render the dropdown menu for mobile */}
-      {isMenuOpen && (
-        <div className={styles.overlayMenu}>
+      {isMenuOpen ? (
+        <div ref={menuRef} className={styles.overlayMenu}>
           <ul className={styles.overlayLinkContainer}>
             <li>
-              <Link href="/programs" onClick={toggleMenu} className={`${styles.overlayLink} ${isActiveLink("/programs") ? styles.activeLinkMob : ""}`}>All Programs</Link>
+              <Link href="/programs" onClick={closeMenu} className={`${styles.overlayLink} ${isActiveLink("/programs") ? styles.activeLinkMob : ""}`}>All Programs</Link>
             </li>
-            <li><Link  onClick={toggleMenu}  href="/onesb"  className={`${styles.overlayLink} ${isActiveLink("/onesb") ? styles.activeLink : ""}`}>One Sb</Link>
-            </li>
-            <li>
-              <Link href="/company" onClick={toggleMenu} className={`${styles.overlayLink} ${isActiveLink("/company") ? styles.activeLinkMob : ""}`}>Company</Link>
+            <li><Link  href="/onesb" onClick={closeMenu}  className={`${styles.overlayLink} ${isActiveLink("/onesb") ? styles.activeLinkMob : ""}`}>One Sb</Link>
             </li>
             <li>
-              <Link href="/resources" onClick={toggleMenu} className={`${styles.overlayLink} ${isActiveLink("/resources") ? styles.activeLinkMob : ""}`}>Resources</Link>
+              <Link href="/company" onClick={closeMenu} className={`${styles.overlayLink} ${isActiveLink("/company") ? styles.activeLinkMob : ""}`}>Company</Link>
             </li>
             <li>
-              <Link href="/services" onClick={toggleMenu} className={`${styles.overlayLink} ${isActiveLink("/services") ? styles.activeLinkMob : ""}`}>Services</Link>
+              <Link href="/resources" onClick={closeMenu} className={`${styles.overlayLink} ${isActiveLink("/resources") ? styles.activeLinkMob : ""}`}>Resources</Link>
+            </li>
+            <li>
+              <Link href="/services" onClick={closeMenu} className={`${styles.overlayLink} ${isActiveLink("/services") ? styles.activeLinkMob : ""}`}>Services</Link>
             </li>
           </ul>
         </div>
-      )}
+      ): null}
     </header>
   );
 };

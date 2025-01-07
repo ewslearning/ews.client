@@ -97,8 +97,8 @@
 .tilesParentContainer {
   display: flex;
   flex-direction: column;
-  height: 380px;
-  width: 310px;
+  height: auto;
+  width: 90vw;
   background-color: var(--surface-3);
   align-items: flex-start;
   padding: 5%;

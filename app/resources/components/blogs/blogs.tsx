@@ -22,31 +22,35 @@ const Blogs: React.FC = () => {
     <div className={styles.divider}></div>
     <div className={styles.blogContainer}>
     <Image className={styles.image} src={Blog1} alt="blog" onClick={() => handleNavigation("/creating-sustainable-workplaces")}/>
+      <div className={styles.blogItemContainer}>
       <div className={styles.blogTextsContainer}>
         <p className={styles.blogDate}>October 30, 2017</p>
         <Link href={"/creating-sustainable-workplaces"} className={styles.blogTitle}>Creating Sustainable Workplaces: A Path to Environmental Responsibility</Link>
-        <button className={styles.readMore} onClick={() => handleNavigation("/creating-sustainable-workplaces")}>Read More</button>
       </div>
-    </div>
+      <button className={styles.readMore} onClick={() => handleNavigation("/creating-sustainable-workplaces")}>Read More</button>
+    </div></div>
 
     <div className={styles.blogContainer}>
     <Image className={styles.image} src={Blog2} alt="blog" onClick={() => handleNavigation("/recycling-at-workplace")}/>
+    <div className={styles.blogItemContainer}>
       <div className={styles.blogTextsContainer}>
         <p className={styles.blogDate}>October 30, 2017</p>
         <Link href={"/recycling-at-workplace"}  className={styles.blogTitle} >Recycling at the Workplace: A Small Step 
         Toward a Big Change</Link>
-        <button className={styles.readMore} onClick={() => handleNavigation("/recycling-at-workplace")}>Read More</button>
+       
       </div>
-    </div>
+      <button className={styles.readMore} onClick={() => handleNavigation("/recycling-at-workplace")}>Read More</button>
+    </div></div>
     
     <div className={styles.blogContainer}>
     <Image className={styles.image} src={Blog3} alt="blog" onClick={() => handleNavigation("/importance-of-proper-waste-management")}/>
+    <div className={styles.blogItemContainer}>
       <div className={styles.blogTextsContainer}>
         <p className={styles.blogDate}>October 30, 2017</p>
         <Link href={"/importance-of-proper-waste-management"}  className={styles.blogTitle} >The Importance of Proper Waste Management: Aligning with the Sustainable Development Goals (SDGs)</Link>
-        <button className={styles.readMore} onClick={() => handleNavigation("/importance-of-proper-waste-management")}>Read More</button>
-      </div>
-    </div>   
+       </div>
+       <button className={styles.readMore} onClick={() => handleNavigation("/recycling-at-workplace")}>Read More</button>
+       </div></div>  
      </div>
      
      

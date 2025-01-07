@@ -17,17 +17,17 @@ const ContactForm: React.FC = () => {
 
       <div className={styles.contactFormContainer}>
          <div className={styles.headerSectionContainer}>
-            <h3 className={styles.heading}>Contact</h3>
             <div className={styles.divider}/>
                <div className={styles.subHeaderContainer}>
-                  <div className={styles.usOrContainer}>
-                  <h1 className={styles.usText}>US</h1>
+                 
+                  <h1 className={styles.usText}>Contact Us</h1>
                   <div className={styles.orContainer}>OR</div>
-                  </div>
+               
                   <div className={styles.emailColumn}>
-                      <div className={styles.reachOutText}>reach out vie email</div>
-                      <div className={styles.emailText}>alma.lawson@example.com</div>
+                      <div className={styles.reachOutText}>reach out via email</div>
+                      <div className={styles.emailText}>contact@ewslearning.com</div>
                   </div>
+                  
                </div>
                <div className={styles.divider}/>
                <p className={styles.message}>We&apos;re excited to hear from you! Whether you have questions about our programs, 
