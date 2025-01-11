@@ -43,12 +43,12 @@ const Hero: React.FC = () => {
         <div className={`${classes.ripple} ${classes.ripple3}`}></div>
         <div className={`${classes.ripple} ${classes.ripple4}`}></div>
         <div className={`${classes.contentContainer} ${classes.leftContent}`}>
-         <h2 className={classes.leftHeaderTxt1}>Empowering Sustainable</h2>
+         <h1 className={classes.leftHeaderTxt1}>Empowering Sustainable</h1>
          <GreenLine className={classes.greenLine}/>
-          <h2 className={classes.leftHeaderTxt}>
+          <h1 className={classes.leftHeaderTxt}>
               Futures through Environmental<br/>Education &
             Corporate Sustainability
-          </h2>
+          </h1>
           
           <Button onClick={handleNavigation} variant="whiteBg">
             Explore Programs
@@ -62,12 +62,12 @@ const Hero: React.FC = () => {
           >
             <div className={classes.subTextContainer}>
               <Star />
-              <h4 className={classes.subText}>
+              <h2 className={classes.subText}>
                 AI-Driven Environmental Education for Everyone, Everywhere
                 <div className={classes.rightStar}>
                   <Star />
                 </div>
-              </h4>
+              </h2>
             </div>
           </div>
         </div>

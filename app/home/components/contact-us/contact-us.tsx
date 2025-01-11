@@ -20,11 +20,11 @@ const ContactUs: React.FC<ContactUsProps> = ({
           out the form, and we&apos;ll get back to you as soon as possible.
         </p>
         <Link href="/contact" className={classes.contactUs}>
-          <h1 className={classes.contactUsLinkText}>Contact Us</h1>
+          <h2 className={classes.contactUsLinkText}>Contact Us</h2>
           <ToLeft className={classes.goToLeftMweb} />
         </Link>
       </div>
-      <Link href="/contact"><ToLeft className={classes.goToLeftDesktop} /></Link>
+      <Link aria-label="go to contact us page" href="/contact"><ToLeft className={classes.goToLeftDesktop} /></Link>
     </section>
   );
 };

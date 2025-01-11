@@ -9,9 +9,9 @@ const AboutUs: React.FC = () => {
     <section className={classes.aboutUsContainer}>
       <div className={classes.headerContainer}>
         <Button className={classes.aboutUsHeader}>About Us</Button>
-        <h3 className={classes.aboutUsSubTitle}>
+        <h2 className={classes.aboutUsSubTitle}>
         Leading the Way in Sustainability
-        </h3>
+        </h2>
       </div>
       <div className={classes.aboutUsContentContainer}>
         <div className={classes.aboutUsContent}>
