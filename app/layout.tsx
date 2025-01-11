@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   title: "EWS Learning",
   description: "Empowering Sustainable Futures through Environmental Education & Corporate Sustainability",
   keywords: "ews learning, ewslearning, ews, EWS Learning, ews learn",
+  applicationName: 'EWS Learning',
+  alternates: {
+    canonical: "https://ewslearning.com"
+  }
 };
 
 export default function RootLayout({

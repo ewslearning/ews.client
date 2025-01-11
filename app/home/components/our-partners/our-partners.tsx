@@ -6,10 +6,10 @@ const OurPartners: React.FC = () => {
   return (
     <section className={classes.ourPartnersContainer}>
       <div className={classes.headerContainer}>
-        <h4 className={classes.subHeaderText}>
+        <h2 className={classes.subHeaderText}>
         At EWS, we value our collaboration and are 
         committed to driving sustainability together
-        </h4>
+        </h2>
         <h1 className={classes.headerText}>Our Partners</h1>
       </div>
       <ImageTextMarquee/>

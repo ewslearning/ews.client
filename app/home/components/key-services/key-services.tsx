@@ -36,7 +36,7 @@ const AccordionItem: React.FC<AccordionItemProps & { isExpanded: boolean }> = ({
     }}
     contentProps={{ className: classes.itemContent }}
     panelProps={{ className: classes.itemPanel }}
-    headingTag="h4"
+    headingTag="h2"
   />
 );
 
@@ -56,8 +56,8 @@ const KeyServices: React.FC = () => {
 
   return (
     <section className={classes.keyServicesContainer}>
-      <h1 className={classes.header}>Key Services</h1>
-      <h3 className={classes.subText}>Overview of Core Services</h3>
+      <h2 className={classes.header}>Key Services</h2>
+      <h2 className={classes.subText}>Overview of Core Services</h2>
       <p className={classes.description}>
         Our comprehensive offerings are designed to empower organizations and
         individuals with the knowledge and skills needed to excel in waste
