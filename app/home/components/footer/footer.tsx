@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
                 <LinkedinIcon
                   onClick={() =>
                     window.open(
-                      "https://www.linkedin.com/in/ews-learning-a5769a344"
+                      "https://www.linkedin.com/company/ews-learning/?viewAsMember=true"
                     )
                   }
                   className={styles.icons}
