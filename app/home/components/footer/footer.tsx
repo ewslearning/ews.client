@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
 
                             <div className={styles.iconContainer}>                           
                                 <FacebookIcon  onClick={() => window.open("https://www.facebook.com/profile.php?id=61570908623491")}  className={styles.icons}/>
-                                <LinkedinIcon  onClick={() => window.open("https://www.linkedin.com/in/ews-learning-a5769a344")} className={styles.icons}/>
+                                <LinkedinIcon  onClick={() => window.open("https://www.linkedin.com/company/ews-learning/?viewAsMember=true")} className={styles.icons}/>
                                 <InstaIcon onClick={() => window.open("https://www.instagram.com/ews.learning/?hl=en")} className={styles.icons}/>
                                 <TwitterIcon  onClick={() => window.open("https://x.com/EWSLearning")} className={styles.icons}/>                              
                             </div>
