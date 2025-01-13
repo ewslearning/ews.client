@@ -24,7 +24,7 @@ export const Newsletter = () => {
   return (
     <article className={classes.newsletterContainer}>
       <div className={classes.headerContainer}>
-        <h1 className={classes.header}>Stay Updated with Our Newsletter</h1>
+        <h2 className={classes.header}>Stay Updated with Our Newsletter</h2>
        
       </div>
       <p className={classes.description}>

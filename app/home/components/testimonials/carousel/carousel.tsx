@@ -71,8 +71,8 @@ const Carousel: React.FC = () => {
           </div>
         </div>
         <div className={styles.profileInfo}>
-          <h6 className={styles.profileName}>Ajay Kuswaha</h6>
-          <h6 className={styles.profileRole}>Sustainability Manager</h6>
+          <p className={styles.profileName}>Ajay Kuswaha</p>
+          <p className={styles.profileRole}>Sustainability Manager</p>
         </div>
       </div>
     </div>,
@@ -98,8 +98,8 @@ const Carousel: React.FC = () => {
           </div>
         </div>
         <div className={styles.profileInfo}>
-          <h6 className={styles.profileName}>Abrar</h6>
-          <h6 className={styles.profileRole}>Operations</h6>
+          <p className={styles.profileName}>Abrar</p>
+          <p className={styles.profileRole}>Operations</p>
         </div>
       </div>
     </div>,
@@ -129,8 +129,8 @@ const Carousel: React.FC = () => {
           </div>
         </div>
         <div className={styles.profileInfo}>
-          <h6 className={styles.profileName}>Prashanth</h6>
-          <h6 className={styles.profileRole}>Environmental Manager</h6>
+          <p className={styles.profileName}>Prashanth</p>
+          <p className={styles.profileRole}>Environmental Manager</p>
         </div>
       </div>
     </div>,

@@ -15,8 +15,8 @@ const Testimonials: React.FC = () => {
     
     <section className={styles.parentContainer}>
       <div className={styles.reviewsContainer}>
-       <div className={styles.testimonialText}>TESTIMONIALS</div>
-       <div className={styles.headerText}>What Clients<br/>Have To Say About Us</div>
+       <h2 className={styles.testimonialText}>TESTIMONIALS</h2>
+       <h2 className={styles.headerText}>What Clients<br/>Have To Say About Us</h2>
        </div>
       <div className={styles.mapContainer}>
        
