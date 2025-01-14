@@ -66,18 +66,27 @@ const packagesList  = [
 ];
 
 const Packages: React.FC = () => {
-   return (<div className={styles.parentContainer}>
-    <h2 className={styles.heading}>Our Packages</h2>
-    <div className={styles.packages}>{packagesList.map((item, index) => (
-       <div key={index}>
-        <PackagesCard Icon={item.Icon} 
-            title={item.title} description={item.description} 
-            price={item.price} features={item.features}>
-            </PackagesCard></div>))}
-        </div>
-    <h3 className={styles.customSolutionsText}>Explore Our Customized Solutions  </h3>
-    <p className={styles.customSolutionsDescription}>Each package can be further tailored to suit specific organizational needs, including adding regional language support and collaborating with sustainability experts.</p>
-   </div>)
-};
+    return (
+       <div className={styles.parentContainer}>
+          <h2 className={styles.heading}>Our Packages</h2>
+          <div className={styles.packages}>
+             {packagesList.map((item, index) => (
+                <PackagesCard
+                   key={index}
+                   Icon={item.Icon}
+                   title={item.title}
+                   description={item.description}
+                   price={item.price}
+                   features={item.features}
+                />
+             ))}
+          </div>
+          <h3 className={styles.customSolutionsText}>Explore Our Customized Solutions</h3>
+          <p className={styles.customSolutionsDescription}>
+             Each package can be further tailored to suit specific organizational needs, including adding regional language support and collaborating with sustainability experts.
+          </p>
+       </div>
+    );
+ }; 
 
 export default Packages;

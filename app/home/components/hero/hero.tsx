@@ -45,10 +45,10 @@ const Hero: React.FC = () => {
         <div className={`${classes.contentContainer} ${classes.leftContent}`}>
          <h1 className={classes.leftHeaderTxt1}>Empowering Sustainable</h1>
          <GreenLine className={classes.greenLine}/>
-          <h1 className={classes.leftHeaderTxt}>
+          <h3 className={classes.leftHeaderTxt}>
               Futures through Environmental<br/>Education &
             Corporate Sustainability
-          </h1>
+          </h3>
           
           <Button onClick={handleNavigation} variant="whiteBg">
             Explore Programs

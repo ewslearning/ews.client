@@ -1,98 +1,87 @@
-
 .parentContainer {
    display: flex;
    flex-direction: column;
-   margin:0;
-   justify-items: center;
+   margin: 0;
    align-items: center;
    padding: 5%;
-   color: #FCFDFF;
-  }
-
-.packages{
-   display: flex;
-   flex-direction: row;
-   width: 100%;
-   justify-items: center;
-   justify-content: space-between;
-   align-items: start;
-   padding-bottom: 5%;
+   color: #FCFDFF; 
 }
 
+.packages {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Dynamic column width */
+   gap: 24px; 
+   width: 100%; 
+   justify-items: center; 
+}
 
- .heading {
+.heading {
    font-size: 56px;
    font-weight: 600;
    line-height: 84px;
-   color: #333333;
+   color: #333333; /* Matches original text color */
    text-align: center;
-   padding-bottom: 80px;
-  }
- 
-  .description {
+   padding-bottom: 80px; /* Maintains spacing below heading */
+}
+
+.description {
    font-size: 28px;
    font-weight: 400;
    line-height: 42px;
-   color: #333333;
+   color: #333333; /* Text color consistent with original */
    text-align: center;
-  }
+}
 
-  .customSolutionsText{
+.customSolutionsText {
    font-size: 56px;
    font-weight: 700;
    line-height: 84px;
-   color: #195829;
+   color: #195829; /* Distinct color for this section */
    text-align: center;
-   padding-bottom: 24px;
+   padding-bottom: 24px; /* Consistent spacing for readability */
    padding-top: 40px;
-  }
+}
 
-  .customSolutionsDescription {
+.customSolutionsDescription {
    font-size: 28px;
    font-weight: 400;
    line-height: 42px;
-   color: #333333;
+   color: #333333; /* Matches other text color */
    text-align: center;
-   padding-bottom: 40px;
-  }
+   padding-bottom: 40px; /* Adequate spacing below the paragraph */
+}
 
-@media (max-width: $breakpoint-md){
+@media (max-width: $breakpoint-md) {
    .heading {
       padding-top: 3%;
-      font-size: 28px;
+      font-size: 28px; /* Adjusted for smaller screens */
       font-weight: 600;
       line-height: 42px;
-      color: #333333;
+      color: #333333; /* Matches original text color */
       text-align: center;
-      padding-bottom: 40px;
-     }
-
-     .packages{
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      justify-items: start;
-      justify-content: space-between;
-      align-items: start;
-      padding-bottom: 5%;
+      padding-bottom: 40px; /* Consistent spacing for smaller screens */
    }
 
-     .customSolutionsText{
-      font-size: 24px;
+   .packages {
+      grid-template-columns: 1fr; /* Stacks cards vertically */
+   }
+
+   .customSolutionsText {
+      font-size: 24px; /* Adjusted size for smaller screens */
       font-weight: 700;
       line-height: 42px;
-      color: #195829;
+      color: #195829; /* Matches original color */
       text-align: center;
       padding-bottom: 12px;
       padding-top: 0px;
-     }
+   }
 
-     .customSolutionsDescription {
-      font-size: 16px;
+   .customSolutionsDescription {
+      font-size: 16px; /* Smaller font size for responsiveness */
       font-weight: 400;
       line-height: 21px;
-      color: #333333;
+      color: #333333; /* Consistent text color */
       text-align: center;
       padding-bottom: 20px;
-     }
+   }
 }
