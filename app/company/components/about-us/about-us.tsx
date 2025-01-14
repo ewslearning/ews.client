@@ -57,7 +57,7 @@ const CompanyAboutUs: React.FC = () => {
         <div className={styles.headerDescriptionContainer}>
         <div className={styles.divider}></div>
         <div className={styles.headerContainer}>
-        <h1 className={styles.header}>Vision</h1>
+        <h3 className={styles.header}>Vision</h3>
         <Vision className={styles.icon}/>
         </div>
         <p className={styles.description}>
@@ -77,7 +77,7 @@ const CompanyAboutUs: React.FC = () => {
         <div className={styles.headerDescriptionContainer}>
         <div className={styles.divider}></div>
         <div className={styles.headerContainer}>
-        <h1 className={styles.header}>Background</h1>
+        <h3 className={styles.header}>Background</h3>
         <Background className={styles.icon}/>
         </div>
         <p className={styles.description}>
@@ -96,7 +96,7 @@ const CompanyAboutUs: React.FC = () => {
         <div className={styles.headerDescriptionContainer}>
         <div className={styles.divider}></div>
         <div className={styles.headerContainer}>
-        <h1 className={styles.header}>Why Now</h1>
+        <h3 className={styles.header}>Why Now</h3>
         <WhyNow className={styles.icon}/>
         </div>
         <p className={styles.description}>

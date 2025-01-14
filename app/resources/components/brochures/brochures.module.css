@@ -1,4 +1,4 @@
-.gridWrapper{
+.gridWrapper {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -10,50 +10,49 @@
 .parentContainer {
   display: flex;
   flex-direction: column;
-  align-items:center;
-  justify-content: center; /* Center-align the grid container */
+  align-items: center;
+  justify-content: center;
   width: 100%;
   margin-top: 2.5%;
   margin-bottom: 5%;
- }
+}
 
- .pageHeader{
+.pageHeader {
   font-size: 64px;
   font-weight: 600;
   line-height: 96px;
   color: var(--green-10);
   padding-bottom: 80px;
- }
-
-.header{
-    font-size: 48px;
-    font-weight: 600;
-    line-height: 72px;
-    color: var(--text-5);
-    padding-left: 12px;
 }
 
+.header {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 72px;
+  color: var(--text-5);
+  padding-left: 12px;
+}
 
 .description {
-    color: var(--text-5);
-    font-size: 28px;
-     font-weight:   400;
-    line-height:   42px;
-    padding-top: 42px;
-    text-align: center;
-    margin-inline: 18%;
-    padding-bottom: 40px;
+  color: var(--text-5);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 42px;
+  padding-top: 42px;
+  text-align: center;
+  margin-inline: 18%;
+  padding-bottom: 40px;
 }
-
-
 
 .gridContainer {
   display: grid;
   justify-items: center;
   align-items: center;
   justify-content: center;
-  grid-template-columns: repeat(3, 28%);
-  gap: 80px;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 40px; /* Adjust spacing between grid items */
+  width: 100%;
+  box-sizing: border-box; 
 }
 
 .divider {
@@ -65,74 +64,38 @@
   margin-bottom: 64px;
 }
 
-@media (max-width: $breakpoint-lg){
+
+@media (max-width: $breakpoint-lg) { /* Tablet screens */
   .gridContainer {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(2, 40%);
-    gap: 80px;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 32px; /* Adjust spacing for medium screens */
+    width: 100%;
   }
-  
 }
 
-@media (max-width: $breakpoint-md){
-  .gridWrapper{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding-inline: 5%;
-  }
-  
-  .parentContainer {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 2.5%;
-    margin-bottom: 5%;
-    padding: 0%;
-    margin-inline:0%;
-    
-   }
-
+@media (max-width: $breakpoint-md) { /* Mobile screens */
   .gridContainer {
-    display:flex;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    grid-template-columns: repeat(1, 100%);
-    gap:24px;
+    grid-template-columns: 1fr; /* 1 column */
+    gap: 24px; /* Adjust spacing for small screens */
+    padding: 0 16px; /* Add padding to prevent items touching screen edges */
+    width: 100%;
   }
 
+  .pageHeader {
+    font-size: 32px; /* Smaller font for headers */
+    line-height: 48px;
+    padding-bottom: 36px;
+  }
 
- .pageHeader{
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 30px;
-  color: var(--green-10);
-  padding-bottom: 36px;
- }
-
-  .header{
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 27px;
-    color: var(--text-5);
+  .header {
+    font-size: 24px;
+    line-height: 36px;
     padding-left: 0px;
   }
+
   .divider {
-    background-color: var(--text-5);
-    height: 1px;
-    width: 100%;
+    width: 100%; /* Adjust divider width */
     margin-left: 0px;
-    margin-top: 4px;
     margin-bottom: 28px;
   }
-  
 }

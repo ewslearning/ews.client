@@ -6,8 +6,8 @@ import Header from "@components/header/header";
 
 export const metadata: Metadata = {
   metadataBase:  new URL('https://ewslearning.com'),
-  title: "EWS Learning",
-  description: "Empowering Sustainable Futures through Environmental Education & Corporate Sustainability",
+  title: "EWS Learning | AI-Driven Environmental Education for Everyone, Everywhere",
+  description: "Empowering Sustainable Futures through Environmental Education & Corporate Sustainability. Our mission is to educate, engage, and connect stakeholders to ensure that waste is managed responsibly, environmental sustainability is prioritized, and governance practices are strengthened for a more equitable and sustainable future.",
   keywords: "ews learning, ewslearning, ews, EWS Learning, ews learn",
   applicationName: 'EWS Learning',
   alternates: {
