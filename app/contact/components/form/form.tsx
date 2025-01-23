@@ -11,6 +11,7 @@ import FacebookIcon from "../../assets/icons/fbGreen.svg";
 import InstaIcon from "../../assets/icons/igGreen.svg";
 import LinkedinIcon from "../../assets/icons/linkedinGreen.svg";
 import TwitterIcon from "../../assets/icons/twitterGreen.svg";
+import YoutubeIcon from "../../assets/icons/youtubeGreen.svg";
 import { useState } from "react";
 
 type Inputs = {
@@ -265,7 +266,8 @@ export const Form = () => {
          <FacebookIcon  onClick={() => window.open("https://www.facebook.com/profile.php?id=61570908623491")}  className={styles.icons}/>
                                 <LinkedinIcon  onClick={() => window.open("https://www.linkedin.com/company/ews-learning/?viewAsMember=true")} className={styles.icons}/>
                                 <InstaIcon onClick={() => window.open("https://www.instagram.com/ews.learning/?hl=en")} className={styles.icons}/>
-                                <TwitterIcon  onClick={() => window.open("https://x.com/EWSLearning")} className={styles.icons}/>                             
+                                <TwitterIcon  onClick={() => window.open("https://x.com/EWSLearning")} className={styles.icons}/>
+                                <YoutubeIcon  onClick={() => window.open("https://www.youtube.com/channel/UCNPQ4KD37Wjy371x3geS0ew")} className={styles.icons}/>                             
                             </div>
                             </div>
      

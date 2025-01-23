@@ -5,6 +5,7 @@ import FacebookIcon from "@assets/icons/facebook.svg";
 import InstaIcon from "@assets/icons/instagram.svg";
 import LinkedinIcon from "@assets/icons/linkedin.svg";
 import TwitterIcon from "@assets/icons/twitter.svg";
+import YoutubeIcon from "@assets/icons/youtube.svg";
 import EWSLogo from "@assets/icons/ews-logo.svg";
 import GoToTop from "@assets/icons/to-top.svg";
 import Link from "next/link";
@@ -83,6 +84,10 @@ const Footer: React.FC = () => {
                 />
                 <TwitterIcon
                   onClick={() => window.open("https://x.com/EWSLearning")}
+                  className={styles.icons}
+                />
+                <YoutubeIcon
+                  onClick={() => window.open("https://www.youtube.com/channel/UCNPQ4KD37Wjy371x3geS0ew")} 
                   className={styles.icons}
                 />
               </div>
