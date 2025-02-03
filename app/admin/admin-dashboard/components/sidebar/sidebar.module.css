@@ -1,0 +1,69 @@
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 116px;
+    left: 0;
+    height: 100vh;
+    width: 160px;
+    background-color: #195829;
+    color: white;
+    padding-top: 30px; /* Adjust for header height */
+    transition: all 0.3s ease;
+      }
+  
+  .sidebaritem {
+    display: flex;
+    align-items: center;
+    padding: 24px 20px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebaritem:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+  
+  .sidebarlabel {
+    margin-left: 10px;
+  }
+  
+  .submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 180px;
+    background-color: #195829;
+    border: 1px solid #0b3215;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    visibility: hidden; /* Hide by default */
+  }
+  
+  .submenu button {
+    padding: 8px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submenu button:hover {
+    background-color: #ffffff;
+    color: black;
+  }
+  
+  /* Show submenu on hover */
+  .sidebaritem:hover .submenu {
+    visibility: visible;
+  }
+  
+  .submenu button:focus {
+    outline: none;
+  }
+  
+  

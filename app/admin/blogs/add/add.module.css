@@ -1,0 +1,33 @@
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .ql-editor {
+    min-height: 200px;
+  }
+  
+  .button {
+    background: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:disabled {
+    background: gray;
+    cursor: not-allowed;
+  }
+  
