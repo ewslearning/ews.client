@@ -1,6 +1,8 @@
 import classes from "./feedback.module.css";
 import Feed from '@assets/icons/feedbackIcon.svg';
 import AjayImg from '@assets/images/ajay-full.png';
+import NeelabhImg from '@assets/images/neelabh-full.png';
+import SaurabhImg from '@assets/images/saurabh-full.png';
 import FeedBackCarousel, { FeedBackCarouselProps } from "./carousel/carousel";
 
 const FeedBack: React.FC = () => {
@@ -13,14 +15,14 @@ const FeedBack: React.FC = () => {
           position: "Sustainability Manager",
         },
         {
-          image: AjayImg,
+          image: NeelabhImg,
           feedback:
             "This program made me rethink my approach to waste management. It was an enlightening experience!",
           name: "Neelabh Sawarn",
           position: "Environmental Scientist",
         },
         {
-          image: AjayImg,
+          image: SaurabhImg,
           feedback:
             "Amazing course! It gave me the tools and knowledge to implement green practices at my workplace.",
           name: "Saurabh",

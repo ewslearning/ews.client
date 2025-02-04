@@ -5,6 +5,7 @@ import FacebookIcon from "@assets/icons/facebook.svg";
 import InstaIcon from "@assets/icons/instagram.svg";
 import LinkedinIcon from "@assets/icons/linkedin.svg";
 import TwitterIcon from "@assets/icons/twitter.svg";
+import YoutubeIcon from "@assets/icons/youtube.svg";
 import EWSLogo from "@assets/icons/ews-logo.svg";
 import GoToTop from "@assets/icons/to-top.svg";
 import Link from "next/link";
@@ -15,6 +16,15 @@ const Footer: React.FC = () => {
       top: 0,
       behavior: "smooth",
     });
+  };
+
+  const openSocialMediaLink = (url: string) => {
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (isMobile) {
+      window.location.href = url;
+    } else {
+      window.open(url);
+    }
   };
 
   return (
@@ -61,7 +71,7 @@ const Footer: React.FC = () => {
               <div className={styles.iconContainer}>
                 <FacebookIcon
                   onClick={() =>
-                    window.open(
+                    openSocialMediaLink(
                       "https://www.facebook.com/profile.php?id=61570908623491"
                     )
                   }
@@ -69,7 +79,7 @@ const Footer: React.FC = () => {
                 />
                 <LinkedinIcon
                   onClick={() =>
-                    window.open(
+                    openSocialMediaLink(
                       "https://www.linkedin.com/company/ews-learning/?viewAsMember=true"
                     )
                   }
@@ -77,12 +87,24 @@ const Footer: React.FC = () => {
                 />
                 <InstaIcon
                   onClick={() =>
-                    window.open("https://www.instagram.com/ews.learning/?hl=en")
+                    openSocialMediaLink(
+                      "https://www.instagram.com/ews.learning/?hl=en"
+                    )
                   }
                   className={styles.icons}
                 />
                 <TwitterIcon
-                  onClick={() => window.open("https://x.com/EWSLearning")}
+                  onClick={() =>
+                    openSocialMediaLink("https://x.com/EWSLearning")
+                  }
+                  className={styles.icons}
+                />
+                <YoutubeIcon
+                  onClick={() =>
+                    openSocialMediaLink(
+                      "https://www.youtube.com/channel/UCNPQ4KD37Wjy371x3geS0ew"
+                    )
+                  }
                   className={styles.icons}
                 />
               </div>

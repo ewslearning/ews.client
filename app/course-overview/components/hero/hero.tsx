@@ -22,7 +22,7 @@ return (
               <div className={classes.mobileContainer}> 
     <Image src={MobHeroBg} alt="Mobile Hero bg" className={classes.mobBgImage}/>
     <div className={classes.mobContainer}>
-    <h2 className={classes.headingMob}>{title}</h2>
+    <h2 className={classes.headingMob}dangerouslySetInnerHTML={{ __html: title }}/>
     <Image src={image} alt="HeroTopImage" className={classes.topImage2}/>
     <div className={classes.durationImgMobContainer}>
      <Image src={Duration} alt="Hero Duration" className={classes.durationImgMob}/>

@@ -169,7 +169,7 @@
 .description {
   font-size: 14px;
   font-weight: 400;
-  padding-right: 90px;
+  padding-right: 0px;
   line-height: 24px;
   color: var(--text-4);
   padding-top: 16px;
@@ -198,7 +198,7 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  grid-template-columns: repeat(2, 240px);
+  grid-template-columns: repeat(2, 180px);
   gap: 12px;
 }
 

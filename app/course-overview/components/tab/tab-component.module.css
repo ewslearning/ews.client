@@ -134,6 +134,7 @@
  .paragraph {
   font-size: 14px;
   font-weight: 400;
+  line-height: 27px;
   color: var(--text-4);
   padding-right: 10%; 
   padding-bottom: 24px;
@@ -142,6 +143,7 @@
  .text {
   font-size: 14px;
   font-weight: 400;
+  line-height: 21px;
   color: var(--text-5);
   padding-left: 8px;
  }
@@ -156,6 +158,8 @@
 .checkIcon{
   height: 24px;
   width: 24px;
+  min-width: 24px;
+  min-height: 24px;
 }
 
   
