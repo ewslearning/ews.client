@@ -6,7 +6,7 @@ import AddBlog from "./add";
 export default function Add() {
   return (
     <div>
-    <AddBlog />
+    <AddBlog onSubmit={()=>{}} />
   </div>
   );
 }
