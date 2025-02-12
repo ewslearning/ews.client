@@ -3,6 +3,10 @@ import "./globals.css";
 import { poppinsFontClass } from "@app/home/theme/fonts/font";
 import Footer from "@components/footer/footer";
 import Header from "@components/header/header";
+import Script from "next/script";
+
+const GA_MEASUREMENT_ID = "G-QV52V79Q0Y";
+
 
 export const metadata: Metadata = {
   metadataBase:  new URL('https://ewslearning.com'),
@@ -20,8 +24,27 @@ export default function RootLayout({
 }: Readonly<{ 
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
+      <head>
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_MEASUREMENT_ID}');
+            `,
+          }}
+        />
+      </head>
       <body className={`${poppinsFontClass.className}`}>
         <Header />
         {children}
