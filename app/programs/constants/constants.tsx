@@ -92,7 +92,15 @@ const courses: CoursesInterface[] = [
       bulletPoints: ["Customizable based on the specific sector.", "Tailored to the size of the group."],
       mode: "Online/Offline",
       duration: "2 to 8 hours",
-    }
+    },
+    {
+      id: 10,
+    imageSrc: TileImg9,
+    title: "Sustainable Development\nGoals (SDG)",
+    bulletPoints: ["Introduction to Sustainable Development Goals", "Corporate Social Responsibility."],
+    mode: "Online/Offline",
+    duration: "1 hour",
+  }
   ];
 
   export default courses;

@@ -307,12 +307,39 @@ const coursesList : CourseOverviewProps[] = [
 "Predicting and managing environmental risks using AI technologies."],
         trainingModules: "Hands-on sessions on AI-driven sustainability solutions, data analytics for environmental management, and AI-powered resource efficiency.",
       
+    },
+    {
+      id: 10,
+      imageSrc: TileImg9,
+      title: "Sustainable<br>Development<br>Goals (SDG)",
+      description: "This program provides participants with knowledge of the United Nations Sustainable Development Goals (SDGs) and their impact on businesses, governments, and communities. Participants will gain practical skills in sustainability strategies, policy integration, and responsible resource management to contribute to a more sustainable future.",
+      mode: "Online/Offline",
+      duration: "1 hours",
+      lannguage: "English",
+      certification: "Yes",
+      overview: {
+        courseDescription: "Participants will learn about global sustainability challenges and how SDGs can be applied in various industries. The course includes specialized modules on sustainability reporting, ethical leadership, and responsible resource management, helping individuals and organizations contribute effectively to sustainable development.",
+       whatYoullLearn: {
+          description: "This course provides insights into the practical applications of sustainability and global responsibility. It explores actionable strategies for corporate, public, and personal initiatives aligned with the SDGs.",
+          points: [
+          ],
+       },
+       certification: "Participants will earn a Certificate in Sustainable Development Goals (SDG) Course, recognizing their ability to use SDGs in various industries.",
+
+    },
+      topicsCovered: ["Introduction to the 17 Sustainable Development Goals",
+"The role of businesses, governments, and individuals in achieving SDGs",
+"Sustainable resource management and environmental responsibility",
+"Corporate Social Responsibility (CSR) and ethical leadership",
+"Strategies for integrating SDGs into business and policy frameworks"],
+        trainingModules: "Module 1: Understanding the 17 SDGs and Their Importance<br>Module 2: Sustainability in Business and Policy-Making<br>Module 3: Corporate Social Responsibility (CSR) & Ethical Practices<br>Module 4: Environmental Sustainability and Green Initiatives",
+      
     }
   ];
 
 const CourseDescription: React.FC = () => {
     const searchParams = useSearchParams();
-    const id = parseInt(searchParams.get('id') ?? "0", 10);
+    const id = parseInt(searchParams?.get('id') ?? "0", 10);
     const relatedCourses = getThreeCoursesExcludingCurrent(courses, id);
   
   const router = useRouter();
