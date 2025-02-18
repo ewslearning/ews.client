@@ -357,7 +357,7 @@ return (<div>
             </div>
             <div className={classes.subheaderText}>{selectedCourse.title.replace(/<br>/g, " ")}
               </div >
-              <p className={classes.description}>{selectedCourse.description}</p>
+              <p className={classes.description} dangerouslySetInnerHTML={{__html: selectedCourse.description}}></p>
               </div >
               <div className={classes.features}>
                     <div className={classes.textColumn}>
