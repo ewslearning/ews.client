@@ -3,7 +3,7 @@
 .tileContainer {
     background-color: var(--surface-3);
     width: 390px;
-    height: 608px;
+    height: 500px;
     padding: 0;
     margin: 0;
     display: flex;
@@ -27,7 +27,7 @@
 
 .imageContainer {
     width: 100%; /* Full width */
-    height: 350px;
+    height: 246px;
     overflow: hidden;
     padding: 0;
     justify-content: center;

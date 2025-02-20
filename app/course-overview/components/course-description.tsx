@@ -6,8 +6,6 @@ import Calendar from "../assets/icons/calendar.svg";
 import Mode from "../assets/icons/mode.svg";
 import Language from "../assets/icons/language.svg";
 import Certification from "../assets/icons/certification.svg";
-import TabComponent, { OverviewProps } from "./tab/tab-component";
-import TileComponent from "../../programs/components/tile/tile";
 import TileImg1 from "../../home/assets/images/waste-management.png";
 import TileImg2 from "../../home/assets/images/Corporate Sustainability Programs.png";
 import TileImg3 from "../../home/assets/images/Sustainable Workforces.png";
@@ -20,6 +18,11 @@ import TileImg9 from "../../home/assets/images/ai-and-sustainability.png";
 import courses, { CoursesInterface } from "@app/programs/constants/constants";
 import { StaticImageData } from "next/image";
 import Hero from "./hero/hero";
+
+import Check from "../assets/icons/check-circle.svg";
+import OurPartners from "./our-partners/our-partners";
+import RelatedCourses from "./related-courses";
+import { OverviewProps } from "./tab/tab-component";
 
 
 
@@ -83,8 +86,8 @@ const coursesList : CourseOverviewProps[] = [
       id: 1,
       imageSrc: TileImg1,
       title: "Waste<br>Management &<br>Recycling<br>Programs",
-      description: "This program provides participants with knowledge of waste management practices tailored for the corporate and public sectors. Participants will gain practical skills in waste classification, handling, disposal, and compliance with environmental regulations.<br><br>The program also explores customized recycling solutions and strategies for handling various waste types, focusing on reducing environmental impact and meeting sustainability goals.",
-      mode: "Online/Offline",
+      description: "Our Waste Management & Recycling Program equips participants with in-depth knowledge of sustainable waste management practices tailored for both corporate and public sectors. This program covers waste classification, safe handling, disposal methods, and regulatory compliance, ensuring businesses and organizations adhere to environmental laws and sustainability standards.<br><br>Participants will also explore customized recycling solutions, circular economy strategies, and innovative waste reduction techniques to minimize environmental impact. By mastering eco-friendly waste disposal and resource recovery methods, attendees can contribute to a greener, more sustainable future while helping organizations achieve their corporate social responsibility (CSR) and ESG (Environmental, Social, and Governance) goals.<br><br>Ideal for professionals in environmental management, sustainability consulting, and corporate compliance, this program provides the skills and insights needed to drive effective waste management initiatives.",
+        mode: "Online/Offline",
       duration: "2 to 8 hours",
       lannguage: "English",
       certification: "Yes",
@@ -92,19 +95,17 @@ const coursesList : CourseOverviewProps[] = [
          courseDescription: "Participants will learn about waste classification, recycling processes, and compliance with environmental standards. The course includes specialized modules on hazardous waste handling, thermal desorption, and bioremediation.",
         whatYoullLearn: {
            description: "The course introduces participants to key waste management and recycling techniques, covering economic considerations and regulatory compliance. It offers interactive modules on hazardous waste handling and other advanced recycling techniques.",
-           points: ["Waste classification and handling techniques.",
-"Recycling processes and compliance with regulations.",
+           points: ["Waste classification, handling, and disposal techniques.",
+"Recycling processes, economic considerations, and compliance with regulations..",
 "Customized recycling solutions for different waste types.",
 "Hazardous waste handling and bioremediation.",
  "Economic considerations in waste management.",
            ],
         },
-        certification: "Participants who complete the course will receive a Certificate in Waste Management and Recycling, verifying their ability to manage waste and recycling in compliance with environmental standards.",
+        certification: "Participants who complete the course will receive a Certificate in Waste Management and Recycling, verifying their ability to manage waste and recycling in compliance with environmental standards.<br>This industry-recognized certification demonstrates your ability to implement eco-friendly waste disposal, recycling strategies, and environmental sustainability initiatives in corporate, industrial, and public sectors.",
 
      },
-      topicsCovered: ["Waste classification, handling, and disposal techniques.", 
-        "Recycling processes, economic considerations, and compliance with regulations.",
-      "Customized recycling solutions for different waste types."],
+      topicsCovered: [],
         trainingModules: "Interactive modules on hazardous waste handling, thermal desorption, bioremediation, and more.",
       
     },
@@ -438,23 +439,35 @@ return (<div>
           <button onClick={handleNavigation} className={classes.contactButton}>Contact Us</button></div>
               </div>
 
-
-              <TabComponent overview={selectedCourse.overview} topicsCovered={selectedCourse.topicsCovered} trainingModules={selectedCourse.trainingModules} />
-              <div className={classes.relatedCoursesContainer}>
-              <span className={classes.heading}>Related Courses</span>
-              <div className={classes.gridContainer}>
-        {relatedCourses.map((course, index) => (
-          <TileComponent
-            key={index}
-            id={course.id}
-            imageSrc={course.imageSrc}
-            title={course.title}
-            bulletPoints={course.bulletPoints}
-            mode={course.mode}
-            duration={course.duration}
-          />
-        ))}
-      </div></div>
+              {/* <TabComponent overview={selectedCourse.overview} topicsCovered={selectedCourse.topicsCovered} trainingModules={selectedCourse.trainingModules} /> */}
+              {/* Overview */}
+              <div key="overview" className={classes.tabContentContainer}>
+      <h5 className={classes.contentHeading}>Course Description</h5>
+      <p className={classes.paragraph}>{selectedCourse.overview.courseDescription}</p>
+      <h5 className={classes.contentHeading}>What You&apos;ll Learn from This Course</h5>
+      <p className={classes.paragraph}>{selectedCourse.overview.whatYoullLearn.description}</p>
+      {selectedCourse.overview.whatYoullLearn.points.map((e, index) => <div key={index} className={classes.iconSpanDiv}><Check className={classes.checkIcon}/><span className={classes.text}>{e}</span></div>)}
+      {/* Topics Covered */}
+    <div key="topics">
+      {selectedCourse.topicsCovered.map((e, index)=> <div key={index} className={classes.iconSpanDiv}><Check className={classes.checkIcon}/><span className={classes.text}>{e}</span></div>)}
+     
+        </div>
+        {/* TrainingModules */}
+        <div key="modules">
+        <h5 className={classes.contentHeading}>Training Modules</h5>
+      <p className={classes.paragraph} dangerouslySetInnerHTML={{ __html: selectedCourse.trainingModules }}></p>
+    </div>
+    <div className={classes.certificationContainer}>
+      <h5 className={classes.contentHeadingCertification}>🎓 Certification of Completion – Your Green Badge of Honor! 🌍</h5>
+      <p className={classes.paragraphCertification} dangerouslySetInnerHTML={{ __html: selectedCourse.overview.certification }}></p>
+      </div>
+      <div>
+        <h5 className={classes.contentHeading}>Requirements</h5>
+      <p className={classes.paragraph} >No experience and requirements are required.</p>
+    </div>
+    </div>
+    <OurPartners/>
+<RelatedCourses relatedCourses={relatedCourses}/>
               </div>);
               };
 
