@@ -50,3 +50,33 @@
   font-size: 18px; /* Adjust font size */
   color: #333333; /* Adjust text color */
 }
+
+
+
+@media (max-width: $breakpoint-lg){
+  .text {
+    margin-top: 8px; /* Space between image and text */
+    font-size: 14px; /* Adjust font size */
+    color: #333333; /* Adjust text color */
+  }
+
+  .image {
+    width: 60%; 
+    height: auto; /* Maintain aspect ratio and keep images in bounds */
+    object-fit: contain; /* Ensure the image fills the wrapper */
+  }
+
+  .imageWrapper {
+    display: flex; /* Maintain alignment */
+    align-items: center;
+    justify-content: center;
+    width: 100px; /* Adjust image size */
+    height: 100px; /* Adjust image size */
+    margin-inline: 30px; /* Space between image-text combos */
+    overflow: hidden;
+  }
+
+  .marqueeTop {
+    padding-bottom: 10px;
+  }
+}

@@ -10,7 +10,7 @@
   text-align: center;
 }
 
-.subHeaderText {
+.subHeaderText { font-size: 18px;
   color: var(--green-10);
   font-weight: 500;
 }

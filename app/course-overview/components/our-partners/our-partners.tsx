@@ -11,7 +11,7 @@ const OurPartners: React.FC = () => {
         </h2>
         {/* <h1 className={classes.headerText}>Our Partners</h1> */}
       </div>
-      <ImageTextMarquee/>
+      <ImageTextMarquee/> 
       {/* <div className={classes.companiesContainer}>
         <div className={classes.image1}>
         <Image src={Onesb} alt="one school of business"  />
