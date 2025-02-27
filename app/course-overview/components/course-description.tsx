@@ -678,7 +678,7 @@ return (<div>
       <p className={classes.paragraph} >No experience and requirements are required.</p>
     </div>
     </div>
-    <Faq faqs={selectedCourse.faqs} onBuyCourse={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSfbXbqpmm1hatXrej42xjPyTh1CjJAJw4r_zNlB4V6K_-aOFQ/viewform?usp=header", "_blank")}/>
+    <Faq faqs={selectedCourse.faqs}/>
     <OurPartners/>
 <RelatedCourses relatedCourses={relatedCourses}/>
               </div>);
