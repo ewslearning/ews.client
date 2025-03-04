@@ -1,0 +1,93 @@
+.benefitsSection {
+  display: flex;
+  padding: 3rem 0;
+  background: linear-gradient(to bottom, #E6E6E5 100%, #F4F4F2 0%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.headerSection {
+  margin-bottom: 2rem;
+}
+
+.tag {
+  display: inline-block;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 84px;
+  color: #333333;
+   text-align: center;
+  margin-top: 0.5rem;
+}
+
+.description {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 42px;
+  color: #333333;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.flexWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.industryCard {
+  flex: 1 1 calc(40% - 1.5rem); /* Two cards per row */
+  max-width: calc(40% - 1.5rem);
+  background: white;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* If it's the only item in the last row, make it take full width */
+.industryCard:nth-child(odd):last-child {
+  flex-basis: 100%;
+  padding: 60px;
+  max-width: calc((40% - 0.7rem) * 2);
+}
+
+@media (max-width: 768px) {
+  .industryCard {
+      flex: 1 1 100%; /* Single column layout on smaller screens */
+      max-width: 100%;
+  }
+}
+
+.icon {
+  color: #195219;
+  width: 2rem;
+  height: 2rem;
+}
+
+.industryTitle {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.industryDescription {
+  font-size: 1rem;
+  color: var(--muted-foreground);
+  margin-top: 0.5rem;
+}

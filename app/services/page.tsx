@@ -1,8 +1,12 @@
 
-import ContactUs from "@app/home/components/contact-us/contact-us";
 import type { Metadata } from 'next'
 import Hero from "./components/hero/hero";
 import Packages from "./components/packages/packages";
+import WasteAuditServices from "./components/waste-audit-services/waste-audit-services";
+import WasteAuditProcess from "./components/waste-audit-process/waste-audit-process";
+import Benefits from "./components/benefits/benefits";
+import WhyChooseUs from "./components/why-choose-us/why-choose-us";
+import ContactForPricing from "./components/contact-for-pricing/contact-for-pricing";
 
 
 export default function Services() {
@@ -10,7 +14,11 @@ export default function Services() {
     <>
     <Hero/>
     <Packages/>
-    <ContactUs/>
+    <WasteAuditServices/>
+    <WasteAuditProcess/>
+    <Benefits/>
+    <WhyChooseUs/>
+    <ContactForPricing/>
     </>
   );
 }
