@@ -3,7 +3,6 @@ import type { Metadata } from 'next';
 import OurPartners from '@app/home/components/our-partners/our-partners';
 
 import ContactForPricing from '@app/services/components/contact-for-pricing/contact-for-pricing';
-import LottieAnim from './components/lottie';
 import Hero from './components/hero/hero';
 import WhatIsProgram from './components/what-is-this-program/what-is-this-program';
 import WhatYoullLearn from './components/what-youll-learn/what-youll-learn';

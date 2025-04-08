@@ -19,7 +19,7 @@ const WhatYoullLearn: React.FC = () => {
     <section id="modules" className={classes.modulesSection}>
       <div className={classes.container}>
         <div className={classes.textCenter}>
-          <h2 className={classes.heading}>What You'll Learn</h2>
+          <h2 className={classes.heading}>What You&apos;ll Learn</h2>
           <p className={classes.subtext}>
             Each module is packed with engaging content, creativity boosters, and climate leadership tools
           </p>
@@ -59,7 +59,7 @@ const WhatYoullLearn: React.FC = () => {
           <ModuleCard
             number={6}
             title="Circular Economy & Fast Fashion Reimagined"
-            description="Examine the fashion industry's environmental footprint and discover sustainable alternatives."
+            description="Examine the fashion industry&apos;s environmental footprint and discover sustainable alternatives."
             icon={<Shirt className={classes.icon} />}
           />
           <ModuleCard

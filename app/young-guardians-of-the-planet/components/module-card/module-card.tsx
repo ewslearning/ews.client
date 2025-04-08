@@ -12,7 +12,7 @@ interface ModuleCardProps {
   icon: React.ReactNode;
 }
 
-const ModuleCard: React.FC<ModuleCardProps> = ({ number, title, description, icon }) => {
+const ModuleCard: React.FC<ModuleCardProps> = ({  title, description, icon }) => {
   return (
     <Card className={classes.card}>
       <CardHeader className={classes.cardHeader}>
