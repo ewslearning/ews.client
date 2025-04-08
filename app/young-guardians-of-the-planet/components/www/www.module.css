@@ -1,0 +1,63 @@
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.subtext {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.spiralWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+}
+
+.spiralImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.module {
+  position: absolute;
+  width: 160px;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 0.8rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Absolute positions based on approved spiral SVG image */
+
+.m0 { top: 6%; left: 16%; transform: translate(-50%, -50%); }
+.m1 { top: 18%; left: 75%; transform: translate(-50%, -50%); }
+.m2 { top: 36%; left: 82%; transform: translate(-50%, -50%); }
+.m3 { top: 53%; left: 25%; transform: translate(-50%, -50%); }
+.m4 { top: 64%; left: 25%; transform: translate(-50%, -50%); }
+.m5 { top: 75%; left: 60%; transform: translate(-50%, -50%); }
+.m6 { top: 85%; left: 35%; transform: translate(-50%, -50%); }
+.m7 { top: 92%; left: 55%; transform: translate(-50%, -50%); }
+
+@media screen and (min-width: 1024px) {
+  .spiralWrapper {
+    width: 50%;
+  }
+}

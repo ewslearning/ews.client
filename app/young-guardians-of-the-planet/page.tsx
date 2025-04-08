@@ -7,16 +7,20 @@ import Hero from './components/hero/hero';
 import WhatIsProgram from './components/what-is-this-program/what-is-this-program';
 import WhatYoullLearn from './components/what-youll-learn/what-youll-learn';
 
+import Accordion from './components/ui/accord';
+import Deliverables from './components/real-world-deliverables/real-world-deliverables';
+
 
 export default function YoungGuardiansOfThePlanet() {
   return (
     <>
     <Hero/>
      <WhatIsProgram/>
-    {/* <LottieAnim/> */}
+    {/* <LottieParallax/> */}
     <WhatYoullLearn/>
-    
-    <OurPartners />
+    <Accordion/>
+    <Deliverables/>
+    <OurPartners />  
     <ContactForPricing/>
     </>
   );
