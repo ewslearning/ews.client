@@ -9,6 +9,7 @@ import WhatYoullLearn from './components/what-youll-learn/what-youll-learn';
 
 import Accordion from './components/ui/accord';
 import Deliverables from './components/real-world-deliverables/real-world-deliverables';
+import DeliverablesCapsules from './components/impact-who-can-use-this';
 
 
 export default function YoungGuardiansOfThePlanet() {
@@ -20,6 +21,7 @@ export default function YoungGuardiansOfThePlanet() {
     <WhatYoullLearn/>
     <Accordion/>
     <Deliverables/>
+    <DeliverablesCapsules/>
     <OurPartners />  
     <ContactForPricing/>
     </>
