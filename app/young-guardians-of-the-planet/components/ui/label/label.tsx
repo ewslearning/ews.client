@@ -3,7 +3,7 @@
 import * as React from "react"
 import * as LabelPrimitive from "@radix-ui/react-label"
 import clsx from "clsx"
-import styles from "./Label.module.css"
+import styles from "./label.module.css"
 
 const Label = React.forwardRef<
   React.ElementRef<typeof LabelPrimitive.Root>,
