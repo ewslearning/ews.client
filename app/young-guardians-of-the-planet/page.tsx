@@ -10,6 +10,8 @@ import WhatYoullLearn from './components/what-youll-learn/what-youll-learn';
 import Accordion from './components/ui/accord';
 import Deliverables from './components/real-world-deliverables/real-world-deliverables';
 import DeliverablesCapsules from './components/impact-who-can-use-this';
+import ActivitiesImpact from './components/sample-activities-and-impact/sample-activities';
+import ImpactCloverSection from './components/your-impact/your-impact';
 
 
 export default function YoungGuardiansOfThePlanet() {
@@ -22,6 +24,8 @@ export default function YoungGuardiansOfThePlanet() {
     <Accordion/>
     <Deliverables/>
     <DeliverablesCapsules/>
+    <ActivitiesImpact/>
+    <ImpactCloverSection/>
     <OurPartners />  
     <ContactForPricing/>
     </>

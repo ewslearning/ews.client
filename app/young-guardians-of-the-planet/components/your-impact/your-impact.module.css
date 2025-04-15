@@ -1,0 +1,114 @@
+.container {
+    position: relative;
+    padding: 6rem 2rem;
+    background: url('../../assets/images/recyclebg.png') center/cover no-repeat;
+    color: #fff;
+    overflow: hidden;
+    min-height: 100vh;
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+    color: #d2f5dd;
+  }
+  
+  .clover {
+    position: relative;
+    width: 540px;
+    height: 540px;
+    margin: 0 auto;
+  }
+  
+  .leaf {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fcfcfc;
+    font-weight: 500;
+    padding: 1rem;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 28px rgba(0, 255, 85, 0.205);
+    opacity: 0;
+    animation: fadeInOut 6s infinite;
+    text-align: center;
+    
+  }
+  
+  .icon {
+    margin-bottom: 0.5rem;
+  }
+  
+  .top {
+    top: 0;
+    left: 0%;
+    transform: translate(-50%, 0) rotate(180deg);
+    border-radius: 50% 50% 0 50%;
+    animation-delay: 0s;
+  }
+  
+  .right {
+    left: 50%;
+    top: 0%;
+    transform: translate(0, -50%) rotate(-90deg);
+    border-radius: 50% 50% 50% 0; /* Flip shape to point inward */
+    animation-delay: 1.5s;
+  }
+  
+  .bottom {
+   top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(0deg);
+    border-radius: 0 50% 50% 50%; /* Flip shape to point inward */
+    animation-delay: 3s;
+  }
+  
+  .left {
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%) rotate(90deg);
+    border-radius: 50% 0 50% 50%;
+    animation-delay: 4.5s;
+  }
+  
+  .leaf span {
+    display: block;
+    font-size: 28px;
+    line-height: 1.2;
+  }
+  
+  @keyframes fadeInOut {
+    0% { opacity: 0; transform: scale(0.9) rotate(var(--rotate)); }
+    15% { opacity: 1; transform: scale(1) rotate(var(--rotate)); }
+    50% { opacity: 1; }
+    85% { opacity: 1; transform: scale(1.05); }
+    100% { opacity: 0; transform: scale(0.9) rotate(var(--rotate)); }
+  }
+  
