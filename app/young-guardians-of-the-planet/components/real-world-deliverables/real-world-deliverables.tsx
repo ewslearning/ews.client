@@ -5,28 +5,72 @@ import type { ComponentType } from 'react';
 import type { LottieComponentProps } from 'lottie-react';
 import styles from './real-world-deliverables.module.css';
 import animationData from '../../assets/lottie/greenhero.json';
+import { FileText, BookOpenCheck, NotebookText, ImagePlus, BadgeCheck, Users2, Handshake, Globe2 } from 'lucide-react';
 
-const bulletPoints = [
-  'A final sustainability project',
-  'A 2-min eco-message video or campaign',
-  'A personalized “Young Sustainability Champion” certificate',
-  'Their own reflection & impact journal',
+interface WhatsIncluded {
+  title: string;
+  content: string;
+  icon: JSX.Element;
+}
+
+const accordionData: WhatsIncluded[] = [
+  {
+      title: 'Interactive Workbooks',
+      content: 'Engaging digital workbooks with activities, challenges, and reflection prompts to deepen learning.',
+      icon: <FileText size={24} />,
+  },
+  {
+      title: 'Student Project Template',
+      content: 'Structured templates to help students plan, execute, and document their sustainability projects.',
+      icon: <NotebookText size={24} />,
+  },
+  {
+      title: 'Reflection Journals',
+      content: 'Personal journals for students to track their learning journey and environmental impact.',
+      icon: <BookOpenCheck size={24} />,
+  },
+  {
+      title: 'DIY & Media Projects',
+      content: 'Hands-on projects and creative media assignments that apply learning to real-world challenges.',
+      icon: <ImagePlus size={24} />,
+  },
+  {
+      title: 'Digital Certificate',
+      content: 'Official recognition of achievement that can be shared with schools and on college applications.',
+      icon: <BadgeCheck size={24} />,
+  },
+  {
+      title: 'Peer-to-Peer Feedback',
+      content: 'Collaborative learning tools that enable students to share ideas and provide constructive feedback.',
+      icon: <Users2 size={24} />,
+  },
+  {
+      title: 'Mentorship Support',
+      content: 'Guidance from experienced mentors to support students throughout their journey.',
+      icon: <Handshake size={24} />,
+  },
+  {
+      title: 'Curated Resources',
+      content: 'Access to expert articles, videos, and tools to deepen their understanding of sustainability topics.',
+      icon: <Globe2 size={24} />,
+  },
 ];
 
 const RealWorld = () => {
+  const firstColumn = accordionData.slice(0, 4);
+  const secondColumn = accordionData.slice(4, 8);
+
   const containerRef = useRef<HTMLDivElement>(null);
   const [shouldPlay, setShouldPlay] = useState(false);
   const [showContent, setShowContent] = useState(false);
   const [LottieComponent, setLottieComponent] = useState<ComponentType<LottieComponentProps> | null>(null);
 
-  // ✅ Dynamically load the Lottie component
   useEffect(() => {
     import('lottie-react').then((mod) => {
       setLottieComponent(() => mod.default);
     });
   }, []);
 
-  // ✅ Play when in viewport
   useEffect(() => {
     const node = containerRef.current;
 
@@ -48,7 +92,6 @@ const RealWorld = () => {
     );
 
     if (node) observer.observe(node);
-
     return () => {
       if (node) observer.unobserve(node);
     };
@@ -56,7 +99,6 @@ const RealWorld = () => {
 
   return (
     <div ref={containerRef} className={styles.wrapper}>
-      {/* ✅ Wait for LottieComponent and animationData before rendering */}
       {LottieComponent && shouldPlay && animationData && (
         <LottieComponent
           animationData={animationData}
@@ -71,22 +113,29 @@ const RealWorld = () => {
         <>
           <div className={`${styles.blurOverlay} ${styles.blurVisible}`} />
           <div className={styles.content}>
-            <h2 className={styles.heading}>Real-World Deliverables</h2>
+            <h2 className={styles.heading}>What&apos;s Included</h2>
             <p className={styles.description}>
-              By the end of the program, students walk away with tangible proof of their impact—creative
-              projects, personal reflections, and tools to continue their sustainability journey in the
-              real world.
+              Our comprehensive program provides everything you need to succeed.
             </p>
-            <div className={styles.cards}>
-              {bulletPoints.map((point, idx) => (
-                <div
-                  key={idx}
-                  className={styles.card}
-                  style={{ animationDelay: `${idx * 0.06}s` }}
-                >
-                  {point}
-                </div>
-              ))}
+            <div className={styles.columns}>
+              <div className={styles.column}>
+                {firstColumn.map((item, index) => (
+                  <div key={index} className={styles.card}>
+                      <div className={styles.icon}>{item.icon}</div>
+                    <h3 className={styles.cardTitle}>{item.title}</h3>
+                    <p className={styles.cardText}>{item.content}</p>
+                  </div>
+                ))}
+              </div>
+              <div className={styles.column}>
+                {secondColumn.map((item, index) => (
+                  <div key={index} className={styles.card}>
+                    <div className={styles.icon}>{item.icon}</div>
+                    <h3 className={styles.cardTitle}>{item.title}</h3>
+                    <p className={styles.cardText}>{item.content}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </>
