@@ -70,6 +70,22 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
           gender: "",
           schoolName: "",
         });
+        const fullName = `${formData.firstName} ${formData.lastName}`.trim();
+         // Build Google Form prefilled URL
+      const query = new URLSearchParams({
+        "usp":"pp_url",
+        "entry.1000020": fullName,            // Full Name
+        "entry.1000025": formData.email,      // Email
+        "entry.1000022": formData.phone,      // Phone
+        "entry.1110581335": formData.age,        // Age
+        "entry.1283564387": formData.schoolName, // School Name
+      });
+
+      const googleFormURL = `https://docs.google.com/forms/d/e/1FAIpQLSf7qnz34NPBjct2XAKIka2a9GufkQLbe3dUilLgOv6d8xcZuA/viewform?${query.toString()}`;
+
+      setTimeout(() => {
+        window.open(googleFormURL, "_blank");
+      }, 1500);
         setTimeout(() => {
           onClose();
           setStatusMessage("");
@@ -150,7 +166,7 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
           </div>
 
           <Button className={styles.submitButton} disabled={isSubmitting}>
-            {isSubmitting ? "Submitting..." : "Submit"}
+            {isSubmitting ? "Submitting..." : "Proceed"}
           </Button>
 
           {statusMessage && <p className={styles.statusMessage}>{statusMessage}</p>}

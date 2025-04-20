@@ -1,20 +1,18 @@
 'use client';
 
+import { useOfferCountdown } from '@app/young-guardians-of-the-planet/services/use-countdown';
 import styles from './offer-banner.module.css';
-import { useCountdown } from '../use-countdown';
 
 export default function OfferBanner() {
  
-  const timeLeft = useCountdown(new Date('2025-05-15T23:59:59'));
-
+  const timeLeft = useOfferCountdown();
+  if (!timeLeft) return null;
   return (
     <div className={styles.banner}>
       <span>
         Hurry up to get <strong>50% off</strong>. Only{' '}
         <span className={styles.timer}>
-          {timeLeft.days}d {timeLeft.hours.toString().padStart(2, '0')}h{' '}
-          {timeLeft.minutes.toString().padStart(2, '0')}m{' '}
-          {timeLeft.seconds.toString().padStart(2, '0')}s
+        {timeLeft.d}d {timeLeft.h}h {timeLeft.m}m {timeLeft.s}s
         </span>{' '}
         left.
       </span>

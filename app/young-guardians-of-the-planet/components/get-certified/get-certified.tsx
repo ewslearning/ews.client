@@ -1,14 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import { Award, Clock, CheckCircle, Sparkles, ArrowRight } from "lucide-react";
+import { Award, Clock, CheckCircle, Sparkles, AlertCircle, ArrowRight } from "lucide-react";
 import styles from "./get-certified.module.css";
 import Button from "@app/home/components/common/button/button";
-import { useCountdown } from "../ui/use-countdown";
+import { useOfferCountdown } from "@app/young-guardians-of-the-planet/services/use-countdown";
 
 export default function CertificationSection() {
   const [isAnimating, setIsAnimating] = useState(false);
-  const timeLeft = useCountdown(new Date('2025-05-15T23:59:59'));
+  const timeLeft = useOfferCountdown();
+
+  const offerActive = timeLeft && (timeLeft.d || timeLeft.h || timeLeft.m || timeLeft.s);
 
   return (
     <div className={styles.wrapper}>
@@ -19,6 +21,7 @@ export default function CertificationSection() {
         </div>
 
         <div className={styles.gridContainer}>
+          {/* LEFT INFO SECTION */}
           <div className={styles.infoSection}>
             <div className={styles.badge}>
               <Award className={styles.badgeIcon} />
@@ -53,52 +56,83 @@ export default function CertificationSection() {
             </ul>
           </div>
 
+          {/* RIGHT OFFER SECTION */}
           <div className={styles.offerSection}>
-            <div
-              className={`${styles.offerBanner} ${isAnimating ? styles.animated : ""}`}
-              onMouseEnter={() => setIsAnimating(true)}
-              onMouseLeave={() => setIsAnimating(false)}
-            >
-              Limited Time Offer!
-            </div>
-
-            <div className={styles.offerCard}>
-              <div className={styles.cardContent}>
-                <Sparkles className={styles.cardIcon} />
-
-                <h3 className={styles.cardTitle}>Special 50% Discount</h3>
-
-                <p className={styles.cardText}>
-                  Become a certified Young Sustainability Champion and start making a difference today!
-                </p>
-
-                <div className={styles.priceGroup}>
-                  <span className={styles.originalPrice}>₹2,999</span>
-                  <span className={styles.discountedPrice}>₹1,499</span>
+            {offerActive ? (
+              <>
+                <div
+                  className={`${styles.offerBanner} ${isAnimating ? styles.animated : ""}`}
+                  onMouseEnter={() => setIsAnimating(true)}
+                  onMouseLeave={() => setIsAnimating(false)}
+                >
+                  Limited Time Offer!
                 </div>
 
-                <div className={styles.timerBox}>
-                  <Clock className={styles.timerIcon} />
-                  <span className={styles.timerText}>
-                    Offer ends in{" "}
-                    <span className={styles.timerBold}>
-                      {timeLeft.days}d {String(timeLeft.hours).padStart(2, '0')}h{" "}
-                      {String(timeLeft.minutes).padStart(2, '0')}m{" "}
-                      {String(timeLeft.seconds).padStart(2, '0')}s
-                    </span>
-                  </span>
+                <div className={styles.offerCard}>
+                  <div className={styles.cardContent}>
+                    <Sparkles className={styles.cardIcon} />
+
+                    <h3 className={styles.cardTitle}>Special 50% Discount</h3>
+
+                    <p className={styles.cardText}>
+                      Become a certified Young Sustainability Champion and start making a difference today!
+                    </p>
+
+                    <div className={styles.priceGroup}>
+                      <span className={styles.originalPrice}>₹2,999</span>
+                      <span className={styles.discountedPrice}>₹1,499</span>
+                    </div>
+
+                    <div className={styles.timerBox}>
+                      <Clock className={styles.timerIcon} />
+                      <span className={styles.timerText}>
+                        Offer ends in{" "}
+                        <span className={styles.timerBold}>
+                           {String(timeLeft.h).padStart(2, "0")}h{" "}
+                          {String(timeLeft.m).padStart(2, "0")}m{" "}
+                          {String(timeLeft.s).padStart(2, "0")}s
+                        </span>
+                      </span>
+                    </div>
+
+                    <Button className={styles.ctaButton}>
+                      Claim Your Discount
+                      <ArrowRight className={styles.ctaIcon} />
+                    </Button>
+
+                    <p className={styles.footnote}>
+                      Join 5,000+ teens already certified as Young Sustainability Champions
+                    </p>
+                  </div>
                 </div>
-
-                <Button className={styles.ctaButton}>
-                  Claim Your Discount
-                  <ArrowRight className={styles.ctaIcon} />
-                </Button>
-
-                <p className={styles.footnote}>
-                  Join 5,000+ teens already certified as Young Sustainability Champions
-                </p>
+              </>
+            ) : (
+                <div className={styles.offerCard}>
+                <div className={styles.cardContent}>
+                  <Sparkles className={styles.cardIcon} />
+              
+                  <h3 className={styles.cardTitle}>Your Journey Starts Here</h3>
+              
+                  <p className={styles.cardText}>
+                  Become a certified Young Sustainability Champion and gain the tools, knowledge, and recognition to drive real change in your community.
+                  </p>
+              
+                  <div className={styles.priceGroup}>
+                    <span className={styles.onlyPrice}>₹2,999</span>
+                  </div>
+              
+                  <Button className={styles.ctaButton}>
+                    Enroll Now
+                    <ArrowRight className={styles.ctaIcon} />
+                  </Button>
+              
+                  <p className={styles.footnote}>
+                    Thousands have already joined — now it's your turn to lead the way.
+                  </p>
+                </div>
               </div>
-            </div>
+              
+            )}
           </div>
         </div>
       </div>
