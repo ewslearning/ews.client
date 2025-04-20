@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Award, Clock, CheckCircle, Sparkles, AlertCircle, ArrowRight } from "lucide-react";
+import { Award, Clock, CheckCircle, Sparkles,  ArrowRight } from "lucide-react";
 import styles from "./get-certified.module.css";
 import Button from "@app/home/components/common/button/button";
 import { useOfferCountdown } from "@app/young-guardians-of-the-planet/services/use-countdown";
@@ -127,7 +127,7 @@ export default function CertificationSection() {
                   </Button>
               
                   <p className={styles.footnote}>
-                    Thousands have already joined — now it's your turn to lead the way.
+                    Thousands have already joined — now it&apos;s your turn to lead the way.
                   </p>
                 </div>
               </div>
