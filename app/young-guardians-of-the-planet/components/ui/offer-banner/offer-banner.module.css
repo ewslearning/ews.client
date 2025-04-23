@@ -36,3 +36,19 @@
     background-color: #bbf7d0;
   }
   
+
+
+  @media (max-width: $breakpoint-md) {
+    .banner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #064e3b;
+      color: #ffffff;
+      padding: 0.75rem 1.5rem;
+      font-size: 0.90rem;
+      font-weight: 500;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+  }
