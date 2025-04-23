@@ -40,3 +40,48 @@
     color: black; /* green-600 */
   }
   
+
+  
+  @media (max-width: $breakpoint-md) { 
+    .modulesSection {
+      padding: 5% 1rem;
+      background-color: white;
+    }
+    
+    .container {
+      max-width: 100%;
+    }
+    
+    .textCenter {
+      text-align: center;
+      margin-bottom: 1.4rem;
+    }
+    
+    .heading {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 0.3rem;
+    }
+    
+    .subtext {
+      max-width: 80%;
+      margin: 0 auto;
+      color: #4b5563;
+      font-size: 14px;
+      line-height: 1.4rem;
+    }
+    
+    .modulesGrid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      border: none;
+    }
+    
+    .icon {
+      height: 1.5rem;
+      width: 1.5rem;
+      color: black; /* green-600 */
+    }
+    
+  }

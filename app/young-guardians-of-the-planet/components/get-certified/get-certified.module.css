@@ -47,7 +47,7 @@
   padding: 2rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $breakpoint-md) {
   .gridContainer {
     grid-template-columns: 1fr 1fr;
     padding: 3rem;
@@ -87,11 +87,7 @@
   line-height: 1.25;
 }
 
-@media (min-width: 768px) {
-  .title {
-    font-size: 2.5rem;
-  }
-}
+
 
 .titleHighlightWrapper {
   position: relative;
@@ -270,4 +266,98 @@
   font-size: 0.875rem;
   color: #15803d;
   margin-top: 1rem;
+}
+
+
+@media (max-width: $breakpoint-md) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .badgeText {
+    font-weight: 500;
+    color: #14532d;
+  }
+  
+  .title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #14532d;
+    line-height: 1.25;
+  }
+  
+  
+  
+  .titleHighlightWrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .titleHighlight {
+    position: relative;
+    z-index: 10;
+  }
+  
+  .titleUnderline {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0;
+    width: 100%;
+    height: 0.75rem;
+    background: #bbf7d0;
+    opacity: 0.5;
+    z-index: -10;
+  }
+  
+  .description {
+    font-size: 1rem;
+    line-height: 22px;
+    color: #15803d;
+  }
+  
+  .featureList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .featureItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .featureIcon {
+    color: #16a34a;
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+    height: 20px;
+  }
+  
+  .featureText {
+    color: #14532d;
+    padding-top: 2px;
+  }
+  
+  .offerSection {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .offerBanner {
+    position: absolute;
+    top: -1rem;
+    right: 4rem;
+    transform: rotate(-12deg);
+    background: #ef4444;
+    color: white;
+    padding: 0.25rem 1rem;
+    border-radius: 999px;
+    font-weight: 600;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
 }

@@ -2,7 +2,6 @@
 import type { Metadata } from 'next';
 import OurPartners from '@app/home/components/our-partners/our-partners';
 
-import ContactForPricing from '@app/services/components/contact-for-pricing/contact-for-pricing';
 import Hero from './components/hero/hero';
 import WhatIsProgram from './components/what-is-this-program/what-is-this-program';
 import WhatYoullLearn from './components/what-youll-learn/what-youll-learn';
@@ -13,11 +12,13 @@ import ActivitiesImpact from './components/sample-activities-and-impact/sample-a
 import ImpactCloverSection from './components/your-impact/your-impact';
 import OfferBanner from './components/ui/offer-banner/offer-banner';
 import GetCertified from './components/get-certified/get-certified';
+import { FormProvider } from './components/ui/form/form-provider';
 
 
 export default function YoungGuardiansOfThePlanet() {
   return (
     <>
+     <FormProvider>
     <OfferBanner/>
     <Hero/>
     
@@ -30,7 +31,8 @@ export default function YoungGuardiansOfThePlanet() {
     <ImpactCloverSection/>
     <GetCertified/>
     <OurPartners />  
-    <ContactForPricing/>
+    {/* <ContactForPricing/> */}
+    </FormProvider>
     </>
   );
 }

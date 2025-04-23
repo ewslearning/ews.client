@@ -151,12 +151,12 @@
 @media (max-width: $breakpoint-md) {
   .wrapper {
     height: auto;
-    min-height: 100vh;
+    min-height: 120vh;
   }
 
   .lottie {
-    width: 100vw; 
-    height: 100vh;
+    width: 380%; 
+    height: 120vh;
     object-fit: fill;
   }
 
@@ -166,37 +166,65 @@
   }
 
   .heading {
-    font-size: 2rem;
-    padding-top: 2rem;
-    margin-bottom: 1.5rem;
+    font-size: 24px;
+    padding-top: 5%;
+    margin-bottom: 0.3rem;
   }
 
-  .description {
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
+  .description  {
+    font-size: 14px;
+    max-width: 80%;
+    margin-bottom: 1.2rem;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.3s;
+    line-height: 21px;
+    opacity: 0;
+  
   }
 
   .columns {
-    flex-direction: column;
-    gap: 1.2rem;
+    flex-direction: row;
+    gap: 1rem;
     align-items: center;
   }
 
   .column {
-    width: 100%;
-    max-width: 90vw;
+    width: 20%;
+    max-width: 20vw;
+    flex: 1;
+    min-width: 35%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
   }
 
   .card {
-    padding: 1rem;
-    font-size: 0.9rem;
+    padding: 0.8rem;
+    font-size: 18px;
+    height: 166px;
   }
 
   .cardTitle {
-    font-size: 1rem;
+    font-size: 14px;
+    font-weight: 400;
   }
 
   .cardText {
-    font-size: 0.9rem;
+    font-size: 10px;
+  }
+
+  .icon {
+    margin-bottom: 0.4rem;
+    color: #ffffffc7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(128, 255, 187, 0.1);
+    border-radius: 50%;
+    padding: 0.5rem;
+    width: fit-content;
+    box-shadow: inset 1px 1px 3px rgba(255, 255, 255, 0.1),
+                inset -1px -1px 2px rgba(0, 0, 0, 0.1);
   }
 }

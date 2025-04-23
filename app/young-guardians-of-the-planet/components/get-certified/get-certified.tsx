@@ -5,11 +5,12 @@ import { Award, Clock, CheckCircle, Sparkles,  ArrowRight } from "lucide-react";
 import styles from "./get-certified.module.css";
 import Button from "@app/home/components/common/button/button";
 import { useOfferCountdown } from "@app/young-guardians-of-the-planet/services/use-countdown";
+import { useFormContext } from "../ui/form/form-provider";
 
 export default function CertificationSection() {
   const [isAnimating, setIsAnimating] = useState(false);
   const timeLeft = useOfferCountdown();
-
+  const { openForm } = useFormContext();
   const offerActive = timeLeft && (timeLeft.d || timeLeft.h || timeLeft.m || timeLeft.s);
 
   return (
@@ -95,7 +96,7 @@ export default function CertificationSection() {
                       </span>
                     </div>
 
-                    <Button className={styles.ctaButton}>
+                    <Button onClick={openForm} className={styles.ctaButton}>
                       Claim Your Discount
                       <ArrowRight className={styles.ctaIcon} />
                     </Button>

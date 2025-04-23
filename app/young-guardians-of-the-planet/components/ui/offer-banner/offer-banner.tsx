@@ -2,8 +2,11 @@
 
 import { useOfferCountdown } from '@app/young-guardians-of-the-planet/services/use-countdown';
 import styles from './offer-banner.module.css';
+import { useFormContext } from '../form/form-provider';
 
 export default function OfferBanner() {
+
+    const { openForm } = useFormContext();
  
   const timeLeft = useOfferCountdown();
   if (!timeLeft) return null;
@@ -16,7 +19,7 @@ export default function OfferBanner() {
         </span>{' '}
         left.
       </span>
-      <button className={styles.button}>Enroll Now</button>
+      <button className={styles.button} onClick={openForm} >Enroll Now</button>
     </div>
   );
 }

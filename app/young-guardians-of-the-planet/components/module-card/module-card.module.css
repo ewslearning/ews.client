@@ -27,9 +27,7 @@
     background-color: #F6D4BA; /* green-100 */
     border-radius: 9999px;
   }
-  
-
-  
+    
   .title {
     margin-top: 1rem;
     font-size: 1.125rem;
@@ -41,3 +39,46 @@
     color: #374151; /* gray-700 */
   }
   
+
+@media (max-width: $breakpoint-md) { 
+
+.card {
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.cardHeader {
+  padding-bottom: 0rem;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.iconCircle {
+  height: 2.8rem;
+  width: 2.rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F6D4BA; /* green-100 */
+  border-radius: 9999px;
+}
+
+.title {
+  margin-top: 0rem;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 12px;
+  color: #374151; /* gray-700 */
+}
+   }
