@@ -29,6 +29,7 @@
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
   color: #fff;
   overflow: hidden;
+  overflow-y: auto;
 }
 
 /* Gradient border using pseudo-element */
@@ -128,4 +129,57 @@
 .closeIcon {
   width: 20px;
   height: 20px;
+}
+
+/* Adjust styles for devices with low height */
+
+@media (max-height: 700px) {
+  .popup {
+    padding: 1rem; /* Reduce padding */
+    max-height: 80vh; /* Ensure the popup fits within the viewport */
+    overflow: hidden;
+    box-sizing: border-box; /* Ensure padding is included in the height calculation */
+   
+  }
+
+  .title {
+    font-size: 1rem; /* Reduce title font size */
+  }
+
+  .form {
+    gap: 0.5rem; /* Reduce spacing between form elements */
+    max-height: calc(80vh - 4rem); /* Adjust form height to fit within the popup */
+    overflow-y: auto; /* Enable scrolling for the form content */
+ 
+  }
+
+  .input {
+    padding: 0rem; /* Reduce input padding */
+    font-size: 0.8rem; /* Reduce input font size */
+  }
+
+  .submitButton {
+    padding: 0.4rem; /* Reduce button padding */
+    font-size: 0.8rem; /* Reduce button font size */
+  }
+
+  .closeIcon {
+    width: 16px; /* Reduce close icon size */
+    height: 16px;
+  }
+
+.row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex: 1px;
+}
+.label {
+  font-size: 12px;
+}
 }
