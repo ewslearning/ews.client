@@ -25,7 +25,7 @@
     top: 0;
     left: 0;
     width: 90%;
-    height: 70%;
+    height: 530px;
     background-color: #FCF0E7;
     border-bottom-right-radius: 5rem;
     z-index: 1;
@@ -125,7 +125,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 60%;
+        height: 300px;
         background-color: #FCF0E7;
         border-bottom-right-radius: 3rem;
         border-bottom-left-radius: 3rem;
@@ -207,7 +207,7 @@
   @media (max-width: $breakpoint-md) {
     .heroContainer {
       flex-direction: column;
-      height: 80vh;
+      height: 90vh;
     }
 
     .roundedBackground {
@@ -215,7 +215,8 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 300px;
+        min-height: 300px;
         background-color: #FCF0E7;
         border-bottom-right-radius: 3rem;
         border-bottom-left-radius: 3rem;
@@ -243,9 +244,9 @@
       
       .leftText p {
         font-weight: 400;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 26px;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
         color: #477954;
         text-align: center;
       }

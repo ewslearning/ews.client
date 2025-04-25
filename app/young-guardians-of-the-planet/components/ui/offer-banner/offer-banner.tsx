@@ -19,7 +19,9 @@ export default function OfferBanner() {
         </span>{' '}
         left.
       </span>
-      <button className={styles.button} onClick={openForm} >Enroll Now</button>
+      <button className={styles.button} onClick={openForm} >Enroll Now for <span className={styles.price}>
+      <span className={styles.originalPrice}>₹2999</span> ₹1499
+    </span></button>
     </div>
   );
 }

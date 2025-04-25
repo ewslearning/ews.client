@@ -166,7 +166,7 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
           </div>
 
           <Button className={styles.submitButton} disabled={isSubmitting}>
-            {isSubmitting ? "Submitting..." : "Proceed"}
+            {isSubmitting ? "Submitting..." : "Proceed to pay ₹1499"}
           </Button>
 
           {statusMessage && <p className={styles.statusMessage}>{statusMessage}</p>}
