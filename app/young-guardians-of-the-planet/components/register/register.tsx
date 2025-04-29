@@ -83,9 +83,9 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
 
       const googleFormURL = `https://docs.google.com/forms/d/e/1FAIpQLSf7qnz34NPBjct2XAKIka2a9GufkQLbe3dUilLgOv6d8xcZuA/viewform?${query.toString()}`;
 
-      setTimeout(() => {
+     
         window.open(googleFormURL, "_blank");
-      }, 1500);
+     
         setTimeout(() => {
           onClose();
           setStatusMessage("");
