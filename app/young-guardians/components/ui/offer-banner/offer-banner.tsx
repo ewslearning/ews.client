@@ -1,6 +1,6 @@
 'use client';
 
-import { useOfferCountdown } from '@app/young-guardians-of-the-planet/services/use-countdown';
+import { useOfferCountdown } from '@app/young-guardians/services/use-countdown';
 import styles from './offer-banner.module.css';
 import { useFormContext } from '../form/form-provider';
 

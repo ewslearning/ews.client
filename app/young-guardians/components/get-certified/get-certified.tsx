@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Award, Clock, CheckCircle, Sparkles,  ArrowRight } from "lucide-react";
 import styles from "./get-certified.module.css";
 import Button from "@app/home/components/common/button/button";
-import { useOfferCountdown } from "@app/young-guardians-of-the-planet/services/use-countdown";
+import { useOfferCountdown } from "@app/young-guardians/services/use-countdown";
 import { useFormContext } from "../ui/form/form-provider";
 
 export default function CertificationSection() {

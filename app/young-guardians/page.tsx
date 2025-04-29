@@ -15,7 +15,7 @@ import GetCertified from './components/get-certified/get-certified';
 import { FormProvider } from './components/ui/form/form-provider';
 
 
-export default function YoungGuardiansOfThePlanet() {
+export default function YoungGuardians() {
   return (
     <>
      <FormProvider>
@@ -39,7 +39,7 @@ export default function YoungGuardiansOfThePlanet() {
   
 
 export const metadata: Metadata = {
-  metadataBase:  new URL('https://ewslearning.com/young-guardians-of-the-planet'),
+  metadataBase:  new URL('https://ewslearning.com/young-guardians'),
   title: 'EWS Learning | Young Guardians of The Planet',
   description: "Empowering Sustainable Futures through Environmental Education & Corporate Sustainability",
   keywords: "ews learning, ewslearning, ews resources, EWS Learning, ews learn, young guardians of planet"
