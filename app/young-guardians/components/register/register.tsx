@@ -23,6 +23,7 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
     age: "",
     gender: "",
     schoolName: "",
+    city: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -69,6 +70,7 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
           age: "",
           gender: "",
           schoolName: "",
+          city: "",
         });
         const fullName = `${formData.firstName} ${formData.lastName}`.trim();
          // Build Google Form prefilled URL
@@ -163,6 +165,11 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
           <div className={styles.inputGroup}>
             <Label htmlFor="schoolName" className={styles.label}>School Name</Label>
             <Input id="schoolName" name="schoolName" maxLength={350} value={formData.schoolName} onChange={handleChange} required className={styles.input} />
+          </div>
+
+          <div className={styles.inputGroup}>
+            <Label htmlFor="city" className={styles.label}>Enter City/State Name</Label>
+            <Input id="city" name="city" maxLength={350} value={formData.schoolName} onChange={handleChange} required className={styles.input} />
           </div>
 
           <Button className={styles.submitButton} disabled={isSubmitting}>
