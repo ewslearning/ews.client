@@ -13,11 +13,35 @@ import ImpactCloverSection from './components/your-impact/your-impact';
 import OfferBanner from './components/ui/offer-banner/offer-banner';
 import GetCertified from './components/get-certified/get-certified';
 import { FormProvider } from './components/ui/form/form-provider';
+import Script from 'next/script';
 
 
 export default function YoungGuardians() {
   return (
     <>
+   <head>
+        <Script
+        id='google-tag-conversions'
+          dangerouslySetInnerHTML={{
+            __html: `
+              function gtag_report_conversion(url) {
+                var callback = function () {
+                  if (typeof(url) != 'undefined') {
+                    window.location = url;
+                  }
+                };
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-16843456903/Rc9yCMPav5YaEIeDy98-',
+                    'value': 1.0,
+                    'currency': 'INR',
+                    'event_callback': callback
+                });
+                return false;
+              }
+            `,
+          }}
+        />
+      </head>
      <FormProvider>
     <OfferBanner/>
     <Hero/>
