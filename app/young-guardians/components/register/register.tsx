@@ -169,7 +169,7 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
 
           <div className={styles.inputGroup}>
             <Label htmlFor="city" className={styles.label}>Enter City/State Name</Label>
-            <Input id="city" name="city" maxLength={350} value={formData.schoolName} onChange={handleChange} required className={styles.input} />
+            <Input id="city" name="city" maxLength={350} value={formData.city} onChange={handleChange} required className={styles.input} />
           </div>
 
           <Button className={styles.submitButton} disabled={isSubmitting}>
