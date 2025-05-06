@@ -59,21 +59,6 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
       });
 
       const result = await response.json();
-      const fullName = `${formData.firstName} ${formData.lastName}`.trim();
-      // Build Google Form prefilled URL
-   const query = new URLSearchParams({
-     "usp":"pp_url",
-     "entry.1000020": fullName,            // Full Name
-     "entry.1000025": formData.email,      // Email
-     "entry.1000022": formData.phone,      // Phone
-     "entry.1110581335": formData.age,        // Age
-     "entry.1283564387": formData.schoolName, // School Name
-   });
-
-   const googleFormURL = `https://docs.google.com/forms/d/e/1FAIpQLSf7qnz34NPBjct2XAKIka2a9GufkQLbe3dUilLgOv6d8xcZuA/viewform?${query.toString()}`;
-
-  
-     window.open(googleFormURL, "_blank");
 
       if (result.success) {
         setStatusMessage("Form submitted successfully!");
@@ -87,7 +72,21 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
           schoolName: "",
           city: "",
         });
-      
+        const fullName = `${formData.firstName} ${formData.lastName}`.trim();
+         // Build Google Form prefilled URL
+      const query = new URLSearchParams({
+        "usp":"pp_url",
+        "entry.1000020": fullName,            // Full Name
+        "entry.1000025": formData.email,      // Email
+        "entry.1000022": formData.phone,      // Phone
+        "entry.1110581335": formData.age,        // Age
+        "entry.1283564387": formData.schoolName, // School Name
+      });
+
+      const googleFormURL = `https://docs.google.com/forms/d/e/1FAIpQLSf7qnz34NPBjct2XAKIka2a9GufkQLbe3dUilLgOv6d8xcZuA/viewform?${query.toString()}`;
+
+     
+      window.location.href = googleFormURL;
      
         setTimeout(() => {
           onClose();
