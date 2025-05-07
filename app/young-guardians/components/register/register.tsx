@@ -31,6 +31,15 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
+    // Allow only alphabets for the city field
+  // Allow only alphabets and spaces for specific fields
+  if (["firstName", "lastName", "schoolName", "city"].includes(name) && !/^[a-zA-Z\s]*$/.test(value)) {
+    return; // Prevent invalid input
+  }
+   // Allow only numbers and the "+" sign for the phone field
+   if (name === "phone" && !/^[0-9+]*$/.test(value)) {
+    return; // Prevent invalid input
+  }
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
