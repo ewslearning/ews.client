@@ -14,6 +14,7 @@ interface PopupFormProps {
   onClose: () => void;
 }
 
+
 export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -95,7 +96,12 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
       const googleFormURL = `https://docs.google.com/forms/d/e/1FAIpQLSf7qnz34NPBjct2XAKIka2a9GufkQLbe3dUilLgOv6d8xcZuA/viewform?${query.toString()}`;
 
      
-      window.location.href = googleFormURL;
+     // Check if the function exists in the global window object
+  if (typeof window.gtag_report_conversion === "function") {
+    window.gtag_report_conversion(googleFormURL);
+  } else {
+    console.error("gtag_report_conversion is not defined");
+  }
      
         setTimeout(() => {
           onClose();
