@@ -1,0 +1,109 @@
+.container {
+    padding: 6rem 2rem;
+    background: white;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    min-height: 80%;
+  }
+  
+  .heading {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    color: black;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-top: 3%;
+  }
+  
+  .card {
+    background-color: #FCF0E7;
+    border-radius: 20px;
+    padding: 4rem 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .icon {
+    color: black;
+    margin-bottom: 1rem;
+  }
+  
+  .card p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+  }
+  
+
+
+@media (max-width: $breakpoint-md) { 
+  .container {
+    padding: 3rem 0%;
+    background: white;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    min-height: 80%;
+  }
+  
+  .heading {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: black;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+    max-width: 100%;
+    margin: 0 5%;
+    padding-top: 3%;
+  }
+  
+  .card {
+    background-color: #FCF0E7;
+    border-radius: 20px;
+    padding: 2rem 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .icon {
+    color: black;
+    margin-bottom: 0.8rem;
+  }
+  
+  .card p {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+  }
+}

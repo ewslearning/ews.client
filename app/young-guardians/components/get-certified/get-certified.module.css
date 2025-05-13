@@ -1,0 +1,363 @@
+.wrapper {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.sectionContainer {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: linear-gradient(to bottom right, #f0fdf4, #dcfce7, #f0fdf4);
+  border: 1px solid #bbf7d0;
+}
+
+.decorativeBg {
+  position: absolute;
+  inset: 0;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.blurTopRight,
+.blurBottomLeft {
+  position: absolute;
+  width: 24rem;
+  height: 24rem;
+  border-radius: 50%;
+  background: #86efac;
+  filter: blur(96px);
+}
+
+.blurTopRight {
+  top: -6rem;
+  right: -6rem;
+}
+
+.blurBottomLeft {
+  bottom: -6rem;
+  left: -6rem;
+}
+
+.gridContainer {
+  position: relative;
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+@media (min-width: $breakpoint-md) {
+  .gridContainer {
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem;
+  }
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.badge {
+  display: inline-flex;
+  max-width: 240px;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.badgeIcon {
+  color: #16a34a;
+}
+
+.badgeText {
+  font-weight: 500;
+  color: #14532d;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #14532d;
+  line-height: 1.25;
+}
+
+
+
+.titleHighlightWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.titleHighlight {
+  position: relative;
+  z-index: 10;
+}
+
+.titleUnderline {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0;
+  width: 100%;
+  height: 0.75rem;
+  background: #bbf7d0;
+  opacity: 0.5;
+  z-index: -10;
+}
+
+.description {
+  font-size: 1.125rem;
+  color: #15803d;
+}
+
+.featureList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.featureIcon {
+  color: #16a34a;
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+  height: 20px;
+}
+
+.featureText {
+  color: #14532d;
+  padding-top: 2px;
+}
+
+.offerSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.offerBanner {
+  position: absolute;
+  top: -1rem;
+  right: 12rem;
+  transform: rotate(-12deg);
+  background: #ef4444;
+  color: white;
+  padding: 0.25rem 1rem;
+  border-radius: 999px;
+  font-weight: bold;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.animated {
+  transform: rotate(-12deg) scale(1.1);
+}
+
+.offerCard {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid #bbf7d0;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.cardIcon {
+  color: #16a34a;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #14532d;
+}
+
+.cardText {
+  color: #15803d;
+}
+
+.priceGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.5rem 0;
+}
+
+.originalPrice {
+  text-decoration: line-through;
+  color: #737373;
+  font-size: 1.125rem;
+}
+
+.discountedPrice {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #14532d;
+}
+
+.timerBox {
+  background: #dcfce7;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.timerIcon {
+  color: #15803d;
+  flex-shrink: 0;
+}
+
+.timerText {
+  color: #14532d;
+  font-weight: 500;
+}
+
+.timerBold {
+  font-weight: 700;
+}
+
+.ctaButton {
+  width: 100%;
+  background: #16a34a;
+  color: white;
+  padding: 1.5rem 0;
+  font-size: 1.125rem;
+  margin-top: 1rem;
+}
+
+.ctaButton:hover {
+  background: #15803d;
+}
+
+.ctaIcon {
+  margin-left: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.ctaButton:hover .ctaIcon {
+  transform: translateX(4px);
+}
+
+.footnote {
+  font-size: 0.875rem;
+  color: #15803d;
+  margin-top: 1rem;
+}
+
+
+@media (max-width: $breakpoint-md) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .badgeText {
+    font-weight: 500;
+    color: #14532d;
+  }
+  
+  .title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #14532d;
+    line-height: 1.25;
+  }
+  
+  
+  
+  .titleHighlightWrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .titleHighlight {
+    position: relative;
+    z-index: 10;
+  }
+  
+  .titleUnderline {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0;
+    width: 100%;
+    height: 0.75rem;
+    background: #bbf7d0;
+    opacity: 0.5;
+    z-index: -10;
+  }
+  
+  .description {
+    font-size: 1rem;
+    line-height: 22px;
+    color: #15803d;
+  }
+  
+  .featureList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .featureItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .featureIcon {
+    color: #16a34a;
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+    height: 20px;
+  }
+  
+  .featureText {
+    color: #14532d;
+    padding-top: 2px;
+  }
+  
+  .offerSection {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .offerBanner {
+    position: absolute;
+    top: -1rem;
+    right: 4rem;
+    transform: rotate(-12deg);
+    background: #ef4444;
+    color: white;
+    padding: 0.25rem 1rem;
+    border-radius: 999px;
+    font-weight: 600;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+}

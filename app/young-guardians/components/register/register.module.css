@@ -1,0 +1,185 @@
+.overlayWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup {
+  position: relative;
+  z-index: 10000;
+  margin: 5vh auto;
+  margin-top: 5%;
+  max-width: 600px;
+  width: 90%;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+/* Gradient border using pseudo-element */
+.popup::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px; /* Border thickness */
+  background: linear-gradient(135deg, #195219, #FCF0E7); /* Change colors as needed */
+  border-radius: 16px;
+  mask:
+  linear-gradient(#fff 0 0) content-box,
+  linear-gradient(#fff 0 0);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  pointer-events: none;
+  z-index: -1;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.input {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  font-size: 1rem;
+}
+
+.label {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.radioGroup {
+  display: flex;
+  gap: 1rem;
+}
+
+.radioItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.submitButton {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #195219;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.closeIcon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Adjust styles for devices with low height */
+
+@media (max-height: 700px) {
+  .popup {
+    padding: 1rem; /* Reduce padding */
+    max-height: 80vh; /* Ensure the popup fits within the viewport */
+    overflow: hidden;
+    box-sizing: border-box; /* Ensure padding is included in the height calculation */
+   
+  }
+
+  .title {
+    font-size: 1rem; /* Reduce title font size */
+  }
+
+  .form {
+    gap: 0.5rem; /* Reduce spacing between form elements */
+    max-height: calc(80vh - 4rem); /* Adjust form height to fit within the popup */
+    overflow-y: auto; /* Enable scrolling for the form content */
+ 
+  }
+
+  .input {
+    padding: 0rem; /* Reduce input padding */
+    font-size: 0.8rem; /* Reduce input font size */
+  }
+
+  .submitButton {
+    padding: 0.4rem; /* Reduce button padding */
+    font-size: 0.8rem; /* Reduce button font size */
+  }
+
+  .closeIcon {
+    width: 16px; /* Reduce close icon size */
+    height: 16px;
+  }
+
+.row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex: 1px;
+}
+.label {
+  font-size: 12px;
+}
+}

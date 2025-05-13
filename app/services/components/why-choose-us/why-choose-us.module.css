@@ -1,0 +1,92 @@
+.whyChooseSection {
+  padding: 5% 0;
+}
+
+.container {
+  margin: 0 5%;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.headerSection {
+  margin-bottom: 2rem;
+}
+
+.tag {
+  display: inline-block;
+  color: var(--primary-foreground);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 50px;
+   font-weight: 600;
+   line-height: 84px;
+   color: #333333;
+    text-align: center;
+  margin-top: 0.5rem;
+}
+
+.description {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 42px;
+  color: #333333;
+  text-align: center;
+  padding-top: 16px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.advantagesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.advantageCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.0rem;
+  text-align: left;
+   flex:  calc(50% - 1.5rem);
+  max-width: 100%; 
+}
+
+.advantageTitle {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 42px;
+  color: #195829CC;
+  text-align: left;
+  padding-top: 16px;
+}
+
+.advantageDescription {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333a6;
+  text-align: left;
+  padding-top: 16px;
+}
+
+.icon {
+  color: #195829CC;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .advantageCard {
+      flex: 1 1 100%;
+      max-width: 100%;
+  }
+}

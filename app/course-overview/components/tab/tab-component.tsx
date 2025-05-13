@@ -38,7 +38,7 @@ const TabComponent : React.FC<CourseDetailsProps> = ({overview, topicsCovered, t
      
         </div>,
     <div key="modules">
-      <p className={classes.paragraph}>{trainingModules}</p>
+      <p className={classes.paragraph} dangerouslySetInnerHTML={{ __html: trainingModules }}></p>
     </div>
   ];
 

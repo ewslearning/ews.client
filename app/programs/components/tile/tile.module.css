@@ -3,7 +3,7 @@
 .tileContainer {
     background-color: var(--surface-3);
     width: 390px;
-    height: 608px;
+    height: 500px;
     padding: 0;
     margin: 0;
     display: flex;
@@ -27,7 +27,7 @@
 
 .imageContainer {
     width: 100%; /* Full width */
-    height: 350px;
+    height: 246px;
     overflow: hidden;
     padding: 0;
     justify-content: center;
@@ -98,7 +98,7 @@
     .tileContainer {
         background-color: var(--surface-3);
         width: 343px;
-        height: 516px;
+        height: 440px;
         padding: 0;
         margin: 0;
         display: flex;
@@ -112,7 +112,7 @@
 
     .imageContainer {
         width: 100%; /* Full width */
-        height: 304px;
+        height: 220px;
         overflow: hidden;
         padding: 0;
         justify-content: center;
@@ -122,7 +122,7 @@
     
     .imageContainer img {
         width: 343px;/* Make sure the image fills the container*/
-        height: 304px; /* Maintain the aspect ratio of the image */
+        height: 220px; /* Maintain the aspect ratio of the image */
         display: block;
         object-fit: cover; 
     }

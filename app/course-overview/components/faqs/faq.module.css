@@ -1,0 +1,270 @@
+.faqContainer {
+    margin: 2% 5%;
+    padding: 2rem;
+    background: #ffffff;
+    border: 1px solid #1958293c;
+    border-radius: 4px;
+}
+
+.heading {
+    text-align: left;
+    margin-bottom: 1.0rem;
+    color: var(--green-10);
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.accordionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #333;
+    background: none;
+    border: none;
+    text-align: left;
+    transition: border 0.3s ease;
+}
+
+.accordionItem {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 4px;
+}
+
+.accordionItem button {
+    width: 100%;
+    background: #fff;
+    border: none;
+    padding: 1rem;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #333;
+    transition: border 0.3s ease, background 0.3s ease;
+}
+
+.accordionItem button:hover {
+    border: 2px solid #1958293c;
+}
+
+.accordionItem:last-child {
+    border-bottom: none; /* Remove border for the last item */
+}
+
+.answer {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.showMoreContainer {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.showMoreButton {
+    background-color: transparent;
+    color: rgb(65, 181, 141);
+    font-size: 14px;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-decoration: underline;
+}
+
+.showMoreButton:hover {
+    color: rgb(3, 126, 83);
+}
+
+.buyCourseButton {
+    position: fixed;
+    bottom: 30px;
+    right: 4%;
+    background-color: #d8a013;
+    color: #fff;
+    border: none;
+    padding: 16px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+.buyCourseButton:hover {
+    background-color: #b7850e;
+}
+
+.buyCourseButton.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Overlay and Popup Form */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: linear-gradient(155deg, #159131 30%, #00177D 100%);
+    padding: 6rem 4rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white; /* Ensure text is readable */
+}
+
+.modal h3 {
+    margin-bottom: 1.5rem;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.modal input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.modalButtons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.modalButtons button {
+    flex: 1;
+    padding: 0.8rem;
+    background-color: #d8a013;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.modalButtons button:hover {
+    background-color: #b7850e;
+}
+
+.textInput {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #159131; /* Green border */
+    border-radius: 6px;
+    font-size: 16px;
+    color: #ffffff; /* Text color */
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.468);
+}
+
+/* Placeholder (Hint) Styling */
+.textInput::placeholder {
+    font-size: 14px;
+    color: #ffffffcf; /* Lighter text for hint */
+    font-style: italic;
+}
+
+/* When input is focused */
+.textInput:focus {
+    border-color: #1338dd; /* Change to blue when focused */
+    box-shadow: 0px 0px 12px rgba(0, 23, 125, 0.5); /* Soft glow effect */
+}
+
+/* If you want to add error styling */
+.textInput.error {
+    border-color: red;
+    background: #ffe6e6; /* Light red background */
+}
+
+.textInput.error::placeholder {
+    color: red;
+}
+
+
+@media (max-width: $breakpoint-lg){
+
+    .modal {
+        background: linear-gradient(165deg, #159131 40%, #00177D 100%);
+        padding: 5.2rem 2.2rem;
+        border-radius: 8px;
+        width: 90%;
+        max-width: 500px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        color: white; /* Ensure text is readable */
+    }
+
+
+    .faqContainer {
+        margin: 2% 5%;
+        padding: 1rem;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    .accordionHeader {
+        font-size: 14px;
+    }
+
+    .accordionItem button {
+        font-size: 14px;
+        padding: 12px 0px;
+    }
+
+    .answer {
+        font-size: 1rem;
+    }
+
+    .showMoreContainer {
+        margin-top: 8px;
+    }
+
+    .buyCourseButton {
+        bottom: 30px;
+        right: 5%;
+        padding: 14px 20px;
+        font-size: 16px;
+    }
+}

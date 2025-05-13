@@ -1,0 +1,320 @@
+
+
+.heroContainer {
+    display: flex;
+    width: 100%;
+    height: 96vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #f9f9f9;
+  }
+  
+  /* === Left Section === */
+  .leftSection {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2rem;
+    overflow: hidden;
+  }
+  
+  .roundedBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 530px;
+    background-color: #FCF0E7;
+    border-bottom-right-radius: 5rem;
+    z-index: 1;
+  }
+  
+  .floatingSvg {
+    position: absolute;
+    top: 10%;
+    left: 42%;
+    /* transform: translateX(-50%); */
+    width: 30%;       /* Or adjust to your liking */
+    height: 74%;
+    z-index: 2;
+    pointer-events: none; /* So it doesn’t interfere with buttons */
+ 
+  }
+  
+  
+  .leftText {
+    position: relative;
+    z-index: 3;
+    max-width: 400px;
+    margin-top: 3rem;
+    margin-left: 10%;
+  }
+  
+  .leftText h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    margin-bottom: 1rem;
+    color: #195829;
+  }
+  
+  .leftText p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    margin-bottom: 1.5rem;
+    color: #477954;
+  }
+  
+  .rightText button {
+    margin-top: 24px;
+    padding: 12px 36px;
+    background-color: #195829;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  /* === Right Section === */
+  .rightSection {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: flex-start; /* 👈 push items to the top */
+    justify-content: flex-end; /* 👈 keep it to the right */
+  }
+  
+  .rightSvg {
+    width: 56%;
+    height: 48%;
+    max-width: 500px;
+    z-index: 1;
+  }
+  
+  .rightText {
+    position: absolute;
+    top: 40%;
+    text-align: left;
+    z-index: 2;
+    max-width: 60%;
+    margin-right: 20%;
+    
+  }
+  
+  .rightText h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .rightText p {
+    font-size: 1rem;
+  }
+  
+  /* === Responsive === */
+  @media (max-width: $breakpoint-lg) {
+    .heroContainer {
+      flex-direction: column;
+     
+    }
+
+    .roundedBackground {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 300px;
+        background-color: #FCF0E7;
+        border-bottom-right-radius: 3rem;
+        border-bottom-left-radius: 3rem;
+        z-index: 1;
+      }
+
+    .leftText {
+        position: relative;
+        z-index: 3;
+        max-width: 400px;
+        margin-top: 3rem;
+        margin-left: 10%;
+      }
+      
+      .leftText h1 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 1rem;
+        color: #195829;
+      }
+      
+      .leftText p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 1.5rem;
+        color: #477954;
+      }
+  
+  
+      .rightSection {
+        width: 100%;
+        padding: 1rem;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        min-height: 60vh;
+      }
+      
+      .rightText {
+        position: relative;
+        z-index: 2;
+        text-align: left;
+        margin-top: 0;
+      }
+      
+      .rightSvg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        height: auto;
+        max-width: 300px;
+        z-index: 1;
+      }
+      
+  
+   
+  
+    .floatingSvg {
+        position: absolute;
+        top: 10%;
+        left: 0%;
+        /* transform: translateX(-50%); */
+        width: 40%;       /* Or adjust to your liking */
+        height: 50%;
+        z-index: 2;
+        pointer-events: none; /* So it doesn’t interfere with buttons */
+     
+      }
+  
+    
+  }
+  
+
+
+  @media (max-width: $breakpoint-md) {
+    .heroContainer {
+      flex-direction: column;
+      height: 90vh;
+    }
+
+    .roundedBackground {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 300px;
+        min-height: 300px;
+        background-color: #FCF0E7;
+        border-bottom-right-radius: 3rem;
+        border-bottom-left-radius: 3rem;
+        z-index: 1;
+      }
+
+    .leftText {
+        position: relative;
+        z-index: 3;
+        max-width: 400px;
+        margin-top: 1rem;
+        margin-left: 0%;
+        padding-inline: 6%;
+      }
+      
+      .leftText h1 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 1rem;
+        color: #195829;
+        text-align: center;
+        padding-inline: 8%;
+      }
+      
+      .leftText p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 1rem;
+        color: #477954;
+        text-align: center;
+      }
+  
+    .leftSection {
+      width: 100%;
+      padding: 1rem;
+    }
+
+    .rightSection {
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      align-content: center;
+      justify-content: center; /* center the text vertically */
+      padding: 0px;
+      min-height: 52vh;
+    }
+    
+    .rightText {
+      top: -60px;
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 100%;
+      margin-right: 0%;
+      padding-inline: 5%;
+    }
+    
+    .rightSvg {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: auto;
+      max-width: 320px;
+      z-index: 1;
+      opacity: 0.9;
+      pointer-events: none;
+    }
+    
+    .rightText h2 {
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+    
+    .rightText p {
+      font-size: 1rem;
+      line-height: 24px;
+    }
+   
+  
+    .floatingSvg {
+        position: absolute;
+        top: 14%;
+        left: 0%;
+        /* transform: translateX(-50%); */
+        width: 40%;       /* Or adjust to your liking */
+        height: 40%;
+        z-index: 2;
+        pointer-events: none; /* So it doesn’t interfere with buttons */
+     
+      }
+  
+   
+  }
+  

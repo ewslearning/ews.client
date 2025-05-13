@@ -57,6 +57,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: formattedDate,
       changeFrequency: "yearly",
       priority: 1,
+    }, 
+    {
+      url: "https://ewslearning.com/young-guardians",
+      lastModified: formattedDate,
+      changeFrequency: "yearly",
+      priority: 1,
     },
   ];
 }
