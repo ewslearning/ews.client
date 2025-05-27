@@ -61,6 +61,11 @@ const Footer: React.FC = () => {
                     Contact Us
                   </Link>
                 </li>
+                 <li>
+                  <Link href="/terms-and-conditions" className={styles.link}>
+                    Terms and Conditions
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>

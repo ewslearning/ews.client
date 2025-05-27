@@ -1,0 +1,17 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background: #fff;
+  color: #222;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.heading {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+.container ol,
+.container ul {
+  margin-left: 1.5rem;
+}
